@@ -19,7 +19,7 @@
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
   <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
-  <link rel="stylesheet" href="/styles/styles-responsive.css">
+  <link rel="stylesheet" href="../../styles/styles-responsive.css">
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>
@@ -41,12 +41,12 @@
       <div class="container">
         <div class="sr-only" id="title-site-nav">Site Menu</div>
         <ul class="pipe-links list-inline">
-          <li class="list-inline-item"><a href="/index.html"><span>1. Basics</span></a></li>
-          <li class="list-inline-item"><a href="/guidelines/fundamentals/home.html"><span>2. Guidelines</span></a></li>
-          <li class="list-inline-item"><a href="/training/fundamentals/home.html" aria-current="true"><span>3. Training</span></a></li>
-          <li class="list-inline-item"><a href="/good-bad/home.html"><span>4. Good / Bad</span></a></li>
-          <li class="list-inline-item"><a href="/sitemap/sitemap-basics.html"><span>Sitemap</span></a></li>
-          <li class="list-inline-item"><a href="/about/fundamentals/contact.html"><span>About</span></a></li>
+          <li class="list-inline-item"><a href="../../index.html"><span>1. Basics</span></a></li>
+          <li class="list-inline-item"><a href="../../guidelines/fundamentals/home.html"><span>2. Guidelines</span></a></li>
+          <li class="list-inline-item"><a href="../../training/fundamentals/home.html" aria-current="true"><span>3. Training</span></a></li>
+          <li class="list-inline-item"><a href="../../good-bad/home.html"><span>4. Good / Bad</span></a></li>
+          <li class="list-inline-item"><a href="../../sitemap/sitemap-basics.html"><span>Sitemap</span></a></li>
+          <li class="list-inline-item"><a href="../../about/fundamentals/contact.html"><span>About</span></a></li>
         </ul>
       </div>
     </nav>
@@ -238,7 +238,10 @@
               <div class="card-block">
 
                 <h3 class="card-title">Tips & Tricks</h3>
-                <p>None documented</p>
+                <ul class="list-icons list-checklist">
+                  <li>When using default browser zoom on a desktop, just like it happens for re-sizing the viewport, media queries are triggered showing the tablet or mobile version.</li>
+                  <li>This is often used by people with low vision so never assume the mobile version is only seen on a mobile.</li>
+                </ul>
 
               </div>
             </div>
@@ -250,16 +253,38 @@
             <div class="card">
               <div class="card-block">
 
+                <h3 class="card-title">Jump to:</h3>
+
+                <h4 class="heading-s">Guidelines</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../guidelines/design/visual-design.html#content-resizing">Content resizing</a></li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-block">
+
                 <h3 class="card-title">Resources</h3>
 
                 <h4 class="heading-s">Specifications</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://www.w3.org/TR/WCAG21/#reflow">SC 1.4.10 Reflow</a></li>
+                  <li><a href="https://www.w3.org/TR/css3-mediaqueries/">Media Queries - CSS3</a></li>
+                </ul>
 
                 <h4 class="heading-s">Examples</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/reflow.html#examples">Understanding SC 1.4.10 Reflow Level AA</a></li>
+                </ul>
 
                 <h4 class="heading-s">Miscellaneous</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://www.w3.org/TR/low-vision-needs/#reflow-to-single-column">Reflow to Single Column - LVTF</a></li>
+                  <li><a href="https://developer.mozilla.org/en-US/Apps/Progressive/Responsive/responsive_design_building_blocks">The building blocks of responsive design - MDN</a></li>
+                  <li><a href="https://developers.google.com/web/fundamentals/design-and-ux/responsive/">Responsive Web Design Basics - Google</a></li>                  
+                </ul>
 
               </div>
             </div>
@@ -270,7 +295,9 @@
                 <h3 class="card-title">Practice</h3>
 
                 <h4 class="heading-s">WCAG Annotations</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../good-bad/home.html">Responsive Good / Bad example site - Good</a></li>
+                </ul>
 
                 <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
@@ -340,7 +367,11 @@
               <div class="card-block">
 
                 <h3 class="card-title">Tips & Tricks</h3>
-                <p>None documented</p>
+                <ul class="list-icons list-checklist">
+                  <li>When using default browser zoom on a desktop, just like it happens for re-sizing the viewport, media queries are triggered showing the tablet or mobile version.</li>
+                  <li>This is often used by people with low vision so never assume the mobile version is only seen on a mobile.</li>
+                  <li>When people zoom in on parts of the page, with or without assistive technology, it's likely they are not aware of changes on other parts of the page. Design and code in a way to inform all users of these changes.</li>
+                </ul>
 
               </div>
             </div>
@@ -368,13 +399,21 @@
                 <h3 class="card-title">Resources</h3>
 
                 <h4 class="heading-s">Specifications</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://www.w3.org/WAI/WCAG21/quickref/?currentsidebar=%23col_customize&tags=zoom">"zoom" - WCAG Filters</a></li>
+                  <li><a href="https://www.w3.org/TR/html52/document-metadata.html#example-8dc32ede">Meta element Warning! - HTML 5.2</a></li>
+                </ul>
 
                 <h4 class="heading-s">Examples</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html#examples">Understanding SC 1.4.4: Resize text</a></li>
+                  <li><a href="https://ebay.gitbooks.io/mindpatterns/antipatterns/disabling_pinch-to-zoom.html">Anti-Pattern: Disabling Pinch-to-Zoom - eBay</a></li>
+                </ul>
 
                 <h4 class="heading-s">Miscellaneous</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag">Using the viewport meta tag to control layout on mobile browsers - MDN</a></li>
+                </ul>
 
               </div>
             </div>
@@ -385,7 +424,10 @@
                 <h3 class="card-title">Practice</h3>
 
                 <h4 class="heading-s">WCAG Annotations</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../good-bad/home.html#annotModal02">02. Zooming and scaling content not prevented - Good</a></li>
+                  <li><a href="../../good-bad/home-bad.html#annotModal02">02. Zoom and scaling prevented - Bad</a></li>
+                </ul>
 
                 <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>

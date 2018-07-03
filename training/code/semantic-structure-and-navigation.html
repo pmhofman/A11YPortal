@@ -19,7 +19,7 @@
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
   <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
-  <link rel="stylesheet" href="/styles/styles-responsive.css">
+  <link rel="stylesheet" href="../../styles/styles-responsive.css">
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>
@@ -41,12 +41,12 @@
       <div class="container">
         <div class="sr-only" id="title-site-nav">Site Menu</div>
         <ul class="pipe-links list-inline">
-          <li class="list-inline-item"><a href="/index.html"><span>1. Basics</span></a></li>
-          <li class="list-inline-item"><a href="/guidelines/fundamentals/home.html"><span>2. Guidelines</span></a></li>
-          <li class="list-inline-item"><a href="/training/fundamentals/home.html" aria-current="true"><span>3. Training</span></a></li>
-          <li class="list-inline-item"><a href="/good-bad/home.html"><span>4. Good / Bad</span></a></li>
-          <li class="list-inline-item"><a href="/sitemap/sitemap-basics.html"><span>Sitemap</span></a></li>
-          <li class="list-inline-item"><a href="/about/fundamentals/contact.html"><span>About</span></a></li>
+          <li class="list-inline-item"><a href="../../index.html"><span>1. Basics</span></a></li>
+          <li class="list-inline-item"><a href="../../guidelines/fundamentals/home.html"><span>2. Guidelines</span></a></li>
+          <li class="list-inline-item"><a href="../../training/fundamentals/home.html" aria-current="true"><span>3. Training</span></a></li>
+          <li class="list-inline-item"><a href="../../good-bad/home.html"><span>4. Good / Bad</span></a></li>
+          <li class="list-inline-item"><a href="../../sitemap/sitemap-basics.html"><span>Sitemap</span></a></li>
+          <li class="list-inline-item"><a href="../../about/fundamentals/contact.html"><span>About</span></a></li>
         </ul>
       </div>
     </nav>
@@ -280,7 +280,8 @@
                 <h3 class="card-title">Tips & Tricks</h3>
                 <ul class="list-icons list-checklist">
                   <li>Page Title <code>&lt;title&gt;</code>, relative to <code>&lt;h1&gt;</code>, <span class="badge badge-info">SHOULD</span> contain the generic website name</li>
-                  <li>Best link text <code>&lt;a href=""&gt;</code> is title of destination page, <code>&lt;title&gt;</code> or <code>&lt;h1&gt;</code></li>
+                  <li>Best text to use for a link, <code>&lt;a href=""&gt;</code>, is the title of destination page, <code>&lt;title&gt;</code> or <code>&lt;h1&gt;</code></li>
+                  <li>Most screen readers read aloud the title on screen load</li>
                 </ul>
 
               </div>
@@ -315,15 +316,20 @@
 
                 <h4 class="heading-s">Specifications</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_customize&tags=page-title">"page title" - WCAG WCAG Filters</a></li>
+                  <li><a href="https://www.w3.org/WAI/WCAG21/quickref/?currentsidebar=%23col_customize&tags=page-title">"page title" - WCAG Filter</a></li>
                   <li><a href="https://www.w3.org/TR/html52/document-metadata.html#the-title-element">The title element - HTML 5.2</a></li>
                 </ul>
 
                 <h4 class="heading-s">Examples</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html#examples">Understanding SC 1.4.4: Resize text</a></li>
+                  <li><a href="https://ibma.github.io/Va11yS/WCAG_HTML/H25_example1.html">H25 Example 1: Providing a title using the title element - IBM</a></li>
+                </ul>
 
                 <h4 class="heading-s">Miscellaneous</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title">&lt;title&gt;: The Document Title element - MDN</a></li>
+                </ul>
 
               </div>
             </div>
@@ -335,16 +341,12 @@
 
                 <h4 class="heading-s">WCAG Annotations</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../good-bad/home.html#annotModal01">Page properly titled - Good WCAG Annotation 01</a></li>
-                  <li><a href="../../good-bad/home-bad.html#annotModal01">Page unclear titled - Bad WCAG Annotation 01</a></li>
+                  <li><a href="../../good-bad/home.html#annotModal01">01. Page properly titled - Good</a></li>
+                  <li><a href="../../good-bad/home-bad.html#annotModal01">01. Page unclear titled - Bad</a></li>
                 </ul>
 
                 <h4 class="heading-s">Design Annotations</h4>
-                <ul class="list-icons list-linklist">
-                  <li><a href="/">Design Annotation Practice PDF</a></li>
-                  <li><a href="/">Design Annotation Example PDF</a></li>
-                  <li><a href="/">Annotation Overview Page</a></li>
-                </ul>
+                <p>None documented</p>
 
               </div>
               <div>
@@ -442,7 +444,7 @@
 
                 <h4 class="heading-s">Specifications</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_customize&tags=language">"language" - WCAG WCAG Filters</a></li>
+                  <li><a href="https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_customize&tags=language">"language" - WCAG Filter</a></li>
                   <li><a href="https://www.w3.org/TR/html52/dom.html#the-lang-and-xmllang-attributes">The lang and xml:lang attributes - HTML 5.2</a></li>
                 </ul>
 
@@ -704,7 +706,7 @@
 
                 <h4 class="heading-s">Specifications</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_customize&tags=headings">"headings" - WCAG WCAG Filters</a></li>
+                  <li><a href="https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_customize&tags=headings">"headings" - WCAG Filter</a></li>
                   <li><a href="https://www.w3.org/TR/WCAG20-TECHS/complete.html">WCAG Techniques</a> - search for "headings"</li>
                   <li><a href="https://www.w3.org/TR/html52/dom.html#heading-content">Heading content - HTML 5.2</a></li>
                   <li><a href="https://www.w3.org/TR/wai-aria-1.1/#heading">Heading (role) WAI ARIA 1.1</a></li>
