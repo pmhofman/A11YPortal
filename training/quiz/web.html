@@ -151,82 +151,84 @@
 
                 <hr>
 
-                <p>What will be the next version of WCAG?</p>
+                <p>What do most screen readers do with the page title? (Open question)</p>
+                <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
+                <div hidden>
+                  <p class="pt-2 mx-2">Answer: Most screen readers read aloud the title on screen load.</p>
+                </div>
+
+                <hr>
+
+                <p>What is the best text to use for a link?</p>
                 <ol class="list-alpha">
-
-                  <li>WCAG.1.1</li>
-                  <li>WCAG.2.1</li>
-                  <li>WCAG.2.2</li>
-                  <li>WCAG.3.0</li>
-
+                  <li>More information...</li>
+                  <li>The title of the destination page</li>
+                  <li>Click here</li>
+                  <li>The current article heading containing the link</li>
                 </ol>
                 <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
-
                 <div hidden>
                   <p class="pt-2 mx-2">Answer: B</p>
                 </div>
 
                 <hr>
 
-                <p>What is NOT one of the main accessibility principles?</p>
+                <p>Can you use HTML5 and ARIA landmarks together?</p>
                 <ol class="list-alpha">
-
-                  <li>Operable</li>
-                  <li>Reproducable</li>
-                  <li>Robust</li>
-                  <li>Perceivable</li>
-                  <li>E. Understandable</li>
-
+                  <li>Yes</li>
+                  <li>No</li>
                 </ol>
                 <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
+                <div hidden>
+                  <p class="pt-2 mx-2">Answer: A</p>
+                </div>
 
+                <hr>
+
+                <p>Should you use ARIA landmarks and skip links together?</p>
+                <ol class="list-alpha">
+                  <li>Yes, it is recommended</li>
+                  <li>No, using HTML 5 and ARIA landmarks are supplementary "skip navigation" mechanisms
+                  </li>
+                </ol>
+                <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
                 <div hidden>
                   <p class="pt-2 mx-2">Answer: B</p>
                 </div>
 
                 <hr>
 
-                <p>Content within an
-                  < em> - tag will be ignored by screenreaders</p>
-                <ol class="list-alpha">
+                <p>What is a disadvantage of using aria label for Landmarks? (Open question)</p>
+                <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
+                <div hidden>
+                  <p class="pt-2 mx-2">Answer: Translation services like Google's don't translate the aria-label attribute</p>
+                </div>
 
+                <hr>
+
+                <p>Content within an <code>&lt;em&gt;</code> will be ignored by screenreaders</p>
+                <ol class="list-alpha">
                   <li>True</li>
                   <li>False</li>
-
                 </ol>
                 <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
 
                 <div hidden>
-                  <p class="pt-2 mx-2">Answer: B, The content is not ignored, but the semantic value of the
-                    < em> - tag is.</p>
+                  <p class="pt-2 mx-2">Answer: B, The content is not ignored, but the semantic value of the <code>&lt;em&gt;</code> is.</p>
                 </div>
 
                 <hr>
 
-                <p>Content can be styled so that it is hidden for the visual user. What techniques do the screen reader do not read the content?</p>
+                <p>Content can be styled so that it is hidden for the visual user. What techniques do screen readers ignore the content?</p>
                 <ol class="list-alpha">
-                  <li>visibility:hidden, width: 0px; height: 0px; display:none</li>
+                  <li>visibility:hidden, width: 0px; height: 0px;</li>
                   <li>width: 0px; height: 0px;</li>
                   <li>text-indent: -10000px;</li>
-                  <li>display:none</li>
+                  <li>display: none</li>
                 </ol>
                 <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
                 <div hidden>
-                  <p class="pt-2 mx-2">Answer: A
-                  </p>
-                </div>
-
-                <hr>
-
-                <p>Creating an accessible sortable table must be done with a sorting event on the td element.</p>
-                <ol class="list-alpha">
-                  <li>True</li>
-                  <li>False</li>
-                </ol>
-                <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
-                <div hidden>
-                  <p class="pt-2 mx-2">Answer: B, Preferably, the sorting would be done using a standard link, using the A element which is natively focusable. This eliminates keyboard accessibility issues altogether.
-                  </p>
+                  <p class="pt-2 mx-2">Answer: A and D</p>
                 </div>
 
                 <hr>
@@ -235,18 +237,17 @@
                 <ol class="list-alpha">
                   <li>Links</li>
                   <li>Form fields</li>
-                  <li>Element(s) with tabindex="0"</li>
+                  <li>Element(s) with tabindex="-1"</li>
                   <li>Buttons</li>
                 </ol>
                 <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
                 <div hidden>
-                  <p class="pt-2 mx-2">Answer: A,B,C,D
-                  </p>
+                  <p class="pt-2 mx-2">Answer: All, but element(s) with tabindex="-1" only programmatic / via JavaScript</p>
                 </div>
 
                 <hr>
 
-                <p>What elements receive programmic focus by default (Select all that apply)</p>
+                <p>What elements receive browser focus by default (Select all that apply)</p>
                 <ol class="list-alpha">
                   <li>Links</li>
                   <li>Tables</li>
@@ -262,40 +263,28 @@
 
                 <hr>
 
-                <p>What is the difference between 'programmatic focus' and 'user visual focus'? (open question)</p>
-                <p>Answer: User visual focus is what the user looks at on the screen. Programmatic focus is the browser 'you are here', the active element. User visual focus has no effect on the programmatic focus</p>
+                <p>What is the difference between 'programmatic focus' and 'visible focus'? (open question)</p>
+                <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
+                <div hidden>
+                  <p class="pt-2 mx-2">Answer: Visible focus is what you 'see' in the browser, programmatic focus can be the same but may also be on an element not visually distinct, like on a heading.</p>
+                </div>
+
+                <hr>
+
+                <p>User visual focus has no effect on the programmatic focus</p>
                 <ol class="list-alpha">
                   <li>True</li>
                   <li>False</li>
                 </ol>
                 <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
                 <div hidden>
-                  <p class="pt-2 mx-2">Answer: B
-                  </p>
+                  <p class="pt-2 mx-2">Answer: B</p>
                 </div>
 
                 <hr>
 
-                <p>Which event do usually not trigger Changes in Programmatic Focus (Select all that apply)</p>
+                <p>If a form field has a specific data format it must be visibly noted next to the field.</p>
                 <ol class="list-alpha">
-                  <li>Clicking on elements with a mouse</li>
-                  <li>Tabbing to them with a keyboard</li>
-                  <li>Scrolling up or down</li>
-                  <li>Using keyboard shortcuts in the browser or assistive technology to navigate the web page</li>
-                  <li>Using page-specific keyboard shortcuts created by the web developer</li>
-                  <li>Mouse hover menus or other similar mouse-activated events</li>
-                  <li>Searching within the page for a word or phrase</li>
-                </ol>
-                <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
-                <div hidden>
-                  <p class="pt-2 mx-2">Answer: C,F
-                  </p>
-                </div>
-
-                <hr>
-
-                <p>If a form field has constraints they should be visibly noted next to the field.</p>
-                <ol cleass="list-alpha">
                   <li>True</li>
                   <li>False</li>
                 </ol>
@@ -346,30 +335,15 @@
 
                 <hr>
 
-                <p>Which color has the default outline of form elements and links for Chrome on Windows?</p>
-                <ol class="list-alpha">
-                  <li>A. Blue</li>
-                  <li>B. Green</li>
-                  <li>C. Orange</li>
-                </ol>
-                <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
-                <div hidden>
-                  <p class="pt-2 mx-2">Answer: C
-                  </p>
-                </div>
-
-                <hr>
-
                 <p>What does tabindex="-1" do?</p>
                 <ol class="list-alpha">
                   <li>Nothing</li>
                   <li>Makes your element focusable</li>
-                  <li>Makes your element onfocusable</li>
+                  <li>Makes your element unfocusable</li>
                 </ol>
                 <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
                 <div hidden>
-                  <p class="pt-2 mx-2">Answer: C
-                  </p>
+                  <p class="pt-2 mx-2">Answer: B and C. "B" because is makes an element programmatically focussable. "C" because it takes it out of the Tab order.</p>
                 </div>
 
                 <hr>
@@ -385,55 +359,11 @@
 
                 <hr>
 
-                <p>Is the following true? In XHTML new windows must be opened via javascript since target="_blank" rel="noopener noreferrer" is not allowed.</p>
-                <ol class="list-alpha">
-                  <li>True</li>
-                  <li>False</li>
-                </ol>
-                <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
-                <div hidden>
-                  <p class="pt-2 mx-2">Answer: A
-                  </p>
-                </div>
-
-                <hr>
-
-                <p>Is the following true? In order to show footers, headers correctly on older browsers display:inline should be applied?</p>
-                <ol class="list-alpha">
-                  <li>True</li>
-                  <li>False</li>
-                </ol>
-                <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
-                <div hidden>
-                  <p class="pt-2 mx-2">Answer: B, Explaination: (display must be set block)
-                  </p>
-                </div>
-
-                <hr>
-
                 <p>Why shouldn't you use 'display:none' or 'visibility:hidden' on skip links? (Open question)</p>
 
                 <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
                 <div hidden>
-                  <p class="pt-2 mx-2">
-                    <p>Answer: In this way they will be ignored by the screen reader. Try using the 'sr-only' approach: https://v4-alpha.getbootstrap.com/getting-started/accessibility/. This approach crops the content to 'zero', so that the user will not
-                      see it, but the browser interprets it as visible content.</p>
-                  </p>
-                </div>
-
-                <hr>
-
-                <p></p>
-                <ol class="list-alpha">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ol>
-                <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
-                <div hidden>
-                  <p class="pt-2 mx-2">Answer: A
-                  </p>
+                  Answer: In this way they will be ignored by the screen reader. Try using the 'sr-only' approach which crops the content to 'zero', so that the user will not see it, but the browser interprets it as visible content.</p>
                 </div>
 
               </div>
@@ -554,7 +484,7 @@
 
                 <hr>
 
-                <p>Which of the following is/are valid ARIA landmark role(s) (check all that apply)</p>
+                <p>Which of the following is/are valid ARIA landmark role(s) (multiple answers possible)</p>
                 <ol class="list-alpha">
                   <li>banner</li>
                   <li>navigation</li>
@@ -1266,7 +1196,7 @@
 
                 <p>Which of the following methods for notifying users of new content does not require JavaScript?</p>            
                 <ol class="list-alpha">
-                  <li>Moving focus within a page or to another element such as a dialog/li>
+                  <li>Moving focus within a page or to another element such as a dialog</li>
                   <li>Loading or reloading a page</li>
                   <li>ARIA live announcements</li>
                   <li>All methods require JavaScript</li>
@@ -1829,7 +1759,7 @@
                 </li>
               </ul>
             </div>
-            <a href="../../guidelines/fundamentals/responsibilities.html" class="link-plug-on">
+            <a href="../../basics/fundamentals/responsibilities.html" class="link-plug-on">
             <span class="icon icon-right-left icon-lg icon-gray-dark mr-2" aria-hidden="true"></span> More on Responsibilities</a>
           </div>
         </div>
@@ -1868,7 +1798,7 @@
             <a href="https://dequeuniversity.com/">Deque University</a>
           </li>
           <li class="list-inline-item">
-            <a href="../../general/contact.html">Contact</a>
+            <a href="../../about/fundamentals/contact.html">Contact</a>
           </li>
           <li class="list-inline-item">
             &copy; 2018 Copyright
