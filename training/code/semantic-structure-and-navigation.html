@@ -323,6 +323,7 @@
                 <h4 class="heading-s">Examples</h4>
                 <ul class="list-icons list-linklist">
                   <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html#examples">Understanding SC 1.4.4: Resize text</a></li>
+                  <li><a href="https://www.w3.org/TR/WCAG-TECHS/H25.html">H25: Providing a title using the title element - W3C</a></li>
                   <li><a href="https://ibma.github.io/Va11yS/WCAG_HTML/H25_example1.html">H25 Example 1: Providing a title using the title element - IBM</a></li>
                 </ul>
 
@@ -544,7 +545,16 @@
               <div class="card-block">
 
                 <h3 class="card-title">Tips & Tricks</h3>
-                <p>None documented</p>
+                <ul class="list-icons list-checklist">
+                  <li>Be aware there are two different purposes for the <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code> elements:
+                    <ul>
+                      <li>One scoped to the body element and <span class="badge badge-info">SHOULD</span> only be used ones.</li>
+                      <li>One scoped to the main element, a sectioning content element, or a sectioning root element other than body and can be used multiple times.</li>
+                    </ul>
+                  </li>
+                  <li><a href="https://inclusive-components.design/data-tables/">ARIA-label Is A Xenophobe</a>, translation services like Google's don't translate the <code>aria-label</code> attribute, so it's better to label using an element's text node. We can do this with <code>aria-labelledby</code>.</li>
+                  <li>Using the element AND the ARIA variant together has the best backward compatible result for older browsers.</li>
+                </ul>
 
               </div>
             </div>
@@ -573,13 +583,29 @@
                 <h3 class="card-title">Resources</h3>
 
                 <h4 class="heading-s">Specifications</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships">1.3.1 Info and Relationships - Level A</a></li>
+                  <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks">2.4.1 Bypass Blocks - Level A</a></li>
+                  <li><a href="https://www.w3.org/TR/html5/sections.html#sections">Sections - HTML 5.2</a></li>
+                  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#landmark_roles">Landmark Roles - WAI-ARIA</a></li>
+                  <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#aria_landmark">Landmark Regions - WAI-ARIA Practices</a></li>
+                  <li><a href="https://www.w3.org/TR/html-aam-1.0/">HTML Accessibility API Mappings 1.0</a></li>
+                </ul>
 
                 <h4 class="heading-s">Examples</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://www.w3.org/TR/wai-aria-practices/examples/landmarks/">ARIA Landmarks Example</a></li>
+                  <li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/ARIA11">ARIA11: Using ARIA landmarks to identify regions of a page</a></li>
+                  <li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/ARIA13">ARIA13: Using aria-labelledby to name regions and landmarks</a></li>
+                </ul>
 
                 <h4 class="heading-s">Miscellaneous</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="http://www.html5accessibility.com/#sections">Sections & Grouping - HTML5 Accessibility</a></li>
+                  <li><a href="https://developer.paciellogroup.com/blog/2013/02/using-wai-aria-landmarks-2013/">Using WAI-ARIA Landmarks – TPG</a></li>
+                  <li><a href="http://alistapart.com/column/wai-finding-with-aria-landmark-roles">WAI-finding with ARIA Landmark Roles - A List Apart</a></li>
+                  <li><a href="https://webaim.org/techniques/aria/#landmarks">Landmark Roles - WebAim</a></li>
+                </ul>
 
               </div>
             </div>
@@ -590,7 +616,12 @@
                 <h3 class="card-title">Practice</h3>
 
                 <h4 class="heading-s">WCAG Annotations</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../good-bad/home.html#annotModal04">04. Landmarks and sectioning elements used
+ - Good</a></li>
+                  <li><a href="../../good-bad/home-bad.html#annotModal04">04. No Landmarks or sectioning elements used
+ - Bad</a></li>
+                </ul>
 
                 <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
@@ -2018,7 +2049,7 @@
                 </li>
               </ul>
             </div>
-            <a href="../../guidelines/fundamentals/responsibilities.html" class="link-plug-on">
+            <a href="../../basics/fundamentals/responsibilities.html" class="link-plug-on">
             <span class="icon icon-right-left icon-lg icon-gray-dark mr-2" aria-hidden="true"></span> More on Responsibilities</a>
           </div>
         </div>
@@ -2057,7 +2088,7 @@
             <a href="https://dequeuniversity.com/">Deque University</a>
           </li>
           <li class="list-inline-item">
-            <a href="../../general/contact.html">Contact</a>
+            <a href="../../about/fundamentals/contact.html">Contact</a>
           </li>
           <li class="list-inline-item">
             &copy; 2018 Copyright
