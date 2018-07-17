@@ -30,7 +30,12 @@
 
 <body class="body bad" id="totop">
 
-  <div class="site-header">
+  <header class="site-header" role="banner">
+    <div class="skip-links">
+      <a href="#main-menu">Skip to Main Menu</a>
+      <a href="#main-content" class="btn-annot-outline">Skip to Main Content</a>
+      <button type="button" class="btn btn-annot btn-annot-skip" data-toggle="modal" data-target="#annotModal03">03</button>
+    </div>
 
     <div class="site-nav bg-grey">
       <nav class="container" role="navigation" aria-labelledby="title-site-nav">
@@ -142,9 +147,9 @@
       </div>
     </div>
 
-  </div>
+  </header>
 
-  <div id="main-content">
+  <main id="main-content" role="main">
 
     <div class="brandbar brandbar-b">
       <div class="brandbar-image brandbar-image-article"></div>
@@ -301,7 +306,7 @@
       </div>
     </div>
     
-  </div>
+  </main>
   
   <footer class="full-cover site-footer" role="contentinfo">
     <div class="container">

@@ -32,8 +32,13 @@
   <button type="button" class="btn btn-annot btn-annot-title" data-toggle="modal" data-target="#annotModal01">01</button>
   <button type="button" class="btn btn-annot btn-annot-meta" data-toggle="modal" data-target="#annotModal02">02</button>
 
-  <div class="site-header">
-    <button type="button" class="btn btn-annot btn-annot-skip" data-toggle="modal" data-target="#annotModal03">03</button>
+  <header class="site-header" role="banner">
+
+    <div class="skip-links">
+      <a href="#main-menu">Skip to Main Menu</a>
+      <a href="#main-content" class="btn-annot-outline">Skip to Main Content</a>
+      <button type="button" class="btn btn-annot btn-annot-skip" data-toggle="modal" data-target="#annotModal03">03</button>
+    </div>
 
     <div class="site-nav bg-grey">
       <nav class="container" role="navigation" aria-labelledby="title-site-nav">
@@ -46,7 +51,6 @@
             <li class="list-inline-item"><a href="../sitemap/sitemap-basics.html"><span>Sitemap</span></a></li>
             <li class="list-inline-item"><a href="../about/fundamentals/contact.html"><span>About</span></a></li>
           </ul>
-        </div>
       </nav>
     </div>
 
@@ -152,9 +156,9 @@
       </div>
     </div>
 
-  </div>
+  </header>
 
-  <div class="btn-annot-outline" id="main-content">
+  <main class="btn-annot-outline" id="main-content" role="main">
 
     <div class="brandbar brandbar-b">
       <div class="brandbar-image brandbar-image-kitesurf"></div>
@@ -319,7 +323,7 @@
       </div>
     </div>
     
-  </div>
+  </main>
   
   <footer class="full-cover site-footer" role="contentinfo">
     <div class="container">
@@ -696,7 +700,7 @@ Everyone kept saying "No comprendo nada de lo que dices."</p>
                 <li>No relationship between and status for menu present</li>
                 <li>No text alternative present for functional icon</li>
                 <li>Menu not marked up with a list and no nested relationsship present</li>
-                <li>No indication of current / active link</span>
+                <li>No indication of current / active link</li>
               </ul>
 
               <div class="alert alert-info">
