@@ -3,6 +3,16 @@
 
 <head>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117757403-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117757403-1');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,7 +20,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
   <link rel="stylesheet" href="../styles/styles-responsive.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -338,7 +348,7 @@
     </section>
 
   </main>
-
+  
   <footer class="full-cover site-footer" role="contentinfo">
     <div class="container">
       <div class="d-inline-block">
@@ -745,13 +755,13 @@ Everyone kept saying "<span lang="es">No comprendo nada de lo que dices.</span>"
 <code class="html">
 <nav role="navigation" aria-labelledby="main-nav">
   <div class="sr-only" id="main-nav">Main Menu</div>
-
+  
   <!-- Button for mobile hamburger style menu -->
   <button aria-controls="mainMenuItems" aria-expanded="false">
     <span class="icon-hamburger"></span>
     <span class="sr-only">Toggle main menu</span>
   </button>
-
+  
   <!-- Menu items device independent -->
   <div id="mainMenuItems">
     <ul>
@@ -940,7 +950,7 @@ Everyone kept saying "<span lang="es">No comprendo nada de lo que dices.</span>"
     <h3>The Baseline</h3>
     <h3>Accessibility Champions</h3>
     <h3>Expert section</h3>
-
+    
     <!-- Optional with ARIA -->
     <div role="heading" aria-level="3">...</div>  
 </code>
