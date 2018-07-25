@@ -108,13 +108,22 @@ workflows:
   version: 2
   default:
     jobs:
-      - checkout
+      - checkout:
+          filters:
+            branches:
+              only: master
       - dependencies:
           requires:
             - checkout
+          filters:
+            branches:
+              only: master
       - build:
           requires:
             - dependencies
+          filters:
+            branches:
+              only: master
       - deploy-staging:
           requires:
             - build
