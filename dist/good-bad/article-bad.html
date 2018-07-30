@@ -63,21 +63,21 @@
 
           <div class="collapse" id="table-of-contents">
             <ul class="list-icons list-linklist toc-columns mx-2 pt-4" role="directory">
-              <li><a href="#annotModal01">01. Content does not provides a logical and hierarchical heading structure</a></li>
-              <li><a href="#annotModal02">02. Incorrect use of a lead heading</a></li>
-              <li><a href="#annotModal03">03. Links and Buttons are wrongly mixed for interactivity</a></li>
-              <li><a href="#annotModal04">04. Max width of links, lists, input fields and paragraphs</a></li>
-              <li><a href="#annotModal05">05. Acronym used to indicate accessibility is not explained</a></li>
-              <li><a href="#annotModal06">06. Headings not describing topic or purpose</a></li>
-              <li><a href="#annotModal07">07. Using styling elements or CSS to convey semantic meaning</a></li>
-              <li><a href="#annotModal08">08. Links without communicating function and advanced warning when opening a new window</a></li>
-              <li><a href="#annotModal09">09. Informative image without the Figure grouping element</a></li>
-              <li><a href="#annotModal10">10. Lists not marked up as such</a></li>
-              <li><a href="#annotModal11">11. Link text not visually distinct from its surrounding</a></li>
-              <li><a href="#annotModal12">12. Link text not descriptive on its own</a></li>
-              <li><a href="#annotModal13">13. Using all capital letters for words or sentences</a></li>
-              <li><a href="#annotModal14">14. Centrally aligned text is applied</a></li>
-              <li><a href="#annotModal15">15. Text is fully justified</a></li>
+              <li><a href="#annotModal01" class="link-ts"><span>01. Content does not provides a logical and hierarchical heading structure</span></a></li>
+              <li><a href="#annotModal02" class="link-ts"><span>02. Incorrect use of a lead heading</span></a></li>
+              <li><a href="#annotModal03" class="link-ts"><span>03. Links and Buttons are wrongly mixed for interactivity</span></a></li>
+              <li><a href="#annotModal04" class="link-ts"><span>04. Max width of links, lists, input fields and paragraphs</span></a></li>
+              <li><a href="#annotModal05" class="link-ts"><span>05. Acronym used to indicate accessibility is not explained</span></a></li>
+              <li><a href="#annotModal06" class="link-ts"><span>06. Headings not describing topic or purpose</span></a></li>
+              <li><a href="#annotModal07" class="link-ts"><span>07. Using styling elements or CSS to convey semantic meaning</span></a></li>
+              <li><a href="#annotModal08" class="link-ts"><span>08. Links without communicating function and advanced warning when opening a new window</span></a></li>
+              <li><a href="#annotModal09" class="link-ts"><span>09. Informative image without the Figure grouping element</span></a></li>
+              <li><a href="#annotModal10" class="link-ts"><span>10. Lists not marked up as such</span></a></li>
+              <li><a href="#annotModal11" class="link-ts"><span>11. Link text not visually distinct from its surrounding</span></a></li>
+              <li><a href="#annotModal12" class="link-ts"><span>12. Link text not descriptive on its own</span></a></li>
+              <li><a href="#annotModal13" class="link-ts"><span>13. Using all capital letters for words or sentences</span></a></li>
+              <li><a href="#annotModal14" class="link-ts"><span>14. Centrally aligned text is applied</span></a></li>
+              <li><a href="#annotModal15" class="link-ts"><span>15. Text is fully justified</span></a></li>
             </ul>
           </div>
 
@@ -119,19 +119,22 @@
 
           <div class="navbar-form form-inline my-2 my-lg-0">
 
-            <form class="m-0 mr-4" role="search">
-              <input class="form-control form-control-search mr-2" type="text" placeholder="Type term...">
+            <div class="m-0 mr-4">
+              <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal04">04</button>
+              <input class="form-control form-control-search mr-2 btn-annot-outline" type="text" placeholder="Type term...">
+              <button type="button" class="btn btn-annot btn-annot-search" data-toggle="modal" data-target="#annotModal07">07</button>
               <button class="btn btn-tertiary search-button my-sm-0 ml-0 p-1" type="submit">
                 <img src="../images/icon-search.png">
               </button>
-            </form>
+            </div>
 
             <div class="font-reset">
               <div class="d-inline-block p-relative">
-                <select class="form-control" name="language" id="language">
+                <select class="form-control btn-annot-outline" name="language" id="language">
                   <option value="english" selected>English</option>
-                  <option value="nederlands">Nederlands</option>
+                  <option value="nederlands">Netherlands</option>
                 </select>
+                <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal05">05</button>
               </div>
             </div>
 
@@ -357,7 +360,7 @@
             <div class="modal-header">
               <h3 class="modal-title" id="annotModal01Heading">01. Content does not provides a logical and hierarchical heading structure</h3>
               <div class="text-right to-top">
-                <a href="#totop">To Top</a>
+                <a href="#totop" class="link-ts"><span>To Top</span></a>
               </div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -434,7 +437,7 @@
             <div class="modal-header">
               <h3 class="modal-title" id="annotModal02Heading">02. Incorrect use of a lead heading</h3>
               <div class="text-right to-top">
-                <a href="#totop">To Top</a>
+                <a href="#totop" class="link-ts"><span>To Top</span></a>
               </div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -471,7 +474,7 @@
             <div class="modal-header">
               <h3 class="modal-title" id="annotModal03Heading">03. Links and Buttons are wrongly mixed for interactivity</h3>
               <div class="text-right to-top">
-                <a href="#totop">To Top</a>
+                <a href="#totop" class="link-ts"><span>To Top</span></a>
               </div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -546,7 +549,7 @@ Staying on same page:
             <div class="modal-header">
               <h3 class="modal-title" id="annotModal04Heading">04. Max width of links, lists, input fields and paragraphs</h3>
               <div class="text-right to-top">
-                <a href="#totop">To Top</a>
+                <a href="#totop" class="link-ts"><span>To Top</span></a>
               </div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -599,7 +602,7 @@ input, .form-control {  }
             <div class="modal-header">
               <h3 class="modal-title" id="annotModal05Heading">05. Acronym used to indicate accessibility is not explained</h3>
               <div class="text-right to-top">
-                <a href="#totop">To Top</a>
+                <a href="#totop" class="link-ts"><span>To Top</span></a>
               </div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -649,7 +652,7 @@ input, .form-control {  }
             <div class="modal-header">
               <h3 class="modal-title" id="annotModal06Heading">06. Headings not describing topic or purpose</h3>
               <div class="text-right to-top">
-                <a href="#totop">To Top</a>
+                <a href="#totop" class="link-ts"><span>To Top</span></a>
               </div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -701,7 +704,7 @@ input, .form-control {  }
             <div class="modal-header">
               <h3 class="modal-title" id="annotModal07Heading">07. Using styling elements or CSS to convey semantic meaning</h3>
               <div class="text-right to-top">
-                <a href="#totop">To Top</a>
+                <a href="#totop" class="link-ts"><span>To Top</span></a>
               </div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -760,7 +763,7 @@ figcaption,
             <div class="modal-header">
               <h3 class="modal-title" id="annotModal08Heading">08. Links without communicating function and advanced warning when opening a new window</h3>
               <div class="text-right to-top">
-                <a href="#totop">To Top</a>
+                <a href="#totop" class="link-ts"><span>To Top</span></a>
               </div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -812,7 +815,7 @@ figcaption,
             <div class="modal-header">
               <h3 class="modal-title" id="annotModal09Heading">09. Informative image without the Figure grouping element</h3>
               <div class="text-right to-top">
-                <a href="#totop">To Top</a>
+                <a href="#totop" class="link-ts"><span>To Top</span></a>
               </div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -865,7 +868,7 @@ figcaption,
             <div class="modal-header">
               <h3 class="modal-title" id="annotModal10Heading">10. Lists not marked up as such</h3>
               <div class="text-right to-top">
-                <a href="#totop">To Top</a>
+                <a href="#totop" class="link-ts"><span>To Top</span></a>
               </div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -920,7 +923,7 @@ figcaption,
             <div class="modal-header">
               <h3 class="modal-title" id="annotModal11Heading">11. Link text not visually distinct from its surrounding</h3>
               <div class="text-right to-top">
-                <a href="#totop">To Top</a>
+                <a href="#totop" class="link-ts"><span>To Top</span></a>
               </div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -990,7 +993,7 @@ a:hover {
             <div class="modal-header">
               <h3 class="modal-title" id="annotModal12Heading">12. Link text not descriptive on its own</h3>
               <div class="text-right to-top">
-                <a href="#totop">To Top</a>
+                <a href="#totop" class="link-ts"><span>To Top</span></a>
               </div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -1059,7 +1062,7 @@ a:hover {
             <div class="modal-header">
               <h3 class="modal-title" id="annotModal13Heading">13. Using all capital letters for words or sentences</h3>
               <div class="text-right to-top">
-                <a href="#totop">To Top</a>
+                <a href="#totop" class="link-ts"><span>To Top</span></a>
               </div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -1105,7 +1108,7 @@ DEFINITION OF DONE
             <div class="modal-header">
               <h3 class="modal-title" id="annotModal14Heading">14. Centrally aligned text is applied</h3>
               <div class="text-right to-top">
-                <a href="#totop">To Top</a>
+                <a href="#totop" class="link-ts"><span>To Top</span></a>
               </div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -1188,7 +1191,7 @@ body {
             <div class="modal-header">
               <h3 class="modal-title" id="annotModal15Heading">15. Text is fully justified</h3>
               <div class="text-right to-top">
-                <a href="#totop">To Top</a>
+                <a href="#totop" class="link-ts"><span>To Top</span></a>
               </div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>

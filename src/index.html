@@ -3,14 +3,24 @@
 
 <head>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117757403-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117757403-1');
+  </script> 
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Home - Fundamentals - Accessibility Portal</title>
 
   <link rel="stylesheet" href="styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
   <link rel="stylesheet" href="styles/styles-responsive.css">
-
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>
@@ -83,7 +93,7 @@
 
   </header>
 
-  <main role="main" id="main-content">
+  <main role="main" id="main-content" tabindex="-1">
 
     <h1 class="sr-only">The Accessibility Portal</h1>
 
@@ -122,7 +132,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4">
-
+            
             <div class="card">
               <div class="card-block">
                 <h3 class="card-title">Do's and Dont's</h3>
@@ -133,7 +143,7 @@
                 <span class="icon icon-accessibility icon-lg icon-gray-dark mr-2" aria-hidden="true"></span> More on Do's and Dont's
               </a>
             </div>
-
+            
             <div class="card">
               <img class="card-img-top img-fluid" src="images/tile-desktop-mobile.jpg" alt="">
               <div class="card-block">
@@ -149,21 +159,21 @@
 
             <div class="card">
               <div class="card-block">
-                <h3 class="card-title" id="training-a11y-champs">
+                <h3 class="card-title">
                   Training A11Y Champs
                 </h3>
-                <ul class="list-icons list-linklist m-0" aria-labelledby="training-a11y-champs">
+                <ul class="list-icons list-linklist m-0">
                   <li>
-                    <a href="training/fundamentals/home.html#champ-training">Become a Champ yourself</a>
+                    <a href="training/fundamentals/home.html#champ-training" class="link-ts"><span>Become a Champ yourself</span></a>
                   </li>
                   <li>
-                    <a href="training/quiz/fundamentals.html">See all A11Y quiz questions</a>
+                    <a href="training/quiz/fundamentals.html" class="link-ts"><span>See all A11Y quiz questions</span></a>
                   </li>
                   <li>
-                    <a href="good-bad/home.html">Good / Bad Examples</a>
+                    <a href="good-bad/home.html" class="link-ts"><span>Good / Bad Examples</span></a>
                   </li>
                   <li>
-                    <a href="about/fundamentals/contact.html">Need help? Ask a Champ!</a>
+                    <a href="about/fundamentals/contact.html" class="link-ts"><span>Need help? Ask a Champ!</span></a>
                   </li>
                 </ul>
               </div>
@@ -221,7 +231,7 @@
     </section>
 
   </main>
-
+  
   <footer class="full-cover site-footer" role="contentinfo">
     <div class="container">
       <div class="d-inline-block">

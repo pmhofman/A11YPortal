@@ -3,12 +3,22 @@
 
 <head>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117757403-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117757403-1');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fundamentals - Quiz - A11Y Champions Training</title>
+  <title>Fundamentals - Quiz - Accessibility Champions Training</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
   <link rel="stylesheet" href="../../styles/styles-responsive.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
@@ -83,7 +93,7 @@
                   <li class="page-item"><a class="page-link active" href="../../training/quiz/fundamentals.html" aria-current="page">Fundamentals <span class="sr-only">(current)</span></a></li>
                   <li class="page-item"><a class="page-link" href="../../training/quiz/design.html">Design</a></li>
                   <li class="page-item"><a class="page-link" href="../../training/quiz/content.html">Content</a></li>
-                  <li class="page-item"><a class="page-link" href="../../training/quiz/web.html">Code</a></li>
+                  <li class="page-item"><a class="page-link" href="../../training/quiz/code.html">Code</a></li>
                   <li class="page-item"><a class="page-link" href="../../training/quiz/testing.html">Testing</a></li>
                   <li class="page-item"><a class="page-link" href="../../training/quiz/various.html">Various</a></li>
                 </ul>
@@ -98,7 +108,7 @@
 
   </header>
 
-  <main role="main" id="main-content">
+  <main role="main" id="main-content" tabindex="-1">
 
     <div class="brandbar brandbar-a">
       <div class="brandbar-image brandbar-image-kitesurf2"></div>
@@ -111,22 +121,22 @@
 
         <h2 class="full-cover-title sr-only" id="title-toc">Table of Contents</h2>
         <ul class="list-icons list-linklist toc-columns" role="directory">
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#disabilities">Disabilities</a></li>
-          <li><a href="#ux">Accessible UX</a></li>
-          <li><a href="#myths">Myths</a></li>
-          <li><a href="#guidelines">Guidelines</a></li>
-          <li><a href="#laws">Laws</a></li>
+          <li><a href="#introduction" class="link-ts"><span>Introduction</span></a></li>
+          <li><a href="#disabilities" class="link-ts"><span>Disabilities</span></a></li>
+          <li><a href="#ux" class="link-ts"><span>Accessible UX</span></a></li>
+          <li><a href="#myths" class="link-ts"><span>Myths</span></a></li>
+          <li><a href="#guidelines" class="link-ts"><span>Guidelines</span></a></li>
+          <li><a href="#laws" class="link-ts"><span>Laws</span></a></li>
         </ul>
 
       </div>
     </nav>
-
+    
     <section class="full-cover bg-grey" role="region" id="introduction" aria-labelledby="title-introduction">
       <div class="container">
 
         <div class="text-right to-top to-top-z">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row">
@@ -135,8 +145,8 @@
 
             <div class="card">
               <div class="card-block">
-
-                <h2 class="card-title" id="title-introduction">Introduction</h2>
+                
+                <h2 class="card-title" id="title-introduction">Introduction</h2>                
                 <p class="lead"><strong>Text</strong></p>
                 <p>Text</p>
 
@@ -153,7 +163,7 @@
                 <h3 class="card-title">Create Question</h3>
                 <p><a href="http://codepen.io/Jake-Abma/details/XMQqbY/">Create your own quiz question</a></p>
 
-              </div>
+              </div>              
             </div>
 
           </div>
@@ -169,7 +179,7 @@
         <h2 class="full-cover-title" id="disabilities">Disabilities</h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row">
@@ -566,7 +576,7 @@
         <h2 class="full-cover-title" id="ux">Accessible UX</h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row">
@@ -736,7 +746,7 @@
         <h2 class="full-cover-title" id="myths">Myths</h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row">
@@ -778,7 +788,7 @@
         <h2 class="full-cover-title" id="guidelines">Guidelines</h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row">
@@ -1103,7 +1113,7 @@
         <h2 class="full-cover-title" id="laws">Laws</h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row">
@@ -1270,19 +1280,19 @@
               </h3>
               <ul class="list-icons list-linklist">
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#user-experience">User Experience</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#user-experience" class="link-ts"><span>User Experience</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#developers">Developers</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#developers" class="link-ts"><span>Developers</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#editors">Editors</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#editors" class="link-ts"><span>Editors</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#customer-journey-expert" class="link-ts"><span>Customer Journey Expert</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#accessibility-champion">Accessibility Champion</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#accessibility-champion" class="link-ts"><span>Accessibility Champion</span></a>
                 </li>
               </ul>
             </div>
@@ -1310,7 +1320,7 @@
       </div>
     </div>
   </aside>
-
+  
   <footer class="full-cover site-footer" role="contentinfo">
     <div class="container">
       <div class="d-inline-block">

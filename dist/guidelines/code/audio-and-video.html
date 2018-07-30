@@ -15,7 +15,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Audio and Video - Code - A11Y Guidelines</title>
+  <title>Audio and Video - Code - Accessibility Guidelines</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
   <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
@@ -99,7 +99,7 @@
 
   </header>
 
-  <main role="main" id="main-content">
+  <main role="main" id="main-content" tabindex="-1">
 
     <div class="brandbar brandbar-a">
       <div class="brandbar-image brandbar-image-satisfied"></div>
@@ -112,11 +112,11 @@
 
         <h2 class="full-cover-title sr-only" id="title-toc">Table of Contents</h2>
         <ul class="list-icons list-linklist toc-columns" role="directory">
-          <li><a href="#alternatives-for-audio-and-visual-content">Alternatives for audio and visual content</a></li>
-          <li><a href="#autoplay">Autoplay</a></li>
-          <li><a href="#metadata">Metadata</a></li>
-          <li><a href="#volume-control">Volume control</a></li>
-          <li><a href="#audio-conflict">Audio conflict</a></li>
+          <li><a href="#alternatives-for-audio-and-visual-content" class="link-ts"><span>Alternatives for audio and visual content</span></a></li>
+          <li><a href="#autoplay" class="link-ts"><span>Autoplay</span></a></li>
+          <li><a href="#metadata" class="link-ts"><span>Metadata</span></a></li>
+          <li><a href="#volume-control" class="link-ts"><span>Volume control</span></a></li>
+          <li><a href="#audio-conflict" class="link-ts"><span>Audio conflict</span></a></li>
         </ul>
 
       </div>
@@ -129,7 +129,7 @@
           <span class="badge badge-success">Must</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -167,18 +167,18 @@
                 
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-alternatives-for-audio-and-visual-content-jump">
-                  <li><a href="#ios-alternatives-for-audio-and-visual-content">iOS</a></li>
-                  <li><a href="#android-alternatives-for-audio-and-visual-content">Android</a></li>
-                  <li><a href="#html-alternatives-for-audio-and-visual-content">HTML</a></li>
-                  <li><a href="#testing-alternatives-for-audio-and-visual-content">Testing</a></li>
+                  <li><a href="#ios-alternatives-for-audio-and-visual-content" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-alternatives-for-audio-and-visual-content" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-alternatives-for-audio-and-visual-content" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-alternatives-for-audio-and-visual-content" class="link-ts"><span>Testing</span></a></li>
                 </ul>
                 
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/design/multimedia-animations-and-motion.html#captions">Captions</a>
-                  <li><a href="../../training/design/multimedia-animations-and-motion.html#transcripts">Transcripts</a>
-                  <li><a href="../../training/design/multimedia-animations-and-motion.html#audio-descriptions">Audio Descriptions</a>
-                  <li><a href="../../training/design/multimedia-animations-and-motion.html#sign-language-interpretation">Sign Language Interpretation</a></li>
+                  <li><a href="../../training/design/multimedia-animations-and-motion.html#captions" class="link-ts"><span>Captions</span></a>
+                  <li><a href="../../training/design/multimedia-animations-and-motion.html#transcripts" class="link-ts"><span>Transcripts</span></a>
+                  <li><a href="../../training/design/multimedia-animations-and-motion.html#audio-descriptions" class="link-ts"><span>Audio Descriptions</span></a>
+                  <li><a href="../../training/design/multimedia-animations-and-motion.html#sign-language-interpretation" class="link-ts"><span>Sign Language Interpretation</span></a></li>
                 </ul>
 
               </div>
@@ -276,7 +276,7 @@
         </h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -310,15 +310,15 @@
                 
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-autoplay-jump">
-                  <li><a href="#ios-autoplay">iOS</a></li>
-                  <li><a href="#android-autoplay">Android</a></li>
-                  <li><a href="#html-autoplay">HTML</a></li>
-                  <li><a href="#testing-autoplay">Testing</a></li>
+                  <li><a href="#ios-autoplay" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-autoplay" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-autoplay" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-autoplay" class="link-ts"><span>Testing</span></a></li>
                 </ul>
                 
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/design/multimedia-animations-and-motion.html#auto-play">Auto-Play</a></li>
+                  <li><a href="../../training/design/multimedia-animations-and-motion.html#auto-play" class="link-ts"><span>Auto-Play</span></a></li>
                 </ul>
 
               </div>
@@ -441,7 +441,7 @@ UIButton *playButton = [UIButton buttonWithType:UIButtonTypeCustom];
         <h2 class="full-cover-title" id="title-metadata">Metadata <span class="badge badge-info">Should</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -471,10 +471,10 @@ UIButton *playButton = [UIButton buttonWithType:UIButtonTypeCustom];
                 
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns" role="directory" aria-labelledby="title-metadata-jump">
-                  <li><a href="#ios-metadata">iOS</a></li>
-                  <li><a href="#android-metadata">Android</a></li>
-                  <li><a href="#html-metadata">HTML</a></li>
-                  <li><a href="#testing-metadata">Testing</a></li>
+                  <li><a href="#ios-metadata" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-metadata" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-metadata" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-metadata" class="link-ts"><span>Testing</span></a></li>
                 </ul>
 
               </div>
@@ -589,7 +589,7 @@ UIButton *playButton = [UIButton buttonWithType:UIButtonTypeCustom];
         <h2 class="full-cover-title" id="title-volume-control">Volume control <span class="badge badge-info">Should</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -623,17 +623,17 @@ UIButton *playButton = [UIButton buttonWithType:UIButtonTypeCustom];
                 
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-volume-control-jump">
-                  <li><a href="#ios-volume-control">iOS</a></li>
-                  <li><a href="#android-volume-control">Android</a></li>
-                  <li><a href="#html-volume-control">HTML</a></li>
-                  <li><a href="#testing-volume-control">Testing</a></li>
+                  <li><a href="#ios-volume-control" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-volume-control" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-volume-control" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-volume-control" class="link-ts"><span>Testing</span></a></li>
                 </ul>
                 
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/design/multimedia-animations-and-motion.html#media-player-accessibility">Media Player Accessibility</a></li>
-                  <li><a href="../../training/design/multimedia-animations-and-motion.html#background-sounds">Background Sounds</a></li>
-                  <li><a href="../../training/design/multimedia-animations-and-motion.html#auto-play">Auto-Play</a></li>
+                  <li><a href="../../training/design/multimedia-animations-and-motion.html#media-player-accessibility" class="link-ts"><span>Media Player Accessibility</span></a></li>
+                  <li><a href="../../training/design/multimedia-animations-and-motion.html#background-sounds" class="link-ts"><span>Background Sounds</span></a></li>
+                  <li><a href="../../training/design/multimedia-animations-and-motion.html#auto-play" class="link-ts"><span>Auto-Play</span></a></li>
                 </ul>
 
               </div>
@@ -709,7 +709,7 @@ UIButton *playButton = [UIButton buttonWithType:UIButtonTypeCustom];
         <h2 class="full-cover-title" id="title-audio-conflict">Audio conflict <span class="badge badge-info">Should not</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -741,10 +741,10 @@ UIButton *playButton = [UIButton buttonWithType:UIButtonTypeCustom];
                 
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns" role="directory" aria-labelledby="title-audio-conflict-jump">
-                  <li><a href="#ios-audio-conflict">iOS</a></li>
-                  <li><a href="#android-audio-conflict">Android</a></li>
-                  <li><a href="#html-audio-conflict">HTML</a></li>
-                  <li><a href="#testing-audio-conflict">Testing</a></li>
+                  <li><a href="#ios-audio-conflict" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-audio-conflict" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-audio-conflict" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-audio-conflict" class="link-ts"><span>Testing</span></a></li>
                 </ul>
 
               </div>
@@ -859,19 +859,19 @@ button.accessibilityTraits |= UIAccessibilityTraitStartsMediaSession</code></pre
               </h3>
               <ul class="list-icons list-linklist">
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#user-experience">User Experience</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#user-experience" class="link-ts"><span>User Experience</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#developers">Developers</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#developers" class="link-ts"><span>Developers</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#editors">Editors</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#editors" class="link-ts"><span>Editors</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#customer-journey-expert" class="link-ts"><span>Customer Journey Expert</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#accessibility-champion">Accessibility Champion</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#accessibility-champion" class="link-ts"><span>Accessibility Champion</span></a>
                 </li>
               </ul>
             </div>

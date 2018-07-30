@@ -3,12 +3,22 @@
 
 <head>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117757403-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117757403-1');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Principles - Fundamentals - A11Y Guidelines</title>
+  <title>Principles - Fundamentals - Accessibility Guidelines</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
   <link rel="stylesheet" href="../../styles/styles-responsive.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
@@ -63,10 +73,10 @@
                 <a class="nav-link" href="../../guidelines/fundamentals/home.html" aria-current="true" id="main-menu">Fundamentals <span class="sr-only">(current)</span></a>
                 <ul class="pagination pagination-navbar">
                   <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/home.html">Home</a></li>
+                  <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/summary.html">Summary</a></li>
                   <li class="page-item"><a class="page-link active" href="../../guidelines/fundamentals/principles.html" aria-current="page">Principles <span class="sr-only">(current)</span></a></li>
                   <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/testing.html">Testing</a></li>
                   <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/checklists.html">Checklists</a></li>
-                  <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/summary.html">Summary</a></li>
                   <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/references.html">References</a></li>
                 </ul>
               </li>
@@ -84,7 +94,7 @@
 
   </header>
 
-  <main role="main" id="main-content">
+  <main role="main" id="main-content" tabindex="-1">
 
     <div class="brandbar brandbar-a">
       <div class="brandbar-image brandbar-image-satisfied"></div>
@@ -97,23 +107,24 @@
 
         <h2 class="full-cover-title sr-only" id="title-toc">Table of Contents</h2>
         <ul class="list-icons list-linklist toc-columns" role="directory">
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#wai-w3c">WAI W3C</a></li>
-          <li><a href="#wcag">WCAG</a></li>
-          <li><a href="#wai-aria">WAI-ARIA</a></li>
-          <li><a href="#material-design">Material Design - Google</a></li>
-          <li><a href="#human-interface-guidelines">Human Interface Guidelines - Apple</a></li>
-          <li><a href="#inclusive-design-principles">Inclusive Design Principles - Microsoft</a></li>
+          <li><a href="#introduction" class="link-ts"><span>Introduction</span></a></li>
+          <li><a href="#wai-w3c" class="link-ts"><span>WAI W3C</span></a></li>
+          <li><a href="#wcag" class="link-ts"><span>WCAG</span></a></li>
+          <li><a href="#wai-aria" class="link-ts"><span>WAI-ARIA</span></a></li>
+          <li><a href="#material-design" class="link-ts"><span>Material Design - Google</span></a></li>
+          <li><a href="#human-interface-guidelines" class="link-ts"><span>Human Interface Guidelines - Apple</span></a></li>
+          <li><a href="#inclusive-design-principles" class="link-ts"><span>Inclusive Design Principles - Microsoft</span></a></li>
+          <li><a href="#inclusive-design" class="link-ts"><span>Inclusive Design - IBM</span></a></li>          
         </ul>
-
-      </div>
+      
+      </div>          
     </nav>
-
+    
     <section class="full-cover bg-grey" role="region" id="introduction" aria-labelledby="title-introduction">
       <div class="container">
 
         <div class="text-right to-top to-top-z">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row">
@@ -122,11 +133,11 @@
 
             <div class="card">
               <div class="card-block">
-
+                
                 <h2 class="card-title" id="title-introduction">Introduction</h2>
-
+                
                 <p class="lead"><strong>A principle approach to design thinking and development</strong></p>
-
+                
                 <p>None documented</p>
 
               </div>
@@ -141,19 +152,20 @@
 
                 <h3 class="card-title">Jump to:</h3>
 
-                <h4 class="heading-s">This section</h4>
-
                 <h4 class="heading-s">Basics</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../basics/essentials/principles.html">Principles</a></li>
+                  <li><a href="../../basics/essentials/principles.html" class="link-ts"><span>Principles</span></a></li>
+                  <li>Use platform and web standards as intended</li>
+                  <li>Use standard interface controls where possible</li>
+                  <li>Support platform accessibility</li>
                 </ul>
 
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/fundamentals/guidelines.html">Guidelines</a></li>
+                  <li><a href="../../training/fundamentals/guidelines.html" class="link-ts"><span>Guidelines</span></a></li>
                 </ul>
 
-              </div>
+              </div>              
             </div>
 
           </div>
@@ -169,9 +181,9 @@
         <h2 class="full-cover-title" id="title-wai-w3c">WAI W3C</h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
-
+        
         <div class="row">
 
           <div class="col-md-7">
@@ -182,7 +194,7 @@
                 <p class="lead"><strong>WAI: Strategies, guidelines, resources to make the Web accessible to people with disabilities</strong></p>
                 <p>Inclusive design, design for all, digital inclusion, universal usability, and similar efforts address a broad range of issues in making technology available to and usable by all people whatever their abilities, age, economic situation, education, geographic location, language, etc.</p>
                 <p>Accessibility focuses on people with disabilities — people with auditory, cognitive, neurological, physical, speech, and visual impairments. The documents below explore some of the overlaps between inclusive design and web accessibility, and help managers, designers, developers, policy makers, researchers, and others optimize their efforts in these overlapping areas.</p>
-
+                
                 <h3 class="heading-s">WAI develops...</h3>
                 <ul>
                   <li>guidelines widely regarded as the international standard for Web accessibility</li>
@@ -191,7 +203,7 @@
                   <li>Testing</li>
                   <li>Tutorials</li>
                   <li>Guidance</li><li>
-                    <a href="https://www.w3.org/WAI/intro/components.php">Essential Components of Web Accessibility</a>
+                    <a href="https://www.w3.org/WAI/intro/components.php" class="link-ts"><span>Essential Components of Web Accessibility</span></a>
                     <ul>
                       <li>Web Content Accessibility Guidelines (WCAG)</li>
                       <li>Accessible Rich Internet Applications (WAI ARIA)</li>
@@ -215,11 +227,11 @@
 
                 <h4 class="heading-s">Specifications</h4>
                 <ul class="list-icons list-linklist toc-columns" role="directory" aria-labelledby="title-toc">
-                  <li><a href="https://www.w3.org/WAI/">Web Accessibility Initiative (WAI)</a></li>
+                  <li><a href="https://www.w3.org/WAI/" class="link-ts"><span>Web Accessibility Initiative (WAI)</span></a></li>
                 </ul>
 
               </div>
-
+              
             </div>
 
           </div>
@@ -235,9 +247,9 @@
         <h2 class="full-cover-title" id="title-wcag">WCAG</h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
-
+        
         <div class="row">
 
           <div class="col-md-7">
@@ -264,11 +276,9 @@
 
                 <h3 class="card-title">Jump to:</h3>
 
-                <h4 class="heading-s">This section</h4>
-
                 <h4 class="heading-s">Basics</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../basics/essentials/principles.html#standards">Standards</a></li>
+                  <li><a href="../../basics/essentials/principles.html#standards" class="link-ts"><span>Standards</span></a></li>
                 </ul>
 
               </div>
@@ -281,16 +291,16 @@
 
                 <h4 class="heading-s">Specifications</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</a></li>
-                  <li><a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines (WCAG) 2.1</a></li>
-                  <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/glance/">WCAG 2.0 at a Glance</a></li>
-                  <li><a href="https://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0</a></li>
-                  <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/">Understanding WCAG 2.0</a></li>
-                  <li><a href="https://www.w3.org/TR/WCAG-TECHS/">Techniques for WCAG 2.0</a></li>
+                  <li><a href="https://www.w3.org/TR/WCAG20/" class="link-ts"><span>Web Content Accessibility Guidelines (WCAG) 2.0</span></a></li>
+                  <li><a href="https://www.w3.org/TR/WCAG21/" class="link-ts"><span>Web Content Accessibility Guidelines (WCAG) 2.1</span></a></li>
+                  <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/glance/" class="link-ts"><span>WCAG 2.0 at a Glance</span></a></li>                  
+                  <li><a href="https://www.w3.org/WAI/WCAG20/quickref/" class="link-ts"><span>How to Meet WCAG 2.0</span></a></li>
+                  <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/" class="link-ts"><span>Understanding WCAG 2.0</span></a></li>
+                  <li><a href="https://www.w3.org/TR/WCAG-TECHS/" class="link-ts"><span>Techniques for WCAG 2.0</span></a></li>
                 </ul>
 
                 <h4 class="heading-s">Task Forces</h4>
-                <a href="https://www.w3.org/WAI/GL/">Accessibility Guidelines Working Group (AG WG / WCAG)</a>
+                <a href="https://www.w3.org/WAI/GL/" class="link-ts"><span>Accessibility Guidelines Working Group (AG WG / WCAG)</span></a>                  
                 <ul class="list-icons list-linklist">
                   <li>Accessibility Conformance Testing (ACT) Task Force</li>
                   <li>Cognitive Accessibility Task Force</li>
@@ -300,7 +310,7 @@
                 </ul>
 
                 <h4 class="heading-s">Components</h4>
-                <a href="https://www.w3.org/WAI/intro/components.php">Essential Components of Web Accessibility</a>
+                <a href="https://www.w3.org/WAI/intro/components.php" class="link-ts"><span>Essential Components of Web Accessibility</span></a>
                 <ul>
                   <li>Web Content Accessibility Guidelines (WCAG)</li>
                   <li>Authoring Tool Accessibility Guidelines (ATAG)</li>
@@ -308,7 +318,7 @@
                 </ul>
 
               </div>
-
+              
             </div>
 
           </div>
@@ -324,9 +334,9 @@
         <h2 class="full-cover-title" id="title-wai-aria">WAI-ARIA</h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
-
+        
         <div class="row">
 
           <div class="col-md-7">
@@ -364,17 +374,15 @@
 
                 <h3 class="card-title">Jump to:</h3>
 
-                <h4 class="heading-s">This section</h4>
-
                 <h4 class="heading-s">Basics</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../basics/essentials/principles.html#standards">Standards</a></li>
+                  <li><a href="../../basics/essentials/principles.html#standards" class="link-ts"><span>Standards</span></a></li>
                 </ul>
 
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/fundamentals/guidelines.html#wai-aria">Accessible Rich Internet Applications (WAI-ARIA)</a></li>
-                  <li><a href="../../training/code/wai-aria.html">Custom JavaScript / ARIA Widgets - Code</a></li>
+                  <li><a href="../../training/fundamentals/guidelines.html#wai-aria" class="link-ts"><span>Accessible Rich Internet Applications (WAI-ARIA)</span></a></li>
+                  <li><a href="../../training/code/wai-aria.html" class="link-ts"><span>Custom JavaScript / ARIA Widgets - Code</span></a></li>
                 </ul>
 
               </div>
@@ -387,12 +395,12 @@
 
                 <h4 class="heading-s">Specifications</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li>
-                  <li><a href="https://www.w3.org/TR/wai-aria-practices/">WAI-ARIA Authoring Practices 1.1</a></li>
+                  <li><a href="https://www.w3.org/TR/wai-aria/" class="link-ts"><span>Accessible Rich Internet Applications (WAI-ARIA) 1.1</span></a></li>
+                  <li><a href="https://www.w3.org/TR/wai-aria-practices/" class="link-ts"><span>WAI-ARIA Authoring Practices 1.1</span></a></li>
                 </ul>
 
               </div>
-
+              
             </div>
 
           </div>
@@ -408,9 +416,9 @@
         <h2 class="full-cover-title" id="title-material-design">Material Design - Google</h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
-
+        
         <div class="row">
 
           <div class="col-md-7">
@@ -420,7 +428,7 @@
 
                 <p class="lead"><strong>Material Design: a unified system that combines theory, resources, and tools for crafting digital experiences.</strong></p>
                 <p>Challenges to create a visual language for our users that synthesizes the classic principles of good design with the innovation and possibility of technology and science. This is material design. This spec is a living document that will be updated as we continue to develop the tenets and specifics of material design.</p>
-
+                
                 <h3 class="heading-s">Material is the metaphor</h3>
                 <p>A material metaphor is the unifying theory of a rationalized space and a system of motion. The material is grounded in tactile reality, inspired by the study of paper and ink, yet technologically advanced and open to imagination and magic.</p>
 
@@ -436,11 +444,9 @@
 
                 <h3 class="card-title">Jump to:</h3>
 
-                <h4 class="heading-s">This section</h4>
-
                 <h4 class="heading-s">Basics</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../basics/essentials/principles.html#standards">Standards</a></li>
+                  <li><a href="../../basics/essentials/principles.html#standards" class="link-ts"><span>Standards</span></a></li>
                 </ul>
 
               </div>
@@ -453,11 +459,11 @@
 
                 <h4 class="heading-s">Specifications</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://material.io/">Material Design</a></li>
+                  <li><a href="https://material.io/" class="link-ts"><span>Material Design</span></a></li>
                 </ul>
 
               </div>
-
+              
             </div>
 
           </div>
@@ -473,9 +479,9 @@
         <h2 class="full-cover-title" id="title-human-interface-guidelines">Human Interface Guidelines - Apple</h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
-
+        
         <div class="row">
 
           <div class="col-md-7">
@@ -485,7 +491,7 @@
 
                 <p class="lead"><strong>Design Principles: To maximize impact and reach, keep the following principles in mind as you imagine your app’s identity.</strong></p>
                 <p>As an app designer, you have the opportunity to deliver an extraordinary product that rises to the top of the App Store charts. To do so, you'll need to meet high expectations for quality and functionality.</p>
-
+                
                 <h3 class="heading-s">Three primary themes differentiate iOS from other platforms:</h3>
                 <ul>
                   <li><strong>Clarity</strong> Throughout the system, text is legible at every size, icons are precise and lucid, adornments are subtle and appropriate, and a sharpened focus on functionality motivates the design. Negative space, color, fonts, graphics, and interface elements subtly highlight important content and convey interactivity.</li>
@@ -505,11 +511,9 @@
 
                 <h3 class="card-title">Jump to:</h3>
 
-                <h4 class="heading-s">This section</h4>
-
                 <h4 class="heading-s">Basics</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../basics/essentials/principles.html#standards">Standards</a></li>
+                  <li><a href="../../basics/essentials/principles.html#standards" class="link-ts"><span>Standards</span></a></li>
                 </ul>
 
               </div>
@@ -522,7 +526,7 @@
 
                 <h4 class="heading-s">Specifications</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://developer.apple.com/ios/human-interface-guidelines/overview/themes/">Human Interface Guidelines - Apple</a></li>
+                  <li><a href="https://developer.apple.com/ios/human-interface-guidelines/overview/themes/" class="link-ts"><span>Human Interface Guidelines - Apple</span></a></li>
                 </ul>
 
               </div>
@@ -539,9 +543,9 @@
         <h2 class="full-cover-title" id="title-inclusive-design-principles">Inclusive Design Principles - Microsoft</h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
-
+        
         <div class="row">
 
           <div class="col-md-7">
@@ -551,10 +555,10 @@
 
                 <p class="lead"><strong>Inclusive Design at Microsoft</strong></p>
                 <p>It’s in our mission statement: empower every person on the planet to achieve more. Designing for inclusivity opens up our experiences and reflects how people adapt to the world around them.</p>
-
+                
                 <h3 class="heading-s">Recognize exclusion</h3>
                 <p>Exclusion happens when we solve problems using our own biases. As Microsoft designers, we seek out those exclusions, and use them as opportunities to create new ideas and inclusive designs.</p>
-
+                
                 <h3 class="heading-s">Learn from diversity</h3>
                 <p>Human beings are the real experts in adapting to diversity. Inclusive design puts people in the center from the very start of the process, and those fresh, diverse perspectives are the key to true insight.</p>
 
@@ -570,12 +574,10 @@
 
                 <h3 class="card-title">Jump to:</h3>
 
-                <h4 class="heading-s">This section</h4>
-
                 <h4 class="heading-s">Basics</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../basics/essentials/principles.html#inclusive-design">Inclusive Design</a></li>
-                  <li><a href="../../basics/essentials/principles.html#standards">Standards</a></li>
+                  <li><a href="../../basics/essentials/principles.html#inclusive-design" class="link-ts"><span>Inclusive Design</span></a></li>
+                  <li><a href="../../basics/essentials/principles.html#standards" class="link-ts"><span>Standards</span></a></li>
                 </ul>
 
               </div>
@@ -588,12 +590,82 @@
 
                 <h4 class="heading-s">Specifications</h4>
                 <ul class="list-icons list-linklist toc-columns" role="directory" aria-labelledby="title-toc">
-                  <li><a href="https://www.microsoft.com/design/inclusive/">Inclusive Design at Microsoft</a></li>
-                  <li><a href="https://www.microsoft.com/accessibility">Microsoft accessibility</a></li>
+                  <li><a href="https://www.microsoft.com/design/inclusive/" class="link-ts"><span>Inclusive Design at Microsoft</span></a></li>                  
+                  <li><a href="https://www.microsoft.com/accessibility" class="link-ts"><span>Microsoft accessibility</span></a></li>
                 </ul>
 
               </div>
+              
+            </div>
 
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="full-cover bg-grey" role="region" id="inclusive-design" aria-labelledby="title-inclusive-design">
+      <div class="container">
+
+        <h2 class="full-cover-title" id="title-inclusive-design">Inclusive Design - IBM</h2>
+
+        <div class="text-right to-top">
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
+        </div>
+        
+        <div class="row">
+
+          <div class="col-md-7">
+
+            <div class="card">
+              <div class="card-block">
+
+                <p class="lead"><strong>At the forefront of the design and development</strong></p>
+                <p>IBM places accessibility at the forefront of the design and development process so all users have more personal and adaptive experiences.</p>
+
+                <p>By developing a deeper understanding of how physical and cognitive disabilities affect the use of a product or service, designers can deliver better human experiences on any device.</p>
+                
+                <h3 class="heading-s">Accessibility and design</h3>
+                <p>Accessibility is an integral function of <a href="https://www.ibm.com/design/thinking/">IBM Design Thinking</a> and the <a href="https://www.ibm.com/design/language/">IBM Design Language</a>. It is also embedded into IBM Designcamps so newly-hired designers can be fluent in accessibility principles, standards and regulations, methodologies, and the newest technologies.</p>
+                
+                <h3 class="heading-s">Empathy in design</h3>
+                <p>Understanding all users, including people with disabilities, the <a href="https://www.ibm.com/able/aging/index.html">aging</a> population, or anyone facing a “situational” disability, helps designers and developers ensure that each feature has a plan for accessibility.</p>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-5">
+
+            <div class="card">
+              <div class="card-block">
+
+                <h3 class="card-title">Jump to:</h3>
+
+                <h4 class="heading-s">Basics</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../basics/essentials/principles.html#inclusive-design" class="link-ts"><span>Inclusive Design</span></a></li>
+                  <li><a href="../../basics/essentials/principles.html#standards" class="link-ts"><span>Standards</span></a></li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-block">
+
+                <h3 class="card-title">Resources</h3>
+
+                <h4 class="heading-s">Specifications</h4>
+                <ul class="list-icons list-linklist toc-columns" role="directory" aria-labelledby="title-toc">
+                  <li><a href="https://www.ibm.com/able/inclusive-design.html" class="link-ts"><span>Inclusive Design at IBM</span></a></li>                  
+                  <li><a href="https://www.ibm.com/able/index.html" class="link-ts"><span>IBM Accessibility Research</span></a></li>
+                </ul>
+
+              </div>
+              
             </div>
 
           </div>
@@ -634,19 +706,19 @@
               </h3>
               <ul class="list-icons list-linklist">
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#user-experience">User Experience</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#user-experience" class="link-ts"><span>User Experience</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#developers">Developers</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#developers" class="link-ts"><span>Developers</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#editors">Editors</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#editors" class="link-ts"><span>Editors</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#customer-journey-expert" class="link-ts"><span>Customer Journey Expert</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#accessibility-champion">Accessibility Champion</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#accessibility-champion" class="link-ts"><span>Accessibility Champion</span></a>
                 </li>
               </ul>
             </div>
@@ -674,7 +746,7 @@
       </div>
     </div>
   </aside>
-
+  
   <footer class="full-cover site-footer" role="contentinfo">
     <div class="container">
       <div class="d-inline-block">

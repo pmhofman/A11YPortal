@@ -4,12 +4,22 @@
 
 <head>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117757403-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117757403-1');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visual Design - Design - A11Y Guidelines</title>
+  <title>Visual Design - Design - Accessibility Guidelines</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
   <link rel="stylesheet" href="../../styles/styles-responsive.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
@@ -92,7 +102,7 @@
 
   </header>
 
-  <main role="main" id="main-content">
+  <main role="main" id="main-content" tabindex="-1">
 
     <div class="brandbar brandbar-a">
       <div class="brandbar-image brandbar-image-satisfied"></div>
@@ -107,18 +117,18 @@
 
         <h2 class="sr-only" id="title-toc">Table of Contents</h2>
         <ul class="list-icons list-linklist toc-columns" role="directory">
-          <li><a href="#colour-contrast">Colour contrast</a></li>
-          <li><a href="#colour-and-meaning">Colour and meaning</a></li>
-          <li><a href="#styling-and-readability">Styling and readability</a></li>
-          <li><a href="#touch-target-size">Touch target size</a></li>
-          <li><a href="#spacing">Spacing</a></li>
-          <li><a href="#content-resizing">Content resizing</a></li>
-          <li><a href="#actionable-elements">Actionable elements</a></li>
-          <li><a href="#visible-focus">Visible focus</a></li>
-          <li><a href="#consistency">Consistency</a></li>
-          <li><a href="#choice">Choice</a></li>
-          <li><a href="#adjustable">Adjustable</a></li>
-          <li><a href="#flicker">Flicker</a></li>
+          <li><a href="#colour-contrast" class="link-ts"><span>Colour contrast</span></a></li>
+          <li><a href="#colour-and-meaning" class="link-ts"><span>Colour and meaning</span></a></li>
+          <li><a href="#styling-and-readability" class="link-ts"><span>Styling and readability</span></a></li>
+          <li><a href="#touch-target-size" class="link-ts"><span>Touch target size</span></a></li>
+          <li><a href="#spacing" class="link-ts"><span>Spacing</span></a></li>
+          <li><a href="#content-resizing" class="link-ts"><span>Content resizing</span></a></li>
+          <li><a href="#actionable-elements" class="link-ts"><span>Actionable elements</span></a></li>
+          <li><a href="#visible-focus" class="link-ts"><span>Visible focus</span></a></li>
+          <li><a href="#consistency" class="link-ts"><span>Consistency</span></a></li>
+          <li><a href="#choice" class="link-ts"><span>Choice</span></a></li>
+          <li><a href="#adjustable" class="link-ts"><span>Adjustable</span></a></li>
+          <li><a href="#flicker" class="link-ts"><span>Flicker</span></a></li>
         </ul>
 
       </div>
@@ -130,7 +140,7 @@
         <h2 class="full-cover-title" id="title-colour-contrast">Colour contrast <span class="badge badge-success">Must</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -164,21 +174,21 @@
               <div class="card-block">
 
                 <h3 class="card-title" id="title-colour-contrast-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-colour-contrast-jump">
-                  <li><a href="#ios-colour-contrast">iOS</a></li>
-                  <li><a href="#android-colour-contrast">Android</a></li>
-                  <li><a href="#html-colour-contrast">HTML</a></li>
-                  <li><a href="#testing-colour-contrast">Testing</a></li>
+                  <li><a href="#ios-colour-contrast" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-colour-contrast" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-colour-contrast" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-colour-contrast" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/design/visual-design-and-colors.html#contrast">Contrast - Design</a></li>
-                  <li><a href="../../training/design/visual-design-and-colors.html#color">Color - Design</a></li>
-                  <li><a href="../../training/content/editorial.html#color">Color - Content</a></li>
-                  <li><a href="../../training/content/editorial.html#contrast">Contrast - Content</a></li>
+                  <li><a href="../../training/design/visual-design-and-colors.html#contrast" class="link-ts"><span>Contrast - Design</span></a></li>
+                  <li><a href="../../training/design/visual-design-and-colors.html#color" class="link-ts"><span>Color - Design</span></a></li>
+                  <li><a href="../../training/content/editorial.html#color" class="link-ts"><span>Color - Content</span></a></li>
+                  <li><a href="../../training/content/editorial.html#contrast" class="link-ts"><span>Contrast - Content</span></a></li>
                 </ul>
 
               </div>
@@ -277,7 +287,7 @@
           <span class="badge badge-danger">Must not</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -318,21 +328,21 @@
               <div class="card-block">
 
                 <h3 class="card-title" id="title-colour-and-meaning-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-colour-and-meaning-jump">
-                  <li><a href="#ios-colour-and-meaning">iOS</a></li>
-                  <li><a href="#android-colour-and-meaning">Android</a></li>
-                  <li><a href="#html-colour-and-meaning">HTML</a></li>
-                  <li><a href="#testing-colour-and-meaning">Testing</a></li>
+                  <li><a href="#ios-colour-and-meaning" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-colour-and-meaning" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-colour-and-meaning" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-colour-and-meaning" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/design/visual-design-and-colors.html#contrast">Contrast - Design</a></li>
-                  <li><a href="../../training/design/visual-design-and-colors.html#color">Color - Design</a></li>
-                  <li><a href="../../training/content/editorial.html#color">Color - Content</a></li>
-                  <li><a href="../../training/content/editorial.html#contrast">Contrast - Content</a></li>
+                  <li><a href="../../training/design/visual-design-and-colors.html#contrast" class="link-ts"><span>Contrast - Design</span></a></li>
+                  <li><a href="../../training/design/visual-design-and-colors.html#color" class="link-ts"><span>Color - Design</span></a></li>
+                  <li><a href="../../training/content/editorial.html#color" class="link-ts"><span>Color - Content</span></a></li>
+                  <li><a href="../../training/content/editorial.html#contrast" class="link-ts"><span>Contrast - Content</span></a></li>
                 </ul>
 
               </div>
@@ -445,7 +455,7 @@
           <span class="badge badge-success">Must</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -476,13 +486,13 @@
               <div class="card-block">
 
                 <h3 class="card-title" id="title-styling-and-readability-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-styling-and-readability-jump">
-                  <li><a href="#ios-styling-and-readability">iOS</a></li>
-                  <li><a href="#android-styling-and-readability">Android</a></li>
-                  <li><a href="#html-styling-and-readability">HTML</a></li>
-                  <li><a href="#testing-styling-and-readability">Testing</a></li>
+                  <li><a href="#ios-styling-and-readability" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-styling-and-readability" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-styling-and-readability" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-styling-and-readability" class="link-ts"><span>Testing</span></a></li>
                 </ul>
 
               </div>
@@ -614,7 +624,7 @@
           <span class="badge badge-success">Must</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -645,18 +655,18 @@
               <div class="card-block">
 
                 <h3 class="card-title" id="title-touch-target-size-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-touch-target-size-jump">
-                  <li><a href="#ios-touch-target-size">iOS</a></li>
-                  <li><a href="#android-touch-target-size">Android</a></li>
-                  <li><a href="#html-touch-target-size">HTML</a></li>
-                  <li><a href="#testing-touch-target-size">Testing</a></li>
+                  <li><a href="#ios-touch-target-size" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-touch-target-size" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-touch-target-size" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-touch-target-size" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/code/responsive-design-and-zoom.html#touch-click-target-size">Touch / Click Target Size</a></li>
+                  <li><a href="../../training/code/responsive-design-and-zoom.html#touch-click-target-size" class="link-ts"><span>Touch / Click Target Size</span></a></li>
                 </ul>
 
               </div>
@@ -865,7 +875,7 @@ addBookmarkImageView.setLayoutParams(layoutParams);</code></pre>
         <h2 class="full-cover-title" id="title-spacing">Spacing <span class="badge badge-info">Should</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -892,13 +902,13 @@ addBookmarkImageView.setLayoutParams(layoutParams);</code></pre>
               <div class="card-block">
 
                 <h3 class="card-title" id="title-spacing-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns" role="directory" aria-labelledby="title-spacing-jump">
-                  <li><a href="#ios-spacing">iOS</a></li>
-                  <li><a href="#android-spacing">Android</a></li>
-                  <li><a href="#html-spacing">HTML</a></li>
-                  <li><a href="#testing-spacing">Testing</a></li>
+                  <li><a href="#ios-spacing" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-spacing" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-spacing" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-spacing" class="link-ts"><span>Testing</span></a></li>
                 </ul>
 
               </div>
@@ -1140,7 +1150,7 @@ layout.addView(addBookmarkBtn, params);</code></pre>
         <h2 class="full-cover-title" id="title-content-resizing">Content resizing <span class="badge badge-success">Must</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -1169,24 +1179,24 @@ layout.addView(addBookmarkBtn, params);</code></pre>
               <div class="card-block">
 
                 <h3 class="card-title" id="title-content-resizing-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-content-resizing-jump">
-                  <li><a href="#ios-content-resizing">iOS</a></li>
-                  <li><a href="#android-content-resizing">Android</a></li>
-                  <li><a href="#html-content-resizing">HTML</a></li>
-                  <li><a href="#testing-content-resizing">Testing</a></li>
+                  <li><a href="#ios-content-resizing" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-content-resizing" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-content-resizing" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-content-resizing" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Basics</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../basics/essentials/principles.html#platform-accessibility">Platform accessibility</a></li>
+                  <li><a href="../../basics/essentials/principles.html#platform-accessibility" class="link-ts"><span>Platform accessibility</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/code/responsive-design-and-zoom.html#responsive-design">Responsive Design</a></li>
-                  <li><a href="../../training/code/responsive-design-and-zoom.html#zoom">Zoom</a></li>
+                  <li><a href="../../training/code/responsive-design-and-zoom.html#responsive-design" class="link-ts"><span>Responsive Design</span></a></li>
+                  <li><a href="../../training/code/responsive-design-and-zoom.html#zoom" class="link-ts"><span>Zoom</span></a></li>
                 </ul>
 
               </div>
@@ -1335,7 +1345,7 @@ body {
         </h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -1375,20 +1385,20 @@ body {
               <div class="card-block">
 
                 <h3 class="card-title" id="title-actionable-elements-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-actionable-elements-jump">
-                  <li><a href="#ios-actionable-elements">iOS</a></li>
-                  <li><a href="#android-actionable-elements">Android</a></li>
-                  <li><a href="#html-actionable-elements">HTML</a></li>
-                  <li><a href="#testing-actionable-elements">Testing</a></li>
+                  <li><a href="#ios-actionable-elements" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-actionable-elements" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-actionable-elements" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-actionable-elements" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/code/semantic-structure-and-navigation.html#links">Links</a></li>
-                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#dynamic-forms-and-custom-widgets">Dynamic Forms & Custom Widgets</a></li>
-
+                  <li><a href="../../training/code/semantic-structure-and-navigation.html#links" class="link-ts"><span>Links</span></a></li>
+                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#dynamic-forms-and-custom-widgets" class="link-ts"><span>Dynamic Forms & Custom Widgets</span></a></li>
+                  
                 </ul>
 
               </div>
@@ -1566,7 +1576,7 @@ body {
         </h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -1597,20 +1607,20 @@ body {
               <div class="card-block">
 
                 <h3 class="card-title" id="title-visible-focus-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-visible-focus-jump">
-                  <li><a href="#ios-visible-focus">iOS</a></li>
-                  <li><a href="#android-visible-focus">Android</a></li>
-                  <li><a href="#html-visible-focus">HTML</a></li>
-                  <li><a href="#testing-visible-focus">Testing</a></li>
+                  <li><a href="#ios-visible-focus" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-visible-focus" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-visible-focus" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-visible-focus" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/design/visual-design-and-colors.html#visual-layout">Visual Layout</a></li>
-                  <li><a href="../../training/design/visual-design-and-colors.html#reading-order-focus-order">Reading Order, Focus Order</a></li>
-                  <li><a href="../../training/code/semantic-structure-and-navigation.html#links">Links</a></li>
+                  <li><a href="../../training/design/visual-design-and-colors.html#visual-layout" class="link-ts"><span>Visual Layout</span></a></li>
+                  <li><a href="../../training/design/visual-design-and-colors.html#reading-order-focus-order" class="link-ts"><span>Reading Order, Focus Order</span></a></li>
+                  <li><a href="../../training/code/semantic-structure-and-navigation.html#links" class="link-ts"><span>Links</span></a></li>
                 </ul>
 
               </div>
@@ -1818,7 +1828,7 @@ a {
         <h2 class="full-cover-title" id="title-consistency">Consistency <span class="badge badge-info">Should</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -1853,13 +1863,13 @@ a {
               <div class="card-block">
 
                 <h3 class="card-title" id="title-consistency-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns" role="directory" aria-labelledby="title-consistency-jump">
-                  <li><a href="#ios-consistency">iOS</a></li>
-                  <li><a href="#android-consistency">Android</a></li>
-                  <li><a href="#html-consistency">HTML</a></li>
-                  <li><a href="#testing-consistency">Testing</a></li>
+                  <li><a href="#ios-consistency" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-consistency" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-consistency" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-consistency" class="link-ts"><span>Testing</span></a></li>
                 </ul>
 
               </div>
@@ -2040,7 +2050,7 @@ UIImageView* aImage = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 10
         <h2 class="full-cover-title" id="title-choice">Choice <span class="badge badge-success">Must</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -2071,13 +2081,13 @@ UIImageView* aImage = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 10
               <div class="card-block">
 
                 <h3 class="card-title" id="title-choice-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns" role="directory" aria-labelledby="title-choice-jump">
-                  <li><a href="#ios-choice">iOS</a></li>
-                  <li><a href="#android-choice">Android</a></li>
-                  <li><a href="#html-choice">HTML</a></li>
-                  <li><a href="#testing-choice">Testing</a></li>
+                  <li><a href="#ios-choice" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-choice" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-choice" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-choice" class="link-ts"><span>Testing</span></a></li>
                 </ul>
 
               </div>
@@ -2088,8 +2098,7 @@ UIImageView* aImage = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 10
         </div>
 
         <div class="card">
-          <div class="card-block">
-
+          <div class="card-block"> class="link-ts"><span>
             <h3 class="card-title">Examples</h3>
 
             <h4 class="heading-s" id="ios-choice">iOS</h4>
@@ -2180,7 +2189,7 @@ UIImageView* aImage = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 10
         <h2 class="full-cover-title" id="title-adjustable">Adjustable <span class="badge badge-info">Should</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -2219,13 +2228,13 @@ UIImageView* aImage = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 10
               <div class="card-block">
 
                 <h3 class="card-title" id="title-adjustable-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns" role="directory" aria-labelledby="title-adjustable-jump">
-                  <li><a href="#ios-adjustable">iOS</a></li>
-                  <li><a href="#android-adjustable">Android</a></li>
-                  <li><a href="#html-adjustable">HTML</a></li>
-                  <li><a href="#testing-adjustable">Testing</a></li>
+                  <li><a href="#ios-adjustable" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-adjustable" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-adjustable" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-adjustable" class="link-ts"><span>Testing</span></a></li>
                 </ul>
 
               </div>
@@ -2295,7 +2304,7 @@ UIImageView* aImage = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 10
         <h2 class="full-cover-title" id="title-flicker">Flicker <span class="badge badge-danger">Must not</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -2327,18 +2336,18 @@ UIImageView* aImage = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 10
               <div class="card-block">
 
                 <h3 class="card-title" id="title-flicker-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-flicker-jump">
-                  <li><a href="#ios-flicker">iOS</a></li>
-                  <li><a href="#android-flicker">Android</a></li>
-                  <li><a href="#html-flicker">HTML</a></li>
-                  <li><a href="#testing-flicker">Testing</a></li>
+                  <li><a href="#ios-flicker" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-flicker" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-flicker" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-flicker" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/design/multimedia-animations-and-motion.html#seizure-inducing-flashes">Seizure-Inducing Flashes</a></li>
+                  <li><a href="../../training/design/multimedia-animations-and-motion.html#seizure-inducing-flashes" class="link-ts"><span>Seizure-Inducing Flashes</span></a></li>
                 </ul>
 
               </div>
@@ -2431,19 +2440,19 @@ UIImageView* aImage = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 10
               </h3>
               <ul class="list-icons list-linklist">
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#user-experience">User Experience</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#user-experience" class="link-ts"><span>User Experience</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#developers">Developers</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#developers" class="link-ts"><span>Developers</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#editors">Editors</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#editors" class="link-ts"><span>Editors</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#customer-journey-expert" class="link-ts"><span>Customer Journey Expert</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#accessibility-champion">Accessibility Champion</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#accessibility-champion" class="link-ts"><span>Accessibility Champion</span></a>
                 </li>
               </ul>
             </div>
@@ -2471,7 +2480,7 @@ UIImageView* aImage = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 10
       </div>
     </div>
   </aside>
-
+  
   <footer class="full-cover site-footer" role="contentinfo">
     <div class="container">
       <div class="d-inline-block">

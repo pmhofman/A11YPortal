@@ -99,7 +99,7 @@
 
   </header>
 
-  <main role="main" id="main-content">
+  <main role="main" id="main-content" tabindex="-1">
 
     <div class="brandbar brandbar-a">
       <div class="brandbar-image brandbar-image-people"></div>
@@ -113,10 +113,11 @@
         <h2 class="full-cover-title sr-only" id="title-toc">Table of Contents</h2>
         <ul class="list-icons list-linklist toc-columns" role="directory">
           <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#research-the-standards-and-examples">1. Research the Standards and Examples</a></li>
-          <li><a href="#choose-the-correct-pattern-and-design">2. Choose the correct pattern and design</a></li>
-          <li><a href="#annotate-all-not-clear-from-the-design-alone">3. Annotate all not clear from the design alone</a></li>
-          <li><a href="#have-it-signed-by-a-a11y-champ">4. Have it signed by a A11Y Champ</a></li>
+          <li><a href="#inspect-which-options-apply-for-your-design">1. Inspect which options apply for your design</a></li>
+          <li><a href="#research-the-standards-and-examples">2. Research the Standards and Examples</a></li>
+          <li><a href="#choose-the-correct-pattern-and-design">3. Choose the correct pattern and design</a></li>
+          <li><a href="#annotate-all-not-clear-from-the-design-alone">4. Annotate all not clear from the design alone</a></li>
+          <li><a href="#have-it-signed-by-a-a11y-champ">5. Have it signed by a A11Y Champ</a></li>
         </ul>
 
       </div>
@@ -126,46 +127,58 @@
       <div class="container">
 
         <div class="text-right to-top to-top-z">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row">
 
           <div class="col-md-7">
 
+            <div class="alert alert-warning">
+              <span class="stacked-icon icon-lg">
+                <span aria-hidden="true" class="icon icon-notification-warning-z1 icon-orange"></span>
+                <span aria-hidden="true" class="icon icon-white icon-notification-warning-z2"></span>
+              </span>
+              <strong>!!! Work in Progress !!! </strong> This page is work in progress...
+            </div>
+
             <div class="card">
               <div class="card-block">
 
                 <h2 class="card-title" id="title-introduction">Introduction</h2>
-                <div class="alert alert-warning">
-                  <span class="stacked-icon icon-lg">
-                    <span aria-hidden="true" class="icon icon-notification-warning-z1 icon-orange"></span>
-                    <span aria-hidden="true" class="icon icon-white icon-notification-warning-z2"></span>
-                  </span>
-                  <strong>!!! Work in Progress !!! </strong> This page is work in progress...
+                <p class="lead"><strong>To define requirements for Development, QA and testing</strong></p>
+
+                <p>For testing feasibility of designs, implementation clarity and functional usability testing tasks when build, Design Annotations are a basic condition. They will help you understand where the gaps to be filled are and create a document with which you can enter the conversation. Without them is like a license to end up with an incomplete, less quality and possibly even wrong product.</p>
+
+                <p>By ensuring structure, consistency, navigation, behaviour, labels, components etc. we can lay down the blue print for inclusive products usable by all. Developers know exactly what to build en where to find the necessary information. When the product is build the functional test results are exactly what has been specified.</p>
+
+                <p>When done the designs must be secured by having it signed off by a Accessibility Champion.</p>
+
+                <h3 class="heading-m">Definition of Ready Vs. Definition of Done</h3>
+
+                <div class="row">
+
+                  <div class="col-md-6">
+                    <h4 class="heading-xs">UX Responsibilities</h4>
+                    <ul class="list-icons list-linklist">
+                      <li><a href="../../basics/essentials/principles.html#inclusive-design">Inclusive Design Principles</a></li>
+                      <li>UX research</li>
+                      <li><a href="../../training/various/input-methods.html">Multi-device interactions</a></li>
+                      <li>Design Annotations</li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-6">
+                    <h4 class="heading-xs">Developer Responsibilities</h4>
+                    <ul class="list-icons list-linklist">
+                      <li>Build accessibility in</li>
+                      <li><a href="../../training/testing/testing-methods-and-tools.html#automated-testing-tools">Automated testing</a></li>
+                      <li>Manual testing</li>
+                      <li>Prioritize backlog defects</li>
+                    </ul>
+                  </div>
+
                 </div>
-                <p class="lead"><strong>Accessible User Xperience Definition of Ready</strong></p>
-
-                <h3 class="heading-s">Why to define requirements for Development and QA</h3>
-                <ul class="list-icons list-linklist">
-                  <li>For testing feasibility of designs and usability testing tasks</li>
-                  <li>By ensuring consistency, structure, navigation, labels and components</li>
-                  <li>Secure by signing off design issues at each step of the Development Life Cycle</li>
-                </ul>
-
-                <h3 class="heading-s">How use standards over custom design patterns</h3>
-                <ul class="list-icons list-linklist">
-                  <li>For testing feasibility of designs and usability testing tasks</li>
-                  <li>By ensuring consistency, structure, navigation, labels and components</li>
-                  <li>Secure by signing off design issues at each step of the Development Life Cycle</li>
-                </ul>
-
-                <h3 class="heading-s">What I need to annotate and when</h3>
-                <ul class="list-icons list-linklist">
-                  <li>For testing feasibility of designs and usability testing tasks</li>
-                  <li>By ensuring consistency, structure, navigation, labels and components</li>
-                  <li>Secure by signing off design issues at each step of the Development Life Cycle</li>
-                </ul>
 
               </div>
             </div>
@@ -194,8 +207,146 @@
                 <h3 class="card-title">Resources</h3>
                 <ul class="list-icons list-linklist">
                   <li><a href="http://www.bbc.co.uk/gel/guidelines/how-to-create-assets-for-apps">How to create assets for Apps - BBC</a></li>
+                  <li><a href="http://www.bbc.co.uk/gel/guidelines/how-to-design-for-accessibility">How to design for accessibility - BBC</a></li>
+                  <li><a href="https://accessibility.digital.gov/">Accessibility for Teams - United States Government</a></li>
+                  <li><a href="https://www.smashingmagazine.com/2018/04/designing-accessibility-inclusion/">Designing For Accessibility And Inclusion - Smashing Magazine</a></li>
                 </ul>
               </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="full-cover bg-faded" role="region" id="inspect-which-options-apply-for-your-design" aria-labelledby="title-inspect-which-options-apply-for-your-design">
+      <div class="container">
+
+        <div class="gs-highway"></div>
+
+        <h2 class="full-cover-title gs-title" id="title-inspect-which-options-apply-for-your-design">
+          <span class="badge badge-pill bg-primary gs-number">1</span> Inspect which options apply for your design
+        </h2>
+
+        <div class="text-right to-top">
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
+        </div>
+
+        <div class="row">
+
+          <div class="col-sm-12">
+
+            <div class="card gs-highway-content">
+              <div class="card-block">
+
+                <p class="lead"><strong>Understand what is needed to perfect your annotations</strong></p>
+
+                <p>The most common options to be annotated can be choosen from the following lists. <strong>Only select those who apply to what you're working on at the moment</strong> and make sure they're fully worked out in details to be sure the functional requirements for the User Experience is present and can be tested accordingly.</p>
+
+                <h3 class="heading-m">Structure and Viewports <span class="badge badge-pill bg-primary gs-highway-bullets mt-0"> </span></h3>
+
+                <div class="row">
+
+                  <div class="col-md-6">
+                    <div class="media mb-4" role="group">
+                      <div class="media-body">
+                        <h3 class="heading-s mt-0 text-primary">Structure</h3>
+                        <ul class="list-icons list-checklist mb-0">
+                          <li><a href="../../guidelines/design/structure.html#containers-and-landmarks"><strong>Containers, Landmarks:</strong></a> Containers should be used to describe page/screen structure, as supported by the platform.</li>
+                          <li><a href="../../guidelines/design/structure.html#headings"><strong>Headings:</strong></a> Content must provide a logical and hierarchical heading structure, as supported by the platform.</li>
+                          <li><a href="../../guidelines/design/visual-design.html#actionable-elements"><strong>Links vs Buttons:</strong></a> Links and other actionable elements must be clearly distinguishable.</li>
+                          <li><strong>Data tables:</strong> ...</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">                    
+                    <div class="media mb-4" role="group">
+                      <div class="media-body">
+                        <h3 class="heading-s mt-0 text-primary">Device sizing</h3>
+                        <ul class="list-icons list-checklist mb-0">
+                          <li><strong>Desktop:</strong> ...</li>
+                          <li><strong>Tablet:</strong> ...</li>
+                          <li><strong>Mobile:</strong> ...</li>
+                          <li><strong>Watch:</strong> ...</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <h3 class="heading-m">Style, Elements and Widgets <span class="badge badge-pill bg-primary gs-highway-bullets mt-0"> </span></h3>
+
+                <div class="row">
+
+                  <div class="col-md-6">
+                    <div class="media mb-4" role="group">
+                      <div class="media-body">
+                        <h3 class="heading-s mt-0 text-primary">Style and colour contrast</h3>
+                        <ul class="list-icons list-checklist mb-0">
+                          <li><a href="../../guidelines/design/visual-design.html#colour-contrast"><strong>Color contrast:</strong></a> The colour of text and background content must have sufficient contrast.</li>
+                          <li><a href="../../guidelines/design/visual-design.html#touch-target-size"><strong>Touch target size:</strong></a> Touch targets must be large enough to touch accurately.</li>
+                          <li><a href="../../guidelines/design/visual-design.html#colour-and-meaning"><strong>Colour and meaning:</strong></a> Information or meaning must not be conveyed by colour only.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="media mb-4" role="group">
+                      <div class="media-body">
+                        <h3 class="heading-s mt-0 text-primary">UIC and Widgets</h3>
+                        <ul class="list-icons list-checklist mb-0">
+                          <li><a href="../../guidelines/design/visual-design.html#colour-contrast"><strong>Name:</strong></a> ...</li>
+                          <li><a href="../../guidelines/design/visual-design.html#actionable-elements"><strong>Role:</strong></a> ...</li>
+                          <li><a href="../../guidelines/design/visual-design.html#actionable-elements"><strong>States:</strong></a> ...</li>
+                          <li><a href="../../guidelines/design/visual-design.html#actionable-elements"><strong>Properties:</strong></a> ...</li>
+                          <li><a href="../../guidelines/design/visual-design.html#actionable-elements"><strong>Values:</strong></a> ...</li>
+                          <li><a href="../../training/various/input-methods.html"><strong>User Input:</strong></a> Keyboard, Pointer Devices and Touch Interaction</li>                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <h3 class="heading-m">Focus, Order and Interaction  <span class="badge badge-pill bg-primary gs-highway-bullets mt-0"> </span></h3>
+
+                <div class="row">
+
+                  <div class="col-md-6">
+                    <div class="media mb-4" role="group">
+                      <div class="media-body">
+                        <h3 class="heading-s mt-0 text-primary">Focus and content order</h3>
+                        <ul class="list-icons list-checklist mb-0">
+                          <li><a href="../../guidelines/code/focus.html#content-order"><strong>Content order:</strong></a> The order of the content must be logical.</li>
+                          <li><a href="../../guidelines/code/focus.html#focus-order"><strong>Focus order:</strong></a> Actionable content must be navigable in a meaningful sequence.</li>
+                          <li><strong>Keyboard Interaction:</strong> ...</li>
+                          <li><a href="../../guidelines/code/focus.html#focusable-elements"><strong>Focus management:</strong></a> All interactive elements must be focusable and non-interactive elements must not be focusable.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="media mb-4" role="group">
+                      <div class="media-body">
+                        <h3 class="heading-s mt-0 text-primary">Alternatives</h3>
+                        <ul class="list-icons list-checklist mb-0">
+                          <li><a href="../../guidelines/content/text-equivalents.html#alternatives-for-non-text-content"><strong>Text alternatives:</strong></a> Alternatives must briefly describe the editorial intent or purpose of the image, object, or element.</li>
+                          <li><a href="../../guidelines/code/audio-and-video.html#alternatives-for-audio-and-visual-content"><strong>Alternate Content:</strong></a> Alternative delivery, such as subtitles, sign language, audio description and transcripts, must be provided with embedded media when available.</li>
+                          <li><strong>Visible / Hidden states:</strong> ...</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
 
             </div>
 
@@ -212,11 +363,11 @@
         <div class="gs-highway"></div>
 
         <h2 class="full-cover-title gs-title" id="title-research-the-standards-and-examples">
-          <span class="badge badge-pill bg-primary gs-number">1</span> Research the Standards and Examples
+          <span class="badge badge-pill bg-primary gs-number">2</span> Research the Standards and Examples
         </h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row">
@@ -226,69 +377,22 @@
             <div class="card gs-highway-content">
               <div class="card-block">
 
-                <p class="lead gs-lead"><strong>Helps each role contribute to make products that work for everyone.</strong></p>
+                <p class="lead"><strong>Use standards over custom design patterns.</strong></p>
+
+                <p>When your selection from step 1 is made you'll need to research what the <a href="http://www.a11yportal.com/basics/essentials/principles.html#inclusive-design">AUX / Inclusive Design Principles</a> are based on <a href="http://www.a11yportal.com/basics/essentials/principles.html#standards">Industry Standards</a>. This research consists of all information related to the working of the page / view and its structure, the design choices, the best UIC for the task to be completed and the specific working of widgets and their relation with other parts.</p>
 
                 <ul class="list-unstyled">
 
-                  <li class="media gs-media" role="group">
+                  <li class="media mb-4" role="group">
                     <span class="badge badge-pill bg-primary gs-highway-bullets"> </span>
                     <div class="d-flex col-sm-4 pl-0 hidden-xs-down">
-                      <span><img class="img-fluid" src="../../images/gs-a11y.png" alt="Accessibility logo"></span></div>
+                      <span><img class="img-fluid border-grey-light" src="../../images/gs-sections.png" alt="Accessibility logo"></span></div>
                     <div class="media-body">
-                      <h3 class="heading-s mt-0">W3C</h3>
-                      <p class="mb-3">Official HTML Recommendation</p>
-                      <ul class="list-inline">
-                        <li class="list-inline-item">
-                          <div class="badge bg-indigo">Developer</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-fuchsia">UX</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-lime text-default">Content</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-black54">CJE</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-
-                  <li class="media gs-media" role="group">
-                    <span class="badge badge-pill bg-primary gs-highway-bullets"> </span>
-                    <div class="d-flex col-sm-4 pl-0 hidden-xs-down">
-                      <span><img class="img-fluid" src="../../images/gs-annotation.png" alt="Example of an annotation"></span></div>
-                    <div class="media-body">
-                      <h3 class="heading-s mt-0">WHATWG</h3>
-                      <p class="mb-3">Living HTML Standard</p>
-                      <ul class="list-inline">
-                        <li class="list-inline-item">
-                          <div class="badge bg-fuchsia">UX</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-lime text-default">Content</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-
-                  <li class="media gs-media" role="group">
-                    <span class="badge badge-pill bg-primary gs-highway-bullets"> </span>
-                    <div class="d-flex col-sm-4 pl-0 hidden-xs-down">
-                      <span><img class="img-fluid" src="../../images/gs-textblock.png" alt="Graphic interpretation of a block of text"></span></div>
-                    <div class="media-body">
-                      <h3 class="heading-s mt-0">WAI ARIA</h3>
-                      <p class="mb-3">The Accessible Rich Internet Applications</p>
-                      <ul class="list-inline">
-                        <li class="list-inline-item">
-                          <div class="badge bg-fuchsia">UX</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-lime text-default">Content</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-black54">CJE</div>
-                        </li>
+                      <h3 class="heading-s mt-0">Structure and Viewports</h3>
+                      <ul class="list-icons list-checklist mb-0">
+                        <li><a href="../../guidelines/design/structure.html#containers-and-landmarks"><strong>Containers, Landmarks:</strong></a> Containers should be used to describe page/screen structure, as supported by the platform.</li>
+                        <li>Structure, Reading / focus Order</li>
+                        <li>Alternatives and Variations</li>
                       </ul>
                     </div>
                   </li>
@@ -296,17 +400,28 @@
                   <li class="media mb-4" role="group">
                     <span class="badge badge-pill bg-primary gs-highway-bullets"> </span>
                     <div class="d-flex col-sm-4 pl-0 hidden-xs-down">
-                      <span><img class="img-fluid" src="../../images/gs-html5.png" alt="HTML5 Logo"></span></div>
+                      <span><img class="img-fluid border-grey-light" src="../../images/gs-sections.png" alt="Accessibility logo"></span></div>
                     <div class="media-body">
-                      <h3 class="heading-s mt-0">Mind Patterns</h3>
-                      <p class="mb-3">Use HTML5 landmarks</p>
-                      <ul class="list-inline">
-                        <li class="list-inline-item">
-                          <div class="badge bg-indigo">Developer</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-fuchsia">UX</div>
-                        </li>
+                      <h3 class="heading-s mt-0">Style, Elements and Widgets</h3>
+                      <ul class="list-icons list-checklist mb-0">
+                        <li><a href="../../guidelines/design/structure.html#containers-and-landmarks"><strong>Containers, Landmarks:</strong></a> Containers should be used to describe page/screen structure, as supported by the platform.</li>
+                        <li>Structure, Reading / focus Order</li>
+                        <li>Alternatives and Variations</li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="media mb-4" role="group">
+                    <span class="badge badge-pill bg-primary gs-highway-bullets"> </span>
+                    <div class="d-flex col-sm-4 pl-0 hidden-xs-down">
+                      <span><img class="img-fluid border-grey-light" src="../../images/gs-sections.png" alt="Accessibility logo"></span></div>
+                    <div class="media-body">
+                      <h3 class="heading-s mt-0">Focus, Order and Interaction</h3>
+                      <ul class="list-icons list-checklist mb-0">
+                        <li>For Roles</li>
+                        <li>For entire Component</li>
+                        <li>State Types</li>
+                        <li>State Colors</li>
                       </ul>
                     </div>
                   </li>
@@ -322,9 +437,72 @@
 
             <div class="card">
               <div class="card-block">
-                <h3 class="card-title mb-2">Resources</h3>
-                <p>None documented</p>
 
+                <h3 class="card-title">Jump to:</h3>
+
+                <h4 class="heading-s">Portals</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="#">Orange Juice</a></li>
+                  <li><a href="#">The Guide</a></li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-block">
+                <h3 class="card-title mb-2">Web</h3>
+                
+                <h4 class="heading-s">Specifications</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://www.w3.org/TR/html/dom.html#kinds-of-content">Kinds of content - HTML</a>
+                    <ul class="mt-2">
+                      <li><a href="https://html.spec.whatwg.org/#toc-semantics">The elements of HTML</a></li>
+                    </ul>
+                  </li>                 
+                  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#roles_categorization">Categorization of Roles - ARIA</a>
+                    <ul class="mt-2">
+                      <li><a href="https://www.w3.org/TR/wai-aria-1.1/#widget_roles">Widget Roles - ARIA</a></li>
+                      <li><a href="https://www.w3.org/TR/wai-aria-1.1/#document_structure_roles">Document Structure Roles - ARIA</a></li>
+                      <li><a href="https://www.w3.org/TR/wai-aria-1.1/#landmark_roles">Landmark Roles - ARIA</a></li>
+                      <li><a href="https://www.w3.org/TR/wai-aria-1.1/#live_region_roles">Live Region Roles - ARIA</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                
+                <h4 class="heading-s">Examples</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#aria_ex">Design Patterns and Widgets - ARIA</a></li>
+                  <li><a href="https://www.w3.org/WAI/tutorials/">Web Accessibility Tutorials - W3C</a></li>
+                  <li><a href="https://inclusive-components.design/">Inclusive Components - Heydon Pickering</a></li>
+                  <li><a href="https://ebay.gitbooks.io/mindpatterns/">MIND Patterns - eBay</a></li>
+                  <li><a href="https://ibma.github.io/Va11yS/index.html">Va11yS: Verified Accessibility Samples - IBM</a></li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-block">
+                <h3 class="card-title mb-2">iOS</h3>
+
+                <h4 class="heading-s">Specifications</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://developer.apple.com/documentation/uikit/accessibility/uiaccessibility/accessibility_traits">Accessibility Traits</a></li>
+                  <li><a href="https://developer.apple.com/documentation/uikit/views_and_controls">Views and Controls</a></li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-block">
+                <h3 class="card-title mb-2">Android</h3>
+
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../training/design/visual-design-and-colors.html#visual-layout">Visual Layout</a></li>
+                </ul>
+                
               </div>
             </div>
 
@@ -341,11 +519,11 @@
         <div class="gs-highway"></div>
 
         <h2 class="full-cover-title gs-title" id="title-choose-the-correct-pattern-and-design">
-          <span class="badge badge-pill bg-primary gs-number">2</span> Choose the correct pattern and design
+          <span class="badge badge-pill bg-primary gs-number">3</span> Choose the correct pattern and design
         </h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row">
@@ -355,7 +533,13 @@
             <div class="card gs-highway-content">
               <div class="card-block">
 
-                <p class="lead gs-lead"><strong>Great design starts by thinking about how to make products work for everyone.</strong></p>
+                <p class="lead"><strong>Great design starts by thinking about how to make products work for everyone.</strong></p>
+
+                <p>While innovation is embedded in the way of technical exploration it should improve the User Experience, not make it more difficult. Using global conventions, native elements / widgets and interaction patterns should be the primary choice at all times as they are of high quality and accessible by default.</p>
+
+                <ul class="list-icons list-linklist">
+                  <li>Use HTML over WAI-ARIA, Native over Self Made</li>
+                </ul>
 
                 <ul class="list-unstyled">
 
@@ -380,69 +564,6 @@
                     </div>
                   </li>
 
-                  <li class="media gs-media" role="group">
-                    <span class="badge badge-pill bg-primary gs-highway-bullets"> </span>
-                    <div class="d-flex col-sm-4 pl-0 hidden-xs-down">
-                      <span><img class="img-fluid" src="../../images/gs-margreet.png" alt="Woman with pony tail"></span></div>
-                    <div class="media-body">
-                      <h3 class="heading-s mt-0">Margreet Janssen (62)</h3>
-                      <p class="mb-3">By using captions she can enjoy watching videos.</p>
-                      <ul class="list-inline">
-                        <li class="list-inline-item">
-                          <div class="badge bg-indigo">Developer</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-fuchsia">UX</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-lime text-default">Content</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-black54">CJE</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-
-                  <li class="media gs-media" role="group">
-                    <span class="badge badge-pill bg-primary gs-highway-bullets"> </span>
-                    <div class="d-flex col-sm-4 pl-0 hidden-xs-down">
-                      <span><img class="img-fluid" src="../../images/gs-henry.png" alt="Man with short hair"></span></div>
-                    <div class="media-body">
-                      <h3 class="heading-s mt-0">Hendry Dobson (34)</h3>
-                      <p class="mb-3">He uses voice control to interact with the computer.</p>
-                      <ul class="list-inline">
-                        <li class="list-inline-item">
-                          <div class="badge bg-indigo">Developer</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-fuchsia">UX</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-
-                  <li class="media mb-4" role="group">
-                    <span class="badge badge-pill bg-primary gs-highway-bullets"> </span>
-                    <div class="d-flex col-sm-4 pl-0 hidden-xs-down">
-                      <span><img class="img-fluid" src="../../images/gs-paul.png" alt="Man with glasses and cane"></span></div>
-                    <div class="media-body">
-                      <h3 class="heading-s mt-0">Paul Holleman (46)</h3>
-                      <p class="mb-3">A screen reader helps him a lot in his work.</p>
-                      <ul class="list-inline">
-                        <li class="list-inline-item">
-                          <div class="badge bg-indigo">Developer</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-lime text-default">Content</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-black54">CJE</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-
                 </ul>
 
               </div>
@@ -454,40 +575,9 @@
 
             <div class="card">
               <div class="card-block">
-                <h3 class="card-title mb-2">Motor disability</h3>
+                <h3 class="card-title mb-2">Text</h3>
                 <ul class="list-icons list-checklist mb-0">
-                  <li>Make large clickable actions.</li>
-                  <li>Ensure that skip navigation is allowed over lists and menus.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title mb-2">Blind / Low vision</h3>
-                <ul class="list-icons list-checklist mb-0">
-                  <li>Ensure all functions are available via the keyboard.</li>
-                  <li>Provide alternative text descriptions.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title mb-2">Cognitive</h3>
-                <ul class="list-icons list-checklist">
-                  <li>Don't use sarcasm, metaphors and irony.</li>
-                  <li>Information should be clear, and easy to understand.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title mb-2">Deaf</h3>
-                <ul class="list-icons list-checklist mb-0">
-                  <li>Provide captioning and transcripts for video.</li>
-                  <li>Break up content with sub-headings, images and videos.</li>
+                  <li>Text</li>
                 </ul>
               </div>
             </div>
@@ -505,11 +595,11 @@
         <div class="gs-highway"></div>
 
         <h2 class="full-cover-title gs-title" id="title-annotate-all-not-clear-from-the-design-alone">
-          <span class="badge badge-pill bg-primary gs-number">3</span> Annotate all not clear from the design alone
+          <span class="badge badge-pill bg-primary gs-number">4</span> Annotate all not clear from the design alone
         </h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row">
@@ -519,7 +609,13 @@
             <div class="card gs-highway-content">
               <div class="card-block">
 
-                <p class="lead gs-lead"><strong>An accurate selection of quality tools can help you find a wide range of accessibility issues.</strong></p>
+                <p class="lead"><strong>An accurate selection of quality tools can help you find a wide range of accessibility issues.</strong></p>
+
+                <h3 class="heading-s">What I need to annotate and when</h3>
+                <ul class="list-icons list-linklist">
+                  <li>Native elements and off-the-shelf building blocks are excluded</li>
+                  <li>Newly designed, adjusted and combined UICs need to be evaluated for A11Y needs</li>
+                </ul>
 
                 <ul class="list-unstyled">
 
@@ -538,72 +634,6 @@
                     </div>
                   </li>
 
-                  <li class="media gs-media" role="group">
-                    <span class="badge badge-pill bg-primary gs-highway-bullets"> </span>
-                    <div class="d-flex col-sm-4 pl-0 hidden-xs-down">
-                      <span><img class="img-fluid" src="../../images/gs-colour-contrast-analyser.png" alt="Colour Contrast Analyser logo"></span></div>
-                    <div class="media-body">
-                      <h3 class="heading-s mt-0"><a href="https://www.paciellogroup.com/resources/contrastanalyser/">Colour Contrast Analyser</a></h3>
-                      <p class="mb-3">Check contrast ratio's of anything on your screen.</p>
-                      <ul class="list-inline">
-                        <li class="list-inline-item">
-                          <div class="badge bg-indigo">Developer</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-fuchsia">UX</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-lime text-default">Content</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-black54">CJE</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-
-                  <li class="media gs-media" role="group">
-                    <span class="badge badge-pill bg-primary gs-highway-bullets"> </span>
-                    <div class="d-flex col-sm-4 pl-0 hidden-xs-down">
-                      <span><img class="img-fluid" src="../../images/gs-nocoffee.png" alt="NoCoffee logo"></span></div>
-                    <div class="media-body">
-                      <h3 class="heading-s mt-0"><a href="https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl">NoCoffee</a></h3>
-                      <p class="mb-3">Simulate visual impairments in the browser.</p>
-                      <ul class="list-inline">
-                        <li class="list-inline-item">
-                          <div class="badge bg-indigo">Developer</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-fuchsia">UX</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-lime text-default">Content</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-black54">CJE</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-
-                  <li class="media mb-4" role="group">
-                    <span class="badge badge-pill bg-primary gs-highway-bullets"> </span>
-                    <div class="d-flex col-sm-4 pl-0 hidden-xs-down">
-                      <span><img class="img-fluid" src="../../images/gs-wave.png" alt="WAVE logo"></span></div>
-                    <div class="media-body">
-                      <h3 class="heading-s mt-0"><a href="https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh">WAVE</a></h3>
-                      <p class="mb-3">A browser extension that helps manual checking.</p>
-                      <ul class="list-inline">
-                        <li class="list-inline-item">
-                          <div class="badge bg-indigo">Developer</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-fuchsia">UX</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-
                 </ul>
 
               </div>
@@ -615,40 +645,9 @@
 
             <div class="card">
               <div class="card-block">
-                <h3 class="card-title mb-2">aXe</h3>
+                <h3 class="card-title mb-2">Text</h3>
                 <ul class="list-icons list-checklist mb-0">
-                  <li>Fast and easy way to find low hanging fruit.</li>
-                  <li>Shows issues where A11Y guidelines are being violated.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title mb-2">Colour Contrast Analyser</h3>
-                <ul class="list-icons list-checklist mb-0">
-                  <li>Simple way to check if the colour has sufficient contrast.</li>
-                  <li>Can be used in all applications and browsers.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title mb-2">NoCoffee</h3>
-                <ul class="list-icons list-checklist">
-                  <li>Simulates a wide variety of vision disabilities.</li>
-                  <li>Provides a better understanding of challenges that people face.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title mb-2">WAVE</h3>
-                <ul class="list-icons list-checklist mb-0">
-                  <li>Promotes human evaluation and gives A11Y feedback.</li>
-                  <li>Easy to use plugin that runs in your browser.</li>
+                  <li>Text</li>
                 </ul>
               </div>
             </div>
@@ -667,11 +666,11 @@
         <div class="badge badge-pill gs-number gs-finish"> </div>
 
         <h2 class="full-cover-title gs-title" id="title-have-it-signed-by-a-a11y-champ">
-          <span class="badge badge-pill bg-primary gs-number">4</span> Have it signed by a A11Y Champ
+          <span class="badge badge-pill bg-primary gs-number">5</span> Have it signed by a A11Y Champ
         </h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row">
@@ -681,7 +680,7 @@
             <div class="card gs-highway-content">
               <div class="card-block">
 
-                <p class="lead gs-lead"><strong>Four quality trainings to get you started with accessibility.</strong></p>
+                <p class="lead"><strong>Four quality trainings to get you started with accessibility.</strong></p>
 
                 <ul class="list-unstyled">
 
@@ -703,78 +702,6 @@
                     </div>
                   </li>
 
-                  <li class="media gs-media" role="group">
-                    <span class="badge badge-pill bg-primary gs-highway-bullets"> </span>
-                    <div class="d-flex col-sm-4 pl-0 hidden-xs-down">
-                      <span><img class="img-fluid" src="../../images/gs-future-learn.png" alt="Screenshot of the Future Learn course"></span></div>
-                    <div class="media-body">
-                      <h3 class="heading-s mt-0"><a href="https://www.futurelearn.com/courses/digital-accessibility">Future Learn - Digital Accessibility</a></h3>
-                      <p class="mb-3">Enabling Participation in the Information Society</p>
-                      <ul class="list-inline">
-                        <li class="list-inline-item">
-                          <div class="badge bg-indigo">Developer</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-fuchsia">UX</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-lime text-default">Content</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-black54">CJE</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-
-                  <li class="media gs-media" role="group">
-                    <span class="badge badge-pill bg-primary gs-highway-bullets"> </span>
-                    <div class="d-flex col-sm-4 pl-0 hidden-xs-down">
-                      <span><img class="img-fluid" src="../../images/gs-georgia-tech.png" alt="Screenshot of the Georgia Tech course"></span></div>
-                    <div class="media-body">
-                      <h3 class="heading-s mt-0"><a href="https://www.edx.org/course/information-communication-technology-ict-gtx-ict100x">Georgia Tech - Foundations of ICT accessibility</a></h3>
-                      <p class="mb-3">By Christopher M. Lee of AMAC, among others.</p>
-                      <ul class="list-inline">
-                        <li class="list-inline-item">
-                          <div class="badge bg-indigo">Developer</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-fuchsia">UX</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-lime text-default">Content</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-black54">CJE</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-
-                  <li class="media mb-4" role="group">
-                    <span class="badge badge-pill bg-primary gs-highway-bullets"> </span>
-                    <div class="d-flex col-sm-4 pl-0 hidden-xs-down">
-                      <span><img class="img-fluid" src="../../images/gs-open-university.png" alt="Screenshot of the Open University course"></span></div>
-                    <div class="media-body">
-                      <h3 class="heading-s mt-0"><a href="http://www.open.edu/openlearn/education/professional-development-education/accessibility-elearning/content-section-0">The Open University - Accessibility of eLearning</a></h3>
-                      <p class="mb-3">Introduction to the challenges for disabled students.</p>
-                      <ul class="list-inline">
-                        <li class="list-inline-item">
-                          <div class="badge bg-indigo">Developer</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-fuchsia">UX</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-lime text-default">Content</div>
-                        </li>
-                        <li class="list-inline-item">
-                          <div class="badge bg-black54">CJE</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-
                 </ul>
 
               </div>
@@ -786,40 +713,9 @@
 
             <div class="card">
               <div class="card-block">
-                <h3 class="card-title mb-2">A11Y Fundamentals</h3>
+                <h3 class="card-title mb-2">Text</h3>
                 <ul class="list-icons list-checklist mb-0">
-                  <li>Include people with all kind of disabilities.</li>
-                  <li>Follow the legislation and guidelines to improve A11Y.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title mb-2">HTML WAI ARIA</h3>
-                <ul class="list-icons list-checklist mb-0">
-                  <li>Name, State, Role and Value.</li>
-                  <li>Deliver the appropriate semantic information.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title mb-2">Universal Design</h3>
-                <ul class="list-icons list-checklist">
-                  <li>Designing all products to be accessible by everyone.</li>
-                  <li>Allow flexibility, be simple, intuitive and minimize errors.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title mb-2">Mobile Web A11Y</h3>
-                <ul class="list-icons list-checklist mb-0">
-                  <li>Responsive design resembles low vision design.</li>
-                  <li>Touch targets must be large enough to touch accurately.</li>
+                  <li>Text</li>
                 </ul>
               </div>
             </div>
@@ -862,19 +758,19 @@
               </h3>
               <ul class="list-icons list-linklist">
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#user-experience">User Experience</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#user-experience" class="link-ts"><span>User Experience</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#developers">Developers</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#developers" class="link-ts"><span>Developers</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#editors">Editors</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#editors" class="link-ts"><span>Editors</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#customer-journey-expert" class="link-ts"><span>Customer Journey Expert</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#accessibility-champion">Accessibility Champion</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#accessibility-champion" class="link-ts"><span>Accessibility Champion</span></a>
                 </li>
               </ul>
             </div>

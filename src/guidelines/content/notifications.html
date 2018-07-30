@@ -3,12 +3,22 @@
 
 <head>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117757403-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117757403-1');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notifications - Content - A11Y Guidelines</title>
+  <title>Notifications - Content - Accessibility Guidelines</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
   <link rel="stylesheet" href="../../styles/styles-responsive.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
@@ -89,7 +99,7 @@
 
   </header>
 
-  <main role="main" id="main-content">
+  <main role="main" id="main-content" tabindex="-1">
 
     <div class="brandbar brandbar-a">
       <div class="brandbar-image brandbar-image-satisfied"></div>
@@ -102,12 +112,12 @@
 
         <h2 class="full-cover-title sr-only" id="title-toc">Table of Contents</h2>
         <ul class="list-icons list-linklist toc-columns" role="directory">
-          <li><a href="#inclusive-notifications">Inclusive Notifications</a></li>
-          <li><a href="#standard-os-notifications">Standard Operating System Notifications</a></li>
-          <li><a href="#error-messages-and-correction">Error message and correction</a></li>
-          <li><a href="#feedback-and-assistance">Feedback and assistance</a></li>
+          <li><a href="#inclusive-notifications" class="link-ts"><span>Inclusive Notifications</span></a></li>
+          <li><a href="#standard-os-notifications" class="link-ts"><span>Standard Operating System Notifications</span></a></li>
+          <li><a href="#error-messages-and-correction" class="link-ts"><span>Error message and correction</span></a></li>
+          <li><a href="#feedback-and-assistance" class="link-ts"><span>Feedback and assistance</span></a></li>
         </ul>
-
+      
       </div>
     </nav>
 
@@ -117,7 +127,7 @@
         <h2 class="full-cover-title" id="title-inclusive-notifications">Inclusive Notifications <span class="badge badge-success">Must</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -150,19 +160,19 @@
               <div class="card-block">
 
                 <h3 class="card-title" id="title-inclusive-notifications-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-inclusive-notifications-jump">
-                  <li><a href="#ios-inclusive-notifications">iOS</a></li>
-                  <li><a href="#android-inclusive-notifications">Android</a></li>
-                  <li><a href="#html-inclusive-notifications">HTML</a></li>
-                  <li><a href="#testing-inclusive-notifications">Testing</a></li>
+                  <li><a href="#ios-inclusive-notifications" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-inclusive-notifications" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-inclusive-notifications" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-inclusive-notifications" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#instructions-and-other-helpful-info">Instructions & Other Helpful Info</a></li>
-                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#form-validation">Form Validation</a></li>
+                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#instructions-and-other-helpful-info" class="link-ts"><span>Instructions & Other Helpful Info</span></a></li>
+                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#form-validation" class="link-ts"><span>Form Validation</span></a></li>
                 </ul>
 
               </div>
@@ -449,7 +459,7 @@ Function checkLength(obj) {
         <h2 class="full-cover-title" id="title-standard-os-notifications">Standard Operating System Notifications <span class="badge badge-info">Should</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -481,19 +491,19 @@ Function checkLength(obj) {
               <div class="card-block">
 
                 <h3 class="card-title" id="title-standard-os-notifications-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-standard-os-notifications-jump">
-                  <li><a href="#ios-standard-os-notifications">iOS</a></li>
-                  <li><a href="#android-standard-os-notifications">Android</a></li>
-                  <li><a href="#html-standard-os-notifications">HTML</a></li>
-                  <li><a href="#testing-standard-os-notifications">Testing</a></li>
+                  <li><a href="#ios-standard-os-notifications" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-standard-os-notifications" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-standard-os-notifications" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-standard-os-notifications" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#instructions-and-other-helpful-info">Instructions & Other Helpful Info</a></li>
-                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#dynamic-forms-and-custom-widgets">Dynamic Forms & Custom Widgets</a></li>
+                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#instructions-and-other-helpful-info" class="link-ts"><span>Instructions & Other Helpful Info</span></a></li>
+                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#dynamic-forms-and-custom-widgets" class="link-ts"><span>Dynamic Forms & Custom Widgets</span></a></li>
                 </ul>
 
               </div>
@@ -689,7 +699,7 @@ button.setOnClickListener(new OnClickListener() {
         <h2 class="full-cover-title" id="title-error-messages-and-correction">Error messages and correction <span class="badge badge-success">Must</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -722,20 +732,20 @@ button.setOnClickListener(new OnClickListener() {
               <div class="card-block">
 
                 <h3 class="card-title" id="title-error-messages-and-correction-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-error-messages-and-correction-jump">
-                  <li><a href="#ios-error-messages-and-correction">iOS</a></li>
-                  <li><a href="#android-error-messages-and-correction">Android</a></li>
-                  <li><a href="#html-error-messages-and-correction">HTML</a></li>
-                  <li><a href="#testing-error-messages-and-correction">Testing</a></li>
+                  <li><a href="#ios-error-messages-and-correction" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-error-messages-and-correction" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-error-messages-and-correction" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-error-messages-and-correction" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#instructions-and-other-helpful-info">Instructions & Other Helpful Info</a></li>
-                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#dynamic-forms-and-custom-widgets">Dynamic Forms & Custom Widgets</a></li>
-                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#form-validation">Form Validation</a></li>
+                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#instructions-and-other-helpful-info" class="link-ts"><span>Instructions & Other Helpful Info</span></a></li>
+                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#dynamic-forms-and-custom-widgets" class="link-ts"><span>Dynamic Forms & Custom Widgets</span></a></li>
+                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#form-validation" class="link-ts"><span>Form Validation</span></a></li>
                 </ul>
 
               </div>
@@ -926,7 +936,7 @@ Fix the items marked below in red
         <h2 class="full-cover-title" id="title-feedback-and-assistance">Feedback and assistance <span class="badge badge-info">Should</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -954,19 +964,19 @@ Fix the items marked below in red
               <div class="card-block">
 
                 <h3 class="card-title" id="title-feedback-and-assistance-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-feedback-and-assistance-jump">
-                  <li><a href="#ios-feedback-and-assistance">iOS</a></li>
-                  <li><a href="#android-feedback-and-assistance">Android</a></li>
-                  <li><a href="#html-feedback-and-assistance">HTML</a></li>
-                  <li><a href="#testing-feedback-and-assistance">Testing</a></li>
+                  <li><a href="#ios-feedback-and-assistance" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-feedback-and-assistance" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-feedback-and-assistance" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-feedback-and-assistance" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#instructions-and-other-helpful-info">Instructions & Other Helpful Info</a></li>
-                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#dynamic-forms-and-custom-widgets">Dynamic Forms & Custom Widgets</a></li>
+                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#instructions-and-other-helpful-info" class="link-ts"><span>Instructions & Other Helpful Info</span></a></li>
+                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#dynamic-forms-and-custom-widgets" class="link-ts"><span>Dynamic Forms & Custom Widgets</span></a></li>
                 </ul>
 
               </div>
@@ -1110,19 +1120,19 @@ Snackbar.make(parentView, "Hello, I'm a hint!", Snackbar.LENGTH_SHORT).show();</
               </h3>
               <ul class="list-icons list-linklist">
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#user-experience">User Experience</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#user-experience" class="link-ts"><span>User Experience</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#developers">Developers</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#developers" class="link-ts"><span>Developers</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#editors">Editors</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#editors" class="link-ts"><span>Editors</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#customer-journey-expert" class="link-ts"><span>Customer Journey Expert</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#accessibility-champion">Accessibility Champion</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#accessibility-champion" class="link-ts"><span>Accessibility Champion</span></a>
                 </li>
               </ul>
             </div>
@@ -1150,7 +1160,7 @@ Snackbar.make(parentView, "Hello, I'm a hint!", Snackbar.LENGTH_SHORT).show();</
       </div>
     </div>
   </aside>
-
+  
   <footer class="full-cover site-footer" role="contentinfo">
     <div class="container">
       <div class="d-inline-block">

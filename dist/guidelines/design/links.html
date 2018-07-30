@@ -15,7 +15,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Links - Design - A11Y Guidelines</title>
+  <title>Links - Design - Accessibility Guidelines</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
   <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
@@ -100,7 +100,7 @@
 
   </header>
 
-  <main role="main" id="main-content">
+  <main role="main" id="main-content" tabindex="-1">
 
     <div class="brandbar brandbar-a">
       <div class="brandbar-image brandbar-image-satisfied"></div>
@@ -113,9 +113,9 @@
 
         <h2 class="full-cover-title sr-only" id="title-toc">Table of Contents</h2>
         <ul class="list-icons list-linklist toc-columns" role="directory">
-          <li><a href="#descriptive-links">Descriptive links</a></li>
-          <li><a href="#links-to-alternative-formats">Links to alternative formats</a></li>
-          <li><a href="#combining-repeated-links">Combining repeated links</a></li>
+          <li><a href="#descriptive-links" class="link-ts"><span>Descriptive links</span></a></li>
+          <li><a href="#links-to-alternative-formats" class="link-ts"><span>Links to alternative formats</span></a></li>
+          <li><a href="#combining-repeated-links" class="link-ts"><span>Combining repeated links</span></a></li>
         </ul>
       
       </div>
@@ -127,7 +127,7 @@
         <h2 class="full-cover-title" id="title-descriptive-links">Descriptive links <span class="badge badge-success">Must</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -158,16 +158,16 @@
                 
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-descriptive-links-jump">
-                  <li><a href="#ios-descriptive-links">iOS</a></li>
-                  <li><a href="#android-descriptive-links">Android</a></li>
-                  <li><a href="#html-descriptive-links">HTML</a></li>
-                  <li><a href="#testing-descriptive-links">Testing</a></li>
+                  <li><a href="#ios-descriptive-links" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-descriptive-links" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-descriptive-links" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-descriptive-links" class="link-ts"><span>Testing</span></a></li>
                 </ul>
                 
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/code/semantic-structure-and-navigation.html#links">Links - Web</a></li>
-                  <li><a href="../../training/content/editorial.html#links">Links - Content</a></li>
+                  <li><a href="../../training/code/semantic-structure-and-navigation.html#links" class="link-ts"><span>Links - Web</span></a></li>
+                  <li><a href="../../training/content/editorial.html#links" class="link-ts"><span>Links - Content</span></a></li>
                 </ul>
 
               </div>
@@ -358,7 +358,7 @@
         <h2 class="full-cover-title" id="title-links-to-alternative-formats">Links to alternative formats <span class="badge badge-success">Must</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -388,16 +388,16 @@
                 
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-links-to-alternative-formats-jump">
-                  <li><a href="#ios-links-to-alternative-formats">iOS</a></li>
-                  <li><a href="#android-links-to-alternative-formats">Android</a></li>
-                  <li><a href="#html-links-to-alternative-formats">HTML</a></li>
-                  <li><a href="#testing-links-to-alternative-formats">Testing</a></li>
+                  <li><a href="#ios-links-to-alternative-formats" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-links-to-alternative-formats" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-links-to-alternative-formats" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-links-to-alternative-formats" class="link-ts"><span>Testing</span></a></li>
                 </ul>
                 
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/code/semantic-structure-and-navigation.html#links">Links - Web</a></li>
-                  <li><a href="../../training/content/editorial.html#links">Links - Content</a></li>
+                  <li><a href="../../training/code/semantic-structure-and-navigation.html#links" class="link-ts"><span>Links - Web</span></a></li>
+                  <li><a href="../../training/content/editorial.html#links" class="link-ts"><span>Links - Content</span></a></li>
                 </ul>
 
               </div>
@@ -590,7 +590,7 @@ builder.setMessage("Are you sure?").setPositiveButton("Yes", dialogClickListener
         <h2 class="full-cover-title" id="title-combining-repeated-links">Combining repeated links <span class="badge badge-success">Must</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -621,16 +621,16 @@ builder.setMessage("Are you sure?").setPositiveButton("Yes", dialogClickListener
                 
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-combining-repeated-links-jump">
-                  <li><a href="#ios-combining-repeated-links">iOS</a></li>
-                  <li><a href="#android-combining-repeated-links">Android</a></li>
-                  <li><a href="#html-combining-repeated-links">HTML</a></li>
-                  <li><a href="#testing-combining-repeated-links">Testing</a></li>
+                  <li><a href="#ios-combining-repeated-links" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-combining-repeated-links" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-combining-repeated-links" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-combining-repeated-links" class="link-ts"><span>Testing</span></a></li>
                 </ul>
                 
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/code/semantic-structure-and-navigation.html#links">Links - Web</a></li>
-                  <li><a href="../../training/content/editorial.html#links">Links - Content</a></li>
+                  <li><a href="../../training/code/semantic-structure-and-navigation.html#links" class="link-ts"><span>Links - Web</span></a></li>
+                  <li><a href="../../training/content/editorial.html#links" class="link-ts"><span>Links - Content</span></a></li>
                 </ul>
 
               </div>
@@ -837,19 +837,19 @@ textLabel.accessibilityLabel = @"Add";</code></pre>
               </h3>
               <ul class="list-icons list-linklist">
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#user-experience">User Experience</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#user-experience" class="link-ts"><span>User Experience</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#developers">Developers</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#developers" class="link-ts"><span>Developers</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#editors">Editors</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#editors" class="link-ts"><span>Editors</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#customer-journey-expert" class="link-ts"><span>Customer Journey Expert</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#accessibility-champion">Accessibility Champion</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#accessibility-champion" class="link-ts"><span>Accessibility Champion</span></a>
                 </li>
               </ul>
             </div>

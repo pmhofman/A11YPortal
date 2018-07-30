@@ -3,12 +3,22 @@
 
 <head>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117757403-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117757403-1');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Focus - Code - A11Y Guidelines</title>
+  <title>Focus - Code - Accessibility Guidelines</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
   <link rel="stylesheet" href="../../styles/styles-responsive.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
@@ -89,7 +99,7 @@
 
   </header>
 
-  <main role="main" id="main-content">
+  <main role="main" id="main-content" tabindex="-1">
 
     <div class="brandbar brandbar-a">
       <div class="brandbar-image brandbar-image-satisfied"></div>
@@ -102,14 +112,14 @@
 
         <h2 class="full-cover-title sr-only" id="title-toc">Table of Contents</h2>
         <ul class="list-icons list-linklist toc-columns" role="directory">
-          <li><a href="#focusable-elements">Focusable elements</a></li>
-          <li><a href="#keyboard-trap">Keyboard trap</a></li>
-          <li><a href="#content-order">Content order</a></li>
-          <li><a href="#focus-order">Focus order</a></li>
-          <li><a href="#user-interactions">User interactions</a></li>
-          <li><a href="#alternative-input-methods">Alternative input methods</a></li>
+          <li><a href="#focusable-elements" class="link-ts"><span>Focusable elements</span></a></li>
+          <li><a href="#keyboard-trap" class="link-ts"><span>Keyboard trap</span></a></li>
+          <li><a href="#content-order" class="link-ts"><span>Content order</span></a></li>
+          <li><a href="#focus-order" class="link-ts"><span>Focus order</span></a></li>
+          <li><a href="#user-interactions" class="link-ts"><span>User interactions</span></a></li>
+          <li><a href="#alternative-input-methods" class="link-ts"><span>Alternative input methods</span></a></li>
         </ul>
-
+      
       </div>
     </nav>
 
@@ -119,7 +129,7 @@
         <h2 class="full-cover-title" id="title-focusable-elements">Focusable elements <span class="badge badge-success">Must</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -148,19 +158,19 @@
               <div class="card-block">
 
                 <h3 class="card-title" id="title-focusable-elements-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-focusable-elements-jump">
-                  <li><a href="#ios-focusable-elements">iOS</a></li>
-                  <li><a href="#android-focusable-elements">Android</a></li>
-                  <li><a href="#html-focusable-elements">HTML</a></li>
-                  <li><a href="#testing-focusable-elements">Testing</a></li>
+                  <li><a href="#ios-focusable-elements" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-focusable-elements" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-focusable-elements" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-focusable-elements" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/design/visual-design-and-colors.html#visual-layout">Visual Layout</a></li>
-                  <li><a href="../../training/design/visual-design-and-colors.html#reading-order-focus-order">Reading Order, Focus Order</a></li>
+                  <li><a href="../../training/design/visual-design-and-colors.html#visual-layout" class="link-ts"><span>Visual Layout</span></a></li>
+                  <li><a href="../../training/design/visual-design-and-colors.html#reading-order-focus-order" class="link-ts"><span>Reading Order, Focus Order</span></a></li>
                 </ul>
 
               </div>
@@ -365,7 +375,7 @@
         <h2 class="full-cover-title" id="title-keyboard-trap">Keyboard trap <span class="badge badge-danger">Must not</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -396,18 +406,18 @@
               <div class="card-block">
 
                 <h3 class="card-title" id="title-keyboard-trap-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-keyboard-trap-jump">
-                  <li><a href="#ios-keyboard-trap">iOS</a></li>
-                  <li><a href="#android-keyboard-trap">Android</a></li>
-                  <li><a href="#html-keyboard-trap">HTML</a></li>
-                  <li><a href="#testing-keyboard-trap">Testing</a></li>
+                  <li><a href="#ios-keyboard-trap" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-keyboard-trap" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-keyboard-trap" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-keyboard-trap" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/various/input-methods.html#keyboard-input">Keyboard Input</a></li>
+                  <li><a href="../../training/various/input-methods.html#keyboard-input" class="link-ts"><span>Keyboard Input</span></a></li>
                 </ul>
 
               </div>
@@ -580,7 +590,7 @@ function check() {
         <h2 class="full-cover-title" id="title-content-order">Content order <span class="badge badge-success">Must</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -607,18 +617,18 @@ function check() {
               <div class="card-block">
 
                 <h3 class="card-title" id="title-content-order-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-content-order-jump">
-                  <li><a href="#ios-content-order">iOS</a></li>
-                  <li><a href="#android-content-order">Android</a></li>
-                  <li><a href="#html-content-order">HTML</a></li>
-                  <li><a href="#testing-content-order">Testing</a></li>
+                  <li><a href="#ios-content-order" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-content-order" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-content-order" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-content-order" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/design/visual-design-and-colors.html#reading-order-focus-order">Reading Order, Focus Order</a></li>
+                  <li><a href="../../training/design/visual-design-and-colors.html#reading-order-focus-order" class="link-ts"><span>Reading Order, Focus Order</span></a></li>
                 </ul>
 
               </div>
@@ -661,7 +671,7 @@ function check() {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">A custom view that lacks an implementation of {code}accessibilityElements{/code}.</code></pre>
+                <pre><code class="objectivec">A custom view that lacks an implementation of <code>accessibilityElements</code>.</code></pre>
               </div>
             </div>
 
@@ -791,7 +801,7 @@ android:nextFocusRight="@+id/edit3" /></code></pre>
         <h2 class="full-cover-title" id="title-focus-order">Focus order <span class="badge badge-success">Must</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -822,18 +832,18 @@ android:nextFocusRight="@+id/edit3" /></code></pre>
               <div class="card-block">
 
                 <h3 class="card-title" id="title-focus-order-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-focus-order-jump">
-                  <li><a href="#ios-focus-order">iOS</a></li>
-                  <li><a href="#android-focus-order">Android</a></li>
-                  <li><a href="#html-focus-order">HTML</a></li>
-                  <li><a href="#testing-focus-order">Testing</a></li>
+                  <li><a href="#ios-focus-order" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-focus-order" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-focus-order" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-focus-order" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/design/visual-design-and-colors.html#reading-order-focus-order">Reading Order, Focus Order</a></li>
+                  <li><a href="../../training/design/visual-design-and-colors.html#reading-order-focus-order" class="link-ts"><span>Reading Order, Focus Order</span></a></li>
                 </ul>
 
               </div>
@@ -1001,7 +1011,7 @@ android:nextFocusRight="@+id/edit3" /></code></pre>
         <h2 class="full-cover-title" id="title-user-interactions">User interactions <span class="badge badge-success">Must</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -1034,21 +1044,21 @@ android:nextFocusRight="@+id/edit3" /></code></pre>
               <div class="card-block">
 
                 <h3 class="card-title" id="title-user-interactions-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-user-interactions-jump">
-                  <li><a href="#ios-user-interactions">iOS</a></li>
-                  <li><a href="#android-user-interactions">Android</a></li>
-                  <li><a href="#html-user-interactions">HTML</a></li>
-                  <li><a href="#testing-user-interactions">Testing</a></li>
+                  <li><a href="#ios-user-interactions" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-user-interactions" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-user-interactions" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-user-interactions" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/various/input-methods.html#mouse-input">Mouse Input</a></li>
-                  <li><a href="../../training/various/input-methods.html#keyboard-input">Keyboard Input</a></li>
-                  <li><a href="../../training/various/input-methods.html#touch-input">Touch Input</a></li>
-                  <li><a href="../../training/various/input-methods.html#voice-input">Voice Input</a></li>
+                  <li><a href="../../training/various/input-methods.html#mouse-input" class="link-ts"><span>Mouse Input</span></a></li>
+                  <li><a href="../../training/various/input-methods.html#keyboard-input" class="link-ts"><span>Keyboard Input</span></a></li>
+                  <li><a href="../../training/various/input-methods.html#touch-input" class="link-ts"><span>Touch Input</span></a></li>
+                  <li><a href="../../training/various/input-methods.html#voice-input" class="link-ts"><span>Voice Input</span></a></li>
                 </ul>
 
               </div>
@@ -1228,7 +1238,7 @@ public boolean onTouchEvent(MotionEvent event) {
         <h2 class="full-cover-title" id="title-alternative-input-methods">Alternative input methods <span class="badge badge-success">Must not</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -1257,26 +1267,26 @@ public boolean onTouchEvent(MotionEvent event) {
               <div class="card-block">
 
                 <h3 class="card-title" id="title-alternative-input-methods-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-alternative-input-methods-jump">
-                  <li><a href="#ios-alternative-input-methods">iOS</a></li>
-                  <li><a href="#android-alternative-input-methods">Android</a></li>
-                  <li><a href="#html-alternative-input-methods">HTML</a></li>
-                  <li><a href="#testing-alternative-input-methods">Testing</a></li>
+                  <li><a href="#ios-alternative-input-methods" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-alternative-input-methods" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-alternative-input-methods" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-alternative-input-methods" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Basics</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../basics/essentials/principles.html#platform-accessibility">Platform accessibility</a></li>
+                  <li><a href="../../basics/essentials/principles.html#platform-accessibility" class="link-ts"><span>Platform accessibility</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/various/input-methods.html#mouse-input">Mouse Input</a></li>
-                  <li><a href="../../training/various/input-methods.html#keyboard-input">Keyboard Input</a></li>
-                  <li><a href="../../training/various/input-methods.html#touch-input">Touch Input</a></li>
-                  <li><a href="../../training/various/input-methods.html#voice-input">Voice Input</a></li>
+                  <li><a href="../../training/various/input-methods.html#mouse-input" class="link-ts"><span>Mouse Input</span></a></li>
+                  <li><a href="../../training/various/input-methods.html#keyboard-input" class="link-ts"><span>Keyboard Input</span></a></li>
+                  <li><a href="../../training/various/input-methods.html#touch-input" class="link-ts"><span>Touch Input</span></a></li>
+                  <li><a href="../../training/various/input-methods.html#voice-input" class="link-ts"><span>Voice Input</span></a></li>
                 </ul>
 
               </div>
@@ -1476,19 +1486,19 @@ public boolean onTouchEvent(MotionEvent event) {
               </h3>
               <ul class="list-icons list-linklist">
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#user-experience">User Experience</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#user-experience" class="link-ts"><span>User Experience</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#developers">Developers</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#developers" class="link-ts"><span>Developers</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#editors">Editors</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#editors" class="link-ts"><span>Editors</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#customer-journey-expert" class="link-ts"><span>Customer Journey Expert</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#accessibility-champion">Accessibility Champion</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#accessibility-champion" class="link-ts"><span>Accessibility Champion</span></a>
                 </li>
               </ul>
             </div>
@@ -1516,7 +1526,7 @@ public boolean onTouchEvent(MotionEvent event) {
       </div>
     </div>
   </aside>
-
+  
   <footer class="full-cover site-footer" role="contentinfo">
     <div class="container">
       <div class="d-inline-block">

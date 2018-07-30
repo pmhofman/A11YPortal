@@ -3,13 +3,22 @@
 
 <head>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117757403-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'UA-117757403-1');
+  </script>
+ 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Structure - Design - A11Y Guidelines</title>
+  <title>Structure - Design - Accessibility Guidelines</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
   <link rel="stylesheet" href="../../styles/styles-responsive.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
@@ -91,7 +100,7 @@
 
   </header>
 
-  <main role="main" id="main-content">
+  <main role="main" id="main-content" tabindex="-1">
 
     <div class="brandbar brandbar-a">
       <div class="brandbar-image brandbar-image-satisfied"></div>
@@ -104,10 +113,10 @@
 
         <h2 class="full-cover-title sr-only" id="title-toc">Table of Contents</h2>
         <ul class="list-icons list-linklist toc-columns" role="directory">
-          <li><a href="#unique-page-screen-titles">Unique page/screen titles</a></li>
-          <li><a href="#headings">Headings</a></li>
-          <li><a href="#containers-and-landmarks">Containers and landmarks</a></li>
-          <li><a href="#grouped-elements">Grouped elements</a></li>
+          <li><a href="#unique-page-screen-titles" class="link-ts"><span>Unique page/screen titles</span></a></li>
+          <li><a href="#headings" class="link-ts"><span>Headings</span></a></li>
+          <li><a href="#containers-and-landmarks" class="link-ts"><span>Containers and landmarks</span></a></li>
+          <li><a href="#grouped-elements" class="link-ts"><span>Grouped elements</span></a></li>
         </ul>
 
       </div>
@@ -119,7 +128,7 @@
         <h2 class="full-cover-title" id="title-unique-page-screen-titles">Unique page/screen titles <span class="badge badge-success">Must</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -148,19 +157,19 @@
               <div class="card-block">
 
                 <h3 class="card-title" id="title-unique-page-screen-titles-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-unique-page-screen-titles-jump">
-                  <li><a href="#ios-unique-page-screen-titles">iOS</a></li>
-                  <li><a href="#android-unique-page-screen-titles">Android</a></li>
-                  <li><a href="#html-unique-page-screen-titles">HTML</a></li>
-                  <li><a href="#testing-unique-page-screen-titles">Testing</a></li>
+                  <li><a href="#ios-unique-page-screen-titles" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-unique-page-screen-titles" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-unique-page-screen-titles" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-unique-page-screen-titles" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/code/semantic-structure-and-navigation.html#page-title">Page Title</a></li>
-                  <li><a href="../../training/content/editorial.html#document-title">Document Title</a></li>
+                  <li><a href="../../training/code/semantic-structure-and-navigation.html#page-title" class="link-ts"><span>Page Title</span></a></li>
+                  <li><a href="../../training/content/editorial.html#document-title" class="link-ts"><span>Document Title</span></a></li>
                 </ul>
 
               </div>
@@ -293,7 +302,7 @@ setTitle("COMPANY NAME");</code></pre>
                   <li>Examine the title of each page/screen on the site/app.</li>
                   <li>Verify that a title exists:
                     <ul>
-                      <li>For HTML a unique descriptive {code}title{/code} element must be present be announced by a screen reader;</li>
+                      <li>For HTML a unique descriptive <code>title</code> element must be present be announced by a screen reader;</li>
                     </ul>
                     <ul>
                       <li>For Android and iOS a title must appear at the top of the screen and be announced by a screen reader.</li>
@@ -314,7 +323,7 @@ setTitle("COMPANY NAME");</code></pre>
 
                 <p>The following checks are true:</p>
                 <ul class="list-icons list-checklist">
-                  <li>For HTML a unique descriptive {code}title{/code} element is present and announced by a screen reader;</li>
+                  <li>For HTML a unique descriptive <code>title</code> element is present and announced by a screen reader;</li>
                   <li>For Android and iOS a title appears at the top of the screen and is announced by a screen reader.</li>
                 </ul>
 
@@ -334,7 +343,7 @@ setTitle("COMPANY NAME");</code></pre>
         <h2 class="full-cover-title" id="title-headings">Headings <span class="badge badge-success">Must</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -361,19 +370,20 @@ setTitle("COMPANY NAME");</code></pre>
               <div class="card-block">
 
                 <h3 class="card-title" id="title-headings-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-headings-jump">
-                  <li><a href="#ios-headings">iOS</a></li>
-                  <li><a href="#android-headings">Android</a></li>
-                  <li><a href="#html-headings">HTML</a></li>
-                  <li><a href="#testing-headings">Testing</a></li>
+                  <li><a href="#ios-headings" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-headings" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-headings" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-headings" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/code/semantic-structure-and-navigation.html#headings">Headings - Web</a></li>
-                  <li><a href="../../training/content/editorial.html#headings">Headings - Content</a></li>
+                  <li><a href="../../training/code/semantic-structure-and-navigation.html#headings" class="link-ts"><span>Headings - Web</span></a></li>
+                  <li><a href="../../training/content/editorial.html#headings" class="link-ts"><span>Headings - Content</span></a></li>
+                  <li><a href="../../training/code/semantic-structure-and-navigation.html#navigation-within-pages" class="link-ts"><span>Navigation Within Pages</span></a></li>
                 </ul>
 
               </div>
@@ -539,7 +549,7 @@ setTitle("COMPANY NAME");</code></pre>
         <h2 class="full-cover-title" id="title-containers-and-landmarks">Containers and landmarks <span class="badge badge-info">Should</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -567,18 +577,19 @@ setTitle("COMPANY NAME");</code></pre>
               <div class="card-block">
 
                 <h3 class="card-title" id="title-containers-and-landmarks-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-containers-and-landmarks-jump">
-                  <li><a href="#ios-containers-and-landmarks">iOS</a></li>
-                  <li><a href="#android-containers-and-landmarks">Android</a></li>
-                  <li><a href="#html-containers-and-landmarks">HTML</a></li>
-                  <li><a href="#testing-containers-and-landmarks">Testing</a></li>
+                  <li><a href="#ios-containers-and-landmarks" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-containers-and-landmarks" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-containers-and-landmarks" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-containers-and-landmarks" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/code/semantic-structure-and-navigation.html#landmarks">Landmarks</a></li>
+                  <li><a href="../../training/code/semantic-structure-and-navigation.html#landmarks" class="link-ts"><span>Landmarks</span></a></li>
+                  <li><a href="../../training/code/semantic-structure-and-navigation.html#navigation-within-pages" class="link-ts"><span>Navigation Within Pages</span></a></li>
                 </ul>
 
               </div>
@@ -763,7 +774,7 @@ setTitle("COMPANY NAME");</code></pre>
         <h2 class="full-cover-title" id="title-grouped-elements">Grouped elements <span class="badge badge-success">Must</span></h2>
 
         <div class="text-right to-top">
-          <a href="#totop">To Top</a>
+          <a href="#totop" class="link-ts"><span>To Top</span></a>
         </div>
 
         <div class="row mb-4">
@@ -790,18 +801,18 @@ setTitle("COMPANY NAME");</code></pre>
               <div class="card-block">
 
                 <h3 class="card-title" id="title-grouped-elements-jump">Jump to:</h3>
-
+                
                 <h4 class="heading-s">This section</h4>
                 <ul class="list-icons list-linklist toc-columns mb-2" role="directory" aria-labelledby="title-grouped-elements-jump">
-                  <li><a href="#ios-grouped-elements">iOS</a></li>
-                  <li><a href="#android-grouped-elements">Android</a></li>
-                  <li><a href="#html-grouped-elements">HTML</a></li>
-                  <li><a href="#testing-grouped-elements">Testing</a></li>
+                  <li><a href="#ios-grouped-elements" class="link-ts"><span>iOS</span></a></li>
+                  <li><a href="#android-grouped-elements" class="link-ts"><span>Android</span></a></li>
+                  <li><a href="#html-grouped-elements" class="link-ts"><span>HTML</span></a></li>
+                  <li><a href="#testing-grouped-elements" class="link-ts"><span>Testing</span></a></li>
                 </ul>
-
+                
                 <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#group-labels">Group Labels</a></li>
+                  <li><a href="../../training/design/form-labels-instructions-and-validation.html#group-labels" class="link-ts"><span>Group Labels</span></a></li>
                 </ul>
 
               </div>
@@ -996,19 +1007,19 @@ setTitle("COMPANY NAME");</code></pre>
               </h3>
               <ul class="list-icons list-linklist">
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#user-experience">User Experience</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#user-experience" class="link-ts"><span>User Experience</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#developers">Developers</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#developers" class="link-ts"><span>Developers</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#editors">Editors</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#editors" class="link-ts"><span>Editors</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#customer-journey-expert" class="link-ts"><span>Customer Journey Expert</span></a>
                 </li>
                 <li>
-                  <a href="../../basics/fundamentals/responsibilities.html#accessibility-champion">Accessibility Champion</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#accessibility-champion" class="link-ts"><span>Accessibility Champion</span></a>
                 </li>
               </ul>
             </div>
@@ -1036,7 +1047,7 @@ setTitle("COMPANY NAME");</code></pre>
       </div>
     </div>
   </aside>
-
+  
   <footer class="full-cover site-footer" role="contentinfo">
     <div class="container">
       <div class="d-inline-block">
