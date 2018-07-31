@@ -2,30 +2,16 @@
 <html lang="en">
 
 <head>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117757403-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-117757403-1');
-  </script>
-
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Audio and Video - Code - Accessibility Guidelines</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
+  <link rel="stylesheet" href="../../styles/style.css">
   <link rel="stylesheet" href="../../styles/styles-responsive.css">
+	<link rel="stylesheet" href="../../styles/prism.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body id="totop">
@@ -347,10 +333,12 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">AVAudioPlayer *audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+                <pre><code class="language-clike"><!--
+AVAudioPlayer *audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
 [audioPlayer prepareToPlay];
 UIButton *playButton = [UIButton buttonWithType:UIButtonTypeCustom];
-[playButton setTitle: NSLocalizedString(@"Play", @"Button title")]</code></pre>
+[playButton setTitle: NSLocalizedString(@"Play", @"Button title")]
+--></code></pre>
               </div>
             </div>
 
@@ -364,9 +352,11 @@ UIButton *playButton = [UIButton buttonWithType:UIButtonTypeCustom];
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">AVAudioPlayer *audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+                <pre><code class="language-clike"><!--
+AVAudioPlayer *audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
 [audioPlayer prepareToPlay];
-[audioPlayer play];</code></pre>
+[audioPlayer play];
+--></code></pre>
               </div>
             </div>
             <h4 class="heading-s" id="android-autoplay">Android</h4>
@@ -384,7 +374,9 @@ UIButton *playButton = [UIButton buttonWithType:UIButtonTypeCustom];
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">&lt;Button android:id="@+id/pause_button" android:src="@drawable/pause" android:contentDescription="@string/pause"/&gt;</code></pre>
+                <pre><code class="language-clike"><!--
+<Button android:id="@+id/pause_button" android:src="@drawable/pause" android:contentDescription="@string/pause"/>
+--></code></pre>
               </div>
             </div>
 
@@ -512,7 +504,8 @@ UIButton *playButton = [UIButton buttonWithType:UIButtonTypeCustom];
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><title>COMPANY NAME - Private</title>
+                <pre><code class="language-markup"><!--
+<title>COMPANY NAME - Private</title>
 <meta name="description" content="A financial guide to your freedom">
 <meta name="keywords" content="Financial, Money, Freedom">
 <link rel="alternate"
@@ -520,7 +513,8 @@ UIButton *playButton = [UIButton buttonWithType:UIButtonTypeCustom];
       hreflang="nl"
       title="COMPANY NAME - Particulier"
       href="https://www.company-name.com/particulier/" />
-</code></pre>
+
+--></code></pre>
               </div>
             </div>
 
@@ -534,9 +528,11 @@ UIButton *playButton = [UIButton buttonWithType:UIButtonTypeCustom];
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><title>COMPANY NAME - Private</title>
+                <pre><code class="language-markup"><!--
+<title>COMPANY NAME - Private</title>
 <meta name="description" content="A financial guide to your freedom">
-<meta name="keywords" content="Financial, Money, Freedom"></code></pre>
+<meta name="keywords" content="Financial, Money, Freedom">
+--></code></pre>
               </div>
             </div>
 
@@ -776,8 +772,10 @@ UIButton *playButton = [UIButton buttonWithType:UIButtonTypeCustom];
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">var button = UIButton(type: .system)
-button.accessibilityTraits |= UIAccessibilityTraitStartsMediaSession</code></pre>
+                <pre><code class="language-clike"><!--
+var button = UIButton(type: .system)
+button.accessibilityTraits |= UIAccessibilityTraitStartsMediaSession
+--></code></pre>
               </div>
             </div>
 
@@ -928,6 +926,7 @@ button.accessibilityTraits |= UIAccessibilityTraitStartsMediaSession</code></pre
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
   <script src="../../scripts/libs/bootstrap/bootstrap.js"></script>
   <script src="../../scripts/script.js"></script>
+	<script src="../../scripts/prism.js"></script>
 
 </body>
 

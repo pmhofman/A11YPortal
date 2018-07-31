@@ -2,30 +2,16 @@
 <html lang="en">
 
 <head>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117757403-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-117757403-1');
-  </script>
- 
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Structure - Design - Accessibility Guidelines</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
+  <link rel="stylesheet" href="../../styles/style.css">
   <link rel="stylesheet" href="../../styles/styles-responsive.css">
+	<link rel="stylesheet" href="../../styles/prism.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body id="totop">
@@ -198,7 +184,9 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">UINavigationItem *item = [[UINavigationItem alloc] initWithTitle: NSLocalizedString (@"COMPANY NAME Global", @"Title for navigation item")];</code></pre>
+                <pre><code class="language-clike"><!--
+UINavigationItem *item = [[UINavigationItem alloc] initWithTitle: NSLocalizedString (@"COMPANY NAME Global", @"Title for navigation item")];
+--></code></pre>
               </div>
             </div>
 
@@ -212,7 +200,9 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">UINavigationItem *item = [[UINavigationItem alloc] initWithTitle:@"COMPANY NAME"];</code></pre>
+                <pre><code class="language-clike"><!--
+UINavigationItem *item = [[UINavigationItem alloc] initWithTitle:@"COMPANY NAME"];
+--></code></pre>
               </div>
             </div>
 
@@ -230,9 +220,11 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java"><activity android:name=".myApp" android:label="COMPANY NAME Mobile Application"></activity>
+                <pre><code class="language-clike"><!--
+<activity android:name=".myApp" android:label="COMPANY NAME Mobile Application"></activity>
 or
-setTitle("COMPANY NAME Mobile");</code></pre>
+setTitle("COMPANY NAME Mobile");
+--></code></pre>
               </div>
             </div>
 
@@ -246,9 +238,11 @@ setTitle("COMPANY NAME Mobile");</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java"><activity android:name=".myApp" android:label="COMPANY NAME"></activity>
+                <pre><code class="language-clike"><!--
+<activity android:name=".myApp" android:label="COMPANY NAME"></activity>
 or
-setTitle("COMPANY NAME");</code></pre>
+setTitle("COMPANY NAME");
+--></code></pre>
               </div>
             </div>
 
@@ -268,7 +262,9 @@ setTitle("COMPANY NAME");</code></pre>
               <div class="collapsible-target" hidden>
                 <p>For the home page of the [COMPANY NAME] Global site:</p>
 
-                <pre><code class="html"><title>COMPANY NAME Mobile</title></code></pre>
+                <pre><code class="language-markup"><!--
+<title>COMPANY NAME Mobile</title>
+--></code></pre>
               </div>
             </div>
 
@@ -284,7 +280,9 @@ setTitle("COMPANY NAME");</code></pre>
               <div class="collapsible-target" hidden>
                 <p>For the home page of the [COMPANY NAME] Global site:</p>
 
-                <pre><code class="html"><title>COMPANY NAME</title></code></pre>
+                <pre><code class="language-markup"><!--
+<title>COMPANY NAME</title>
+--></code></pre>
               </div>
             </div>
 
@@ -413,7 +411,8 @@ setTitle("COMPANY NAME");</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+                <pre><code class="language-clike"><!--
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
   if (section == 0)
   {
@@ -428,7 +427,8 @@ setTitle("COMPANY NAME");</code></pre>
     // Unknown section - log error, return safely
     return nil;
   }
-}</code></pre>
+}
+--></code></pre>
               </div>
             </div>
 
@@ -473,10 +473,12 @@ setTitle("COMPANY NAME");</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><h1>European Stocks</h1>
+                <pre><code class="language-markup"><!--
+<h1>European Stocks</h1>
 <h2>Today's Forecast</h2>
 <h2>Tomorrow Forecast</h2>
-<h3>Tomorrow's Banking Stocks</h3></code></pre>
+<h3>Tomorrow's Banking Stocks</h3>
+--></code></pre>
               </div>
             </div>
 
@@ -490,10 +492,12 @@ setTitle("COMPANY NAME");</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><div class="heading">European Stocks</div>
+                <pre><code class="language-markup"><!--
+<div class="heading">European Stocks</div>
 <div class="subheading">Today's Forecast</div>
 <div class="subheading">Tomorrow Forecast</div>
-<div class="subheading2">Tomorrow's Banking Stocks</div></code></pre>
+<div class="subheading2">Tomorrow's Banking Stocks</div>
+--></code></pre>
               </div>
             </div>
 
@@ -630,7 +634,8 @@ setTitle("COMPANY NAME");</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><div id="header" role="banner">
+                <pre><code class="language-markup"><!--
+<div id="header" role="banner">
   <div id="logo">...</div>
   <h1>COMPANY NAME</h1>
   <div id="nav" role="navigation">
@@ -647,7 +652,8 @@ setTitle("COMPANY NAME");</code></pre>
 <div id="footer" role="contentinfo">
   <p>COMPANY NAME 2018</p>
   <ul> ... </ul>
-</div></code></pre>
+</div>
+--></code></pre>
               </div>
             </div>
 
@@ -661,7 +667,8 @@ setTitle("COMPANY NAME");</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><header>
+                <pre><code class="language-markup"><!--
+<header>
   <div id="logo">...</div>
   <h1>COMPANY NAME</h1>
   <nav>
@@ -678,7 +685,8 @@ setTitle("COMPANY NAME");</code></pre>
 <footer>
   <p>COMPANY NAME 2018</p>
   <ul> ... </ul>
-</footer></code></pre>
+</footer>
+--></code></pre>
               </div>
             </div>
 
@@ -692,7 +700,8 @@ setTitle("COMPANY NAME");</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><div id="header">
+                <pre><code class="language-markup"><!--
+<div id="header">
   <div id="logo">...</div>
   <h1>COMPANY NAME</h1>
   <div id="nav">
@@ -709,7 +718,8 @@ setTitle("COMPANY NAME");</code></pre>
 <div id="footer">
   <p>COMPANY NAME 2018</p>
   <ul> ... </ul>
-</div></code></pre>
+</div>
+--></code></pre>
               </div>
             </div>
 
@@ -841,9 +851,11 @@ setTitle("COMPANY NAME");</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">[FNLabel setText:NSLocalizedString(@"First Name", @"Label title")];
+                <pre><code class="language-clike"><!--
+[FNLabel setText:NSLocalizedString(@"First Name", @"Label title")];
 [FNLabel setIsAccessibilityElement:NO]; // We hide the label element since it is announced as part of the field
-[FNField setAccessibilityLabel:FNLabel.accessibilityLabel];</code></pre>
+[FNField setAccessibilityLabel:FNLabel.accessibilityLabel];
+--></code></pre>
               </div>
             </div>
 
@@ -857,9 +869,11 @@ setTitle("COMPANY NAME");</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">[FNLabel setText:NSLocalizedString(@"First Name", @"Label title")];
+                <pre><code class="language-clike"><!--
+[FNLabel setText:NSLocalizedString(@"First Name", @"Label title")];
 [FNLabel setIsAccessibilityElement:YES];
-[FNField setAccessibilityLabel:FNLabel.accessibilityLabel];</code></pre>
+[FNField setAccessibilityLabel:FNLabel.accessibilityLabel];
+--></code></pre>
               </div>
             </div>
 
@@ -882,7 +896,8 @@ setTitle("COMPANY NAME");</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><!-- Example 1 - tabs with ARIA roles and attributes -->
+                <pre><code class="language-markup"><!--
+// Example 1 - tabs with ARIA roles and attributes
 <ul role="tablist">
   <li role="presentation"><a href="#s1" role="tab" aria-controls="s1" aria-selected="true">Read</a></li>
   <li role="presentation"><a href="#s2" role="tab" aria-controls="s2">Watched</a></li>
@@ -890,17 +905,18 @@ setTitle("COMPANY NAME");</code></pre>
 <section id="s1" role="tabpanel">...</section>
 <section id="s2" role="tabpanel" aria-hidden="true">...</section>
 
-<!-- Example 2 - figure with caption -->
+// Example 2 - figure with caption
 <figure>
   <img src="clouds.jpg" alt="" ... />
   <img style="position:relative; left:-10px;" src="sun.jpg" alt="" ... />
   <figcaption>Partly sunny</figcaption>
 </figure>
 
-<!-- Example 3 - tree view -->
+// Example 3 - tree view
 <ul>
   <li><a href=""><img src="expanded.jpg" alt="expanded" />TV Shows<span class="offscrn"> level 0</span></a></li>
-</ul></code></pre>
+</ul>
+--></code></pre>
               </div>
             </div>
 
@@ -914,7 +930,8 @@ setTitle("COMPANY NAME");</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><!-- Example 1 - tabs -->
+                <pre><code class="language-markup"><!--
+// Example 1 - tabs
 <ul>
   <li><a href="#s1" class="selected">Read</a></li>
   <li><a href="#s2">Watched</a></li>
@@ -923,14 +940,15 @@ setTitle("COMPANY NAME");</code></pre>
 <section id="s2">...</section>
 <img src="clouds.jpg" alt="cloudy" ... />
 
-<!-- Example 2 - figure with caption -->
+// Example 2 - figure with caption
 <img style="position:relative; left:-10px;" src="sun.jpg" alt="sunny" ... />
 <p>Partly sunny</p>
 
-<!-- Example 3 - tree view -->
+// Example 3 - tree view
 <ul>
   <li><img src="expanded.jpg" alt="expanded" /><a href="...">TV Shows</a><span class="offscrn"> level 0</span></li>
-</ul></code></pre>
+</ul>
+--></code></pre>
               </div>
             </div>
 
@@ -1076,6 +1094,7 @@ setTitle("COMPANY NAME");</code></pre>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
   <script src="../../scripts/libs/bootstrap/bootstrap.js"></script>
   <script src="../../scripts/script.js"></script>
+	<script src="../../scripts/prism.js"></script>
 
 </body>
 

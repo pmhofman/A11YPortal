@@ -16,13 +16,6 @@
   //     $(this).parent().removeClass("focused");
   //   })
 
-  $("code").each(function() {
-    var text = $(this)
-      .html()
-      .replace(/</g, "&lt;");
-    var text = text.replace(/>/g, "&gt;");
-    $(this).html(text);
-  });
 
   // Annotations
 
@@ -40,9 +33,7 @@
     $(".body").toggleClass("body-annot");
   }
 
-  $(function() {
-    window.prettyPrint && prettyPrint();
-  });
+
 
   if (matchMedia) {
     const mediaQuery = window.matchMedia("(max-width: 768px)");

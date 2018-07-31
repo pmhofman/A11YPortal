@@ -2,30 +2,17 @@
 <html>
 
 <head>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117757403-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-117757403-1');
-  </script>
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   
   <title>Bad Article</title>
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
+  <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/styles-responsive.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
 
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body class="body bad" id="totop">
@@ -385,22 +372,21 @@
 
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
-<!-- Starting with a H2 element instead of a H1 -->
+              <pre><code class="language-markup"><!-- 
+
+// Starting with a H2 element instead of a H1
 <h2 class="heading-xl">Inaccessible Article Page</h2>
 
-  <!-- Not using H elements for headings -->
+  // Not using H elements for headings
   <div class="heading-m">The Baseline</div>
   <div class="heading-m">Accessibility Champions</div>
   <div class="heading-m">Expert section</div>
 
-  <!-- Only using one or wrong kind of H element for styling purposes -->
+  // Only using one or wrong kind of H element for styling purposes
   <h2 class="heading-xl">...</h2>
     <div class="heading-m">...</div>
     ...
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -452,13 +438,12 @@
 
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <h2>Accessible Article Page</h2>
 
 <h3 class="lead">Good and Bad Demonstration</h3>
-</code>
-</pre>
+--></code></pre>
 
             </div>
             <div class="modal-footer">
@@ -502,25 +487,24 @@
               </ul>
               <h4 class="heading-s">HTML Fail</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 Go to other page:
 
-<!-- Link in code and button styling -->
+// Link in code and button styling
 <a href="../good-bad/home.html" class="btn btn-primary">Read more...</a>
 
-<!-- Button in code and button styling -->
+// Button in code and button styling
 <button type="button" class="link-primary">Read more...</button>
 
 Staying on same page:
 
-<!-- Link in code and link styling -->
+// Link in code and link styling
 <a href="../good-bad/home.html" class="link-primary">Watch the video</a>
 
-<!-- Button in code and link styling -->
+// Button in code and link styling
 <button type="button" class="link-primary">Watch the video</button>
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -560,20 +544,19 @@ Staying on same page:
               
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
-<!-- HTML -->
+              <pre><code class="language-markup"><!-- 
+
+// HTML
 <p>The social model of disability...</p>
 
-<!-- CSS -->
+// CSS
 No "max-width: 580px;" property present for:
 
 p { }
 ol, ul, dl {  }
 a {   }
 input, .form-control {  }
-</code>
-</pre>
+--></code></pre>
 
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
@@ -619,11 +602,10 @@ input, .form-control {  }
               
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <p>Team A11Y ...</p>
-</code>
-</pre>
+--></code></pre>
 
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
@@ -669,13 +651,12 @@ input, .form-control {  }
               
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <h3>Why</h3>
 <h3>How</h3>
 <h3>What</h3>
-</code>
-</pre>
+--></code></pre>
 
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
@@ -721,20 +702,19 @@ input, .form-control {  }
               
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
-<!-- Styling elements -->
+              <pre><code class="language-markup"><!-- 
+
+// Styling elements
 <b>digital equality is a human right</b>
 <figcaption><i>Four people in a room...</i></figcaption>
 <div class="figcaption"><i>Four people in a room...</i></div>
 
-<!-- Only using CSS -->
+// Only using CSS
 <span style="font-weight: bold">digital equality is a human right</span>
 
 figcaption,
 .figcaption { font-style: italic;}
-</code>
-</pre>
+--></code></pre>
 
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
@@ -780,13 +760,12 @@ figcaption,
               
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <a href="../good-bad/home.html" target="_blank" rel="noopener noreferrer">
   An Alphabet of Accessibility Issues
 </a>
-</code>
-</pre>
+--></code></pre>
 
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
@@ -825,16 +804,15 @@ figcaption,
               <p>The picture of the "Empathy Lab" is considered informative, but there is no textual alternative provided and no grouping <code>figure</code> element to relate the briefly described text to the image.</p>
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <div class="figure">
   <img src="/planning.jpg" alt="">
   <div class="figcaption">
     Four people in a room at desks...
   </div>
 </div>
-</code>
-</pre>
+--></code></pre>
 
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
@@ -878,9 +856,9 @@ figcaption,
               <p>The list items "User Experience" and "Developers" etc. are formatted to visually resemble a list but this structural information is not represented in the HTML code.</p>
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
-<!-- Using divs to visually fake items -->
+              <pre><code class="language-markup"><!-- 
+
+// Using divs to visually fake items
 
 <div class="mb-2"><a href="../good-bad/home.html" class="link-linklist">Lessons pages</a></div>
 <div class="mb-2"><a href="../good-bad/home.html" class="link-linklist">Specials</a></div>
@@ -888,14 +866,13 @@ figcaption,
 <div class="mb-2"><a href="../good-bad/home.html" class="link-linklist">Quiz questions</a></div>
 <div class="mb-4"><a href="../good-bad/home.html" class="link-linklist">Deque University</a></div>
 
-<!-- Fake ordered list -->
+// Fake ordered list
 
 <div class="mb-2">1. Persona's used</div>
 <div class="mb-2">2. Standards followed</div>
 <div class="mb-2">3. User tests done</div>
 <div class="mb-4">4. WCAG 2.0 AA compliant</div>
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -933,13 +910,13 @@ figcaption,
               <p>The links uses only a small color change that is similar to the surrounding text making it hard for users to identify the link.</p>
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
-<!-- HTML -->
+              <pre><code class="language-markup"><!-- 
+
+// HTML
 
 <p>By simplifying <a href="../good-bad/home.html">A11Y guidelines</a> with <a href="../good-bad/home.html">easy checklists</a>...</p>
 
-<!-- CSS -->
+// CSS
 
 p { color: #333333; }
 
@@ -947,8 +924,7 @@ a,
 a:hover {
   color: #1570a5;
 }
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -1010,15 +986,14 @@ a:hover {
               </div>
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <a href="/article-page.html">read more...</a>
 <a href="/a11y-guidelines.html">simplifying</a>
 <a href="/easy-checklists.html">easy</a>
 <a href="/hands-on-examples.html">click here</a>
 <a href="/training-material.html">we give you</a>
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -1069,7 +1044,7 @@ a:hover {
               </button>
             </div>
             <div class="modal-body">
-              <p>Sentences or phrases IN ALL CAPITALS is not a good idea. Capitalized content is more difficult to read and may give the impression that the author is shouting. Using an exclamation point or use of <code>&lt;em&gt;</code> or <code>&lt;strong&gt;</code> is often way better.</p>              
+              <p>Sentences or phrases IN ALL CAPITALS is not a good idea. Capitalized content is more difficult to read and may give the impression that the author is shouting. Using an exclamation point or use of <code>&lt;em&gt;</code> or <code>&lt;strong&gt;</code> is often way better.</p>
               <div class="alert alert-info">
                 <p>
                   <strong>Note!</strong> Firstly, some screen readers read capitalized text letter-by-letter. And this occasionally even occurs when the HTML is in sentence-case and the CSS forces the capitalization.</p>
@@ -1077,11 +1052,10 @@ a:hover {
               </div>
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 DEFINITION OF DONE
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -1139,13 +1113,13 @@ DEFINITION OF DONE
               <p>The direction property specifies the text direction/writing direction which may change according to the language.</p>
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
-<!-- HTML -->
+              <pre><code class="language-markup"><!-- 
+
+// HTML
 
 <div class="card text-center">...</div>
 
-<!-- CSS -->
+// CSS
 
 body {
   direction: ltr;
@@ -1154,8 +1128,7 @@ body {
 
 .text-center { text-align: center; }
 
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -1215,13 +1188,13 @@ body {
               </ul>
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
-<!-- HTML -->
+              <pre><code class="language-markup"><!-- 
+
+// HTML
 
 <div class="card text-justify">...</div>
 
-<!-- CSS -->
+// CSS
 
 body {
   direction: ltr;
@@ -1229,8 +1202,7 @@ body {
 }
 
 .text-justify { text-align: justify; }
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -1268,6 +1240,7 @@ body {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
   <script src="../scripts/libs/bootstrap/bootstrap.js"></script>
   <script src="../scripts/script.js"></script>
+	<script src="../scripts/prism.js"></script>
 
 </body>
 

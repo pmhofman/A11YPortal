@@ -2,30 +2,16 @@
 <html lang="en">
 
 <head>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117757403-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-117757403-1');
-  </script>
-
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Focus - Code - Accessibility Guidelines</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
+  <link rel="stylesheet" href="../../styles/style.css">
   <link rel="stylesheet" href="../../styles/styles-responsive.css">
+	<link rel="stylesheet" href="../../styles/prism.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body id="totop">
@@ -200,9 +186,11 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">[somethingAccessible setIsAccessibilityElement:YES];
+                <pre><code class="language-clike"><!--
+[somethingAccessible setIsAccessibilityElement:YES];
 [somethingAccessible setAccessibilityLabel:NSLocalizedString(@"Description of thing", @"Accesibility label for thing")];
-[somethingDecorative setIsAccessibilityElement:NO];</code></pre>
+[somethingDecorative setIsAccessibilityElement:NO];
+--></code></pre>
               </div>
             </div>
 
@@ -216,7 +204,9 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">[somethingInteractive setIsAccessibilityElement:NO];</code></pre>
+                <pre><code class="language-clike"><!--
+[somethingInteractive setIsAccessibilityElement:NO];
+--></code></pre>
               </div>
             </div>
 
@@ -234,13 +224,15 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">//A text input that can be accessed directly by touch and is focusable using the keyboard
+                <pre><code class="language-clike"><!--
+//A text input that can be accessed directly by touch and is focusable using the keyboard
 <EditText
         android:id="@+id/editText"
         android:inputType="textPassword"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:focusable="true"></EditText></code></pre>
+        android:focusable="true"></EditText>
+--></code></pre>
               </div>
             </div>
 
@@ -254,13 +246,15 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">//A text input that cannot be focused using the keyboard
+                <pre><code class="language-clike"><!--
+//A text input that cannot be focused using the keyboard
 <EditText
         android:id="@+id/editText"
         android:inputType="textPassword"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:focusable="false"></EditText> </code></pre>
+        android:focusable="false"></EditText> 
+--></code></pre>
               </div>
             </div>
 
@@ -280,8 +274,10 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><!-- standard element that is interactive by default -->
-<a href="..."><img src="back.jpg" alt="back" /></a></code></pre>
+                <pre><code class="language-markup"><!--
+// standard element that is interactive by default
+<a href="..."><img src="back.jpg" alt="back" /></a>
+--></code></pre>
               </div>
             </div>
 
@@ -295,8 +291,10 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><!-- clickable image that is not keyboard accessible -->
-<img src="back.jpg" alt="back" onclick="myClickEvent();" /></code></pre>
+                <pre><code class="language-markup"><!--
+// clickable image that is not keyboard accessible
+<img src="back.jpg" alt="back" onclick="myClickEvent();" />
+--></code></pre>
               </div>
             </div>
 
@@ -448,10 +446,12 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">// Dismiss the keyboard on return
+                <pre><code class="language-clike"><!--
+// Dismiss the keyboard on return
   - (IBAction)returnKey:(id)sender {
   [sender resignFirstResponder];
-}</code></pre>
+}
+--></code></pre>
               </div>
             </div>
 
@@ -465,7 +465,8 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">// not dismissing the keyboard thus blocking other components
+                <pre><code class="language-clike"><!--
+// not dismissing the keyboard thus blocking other components
   (IBAction)returnKey:(id)sender{
     // Validate the field
     if (someValidCondition) {
@@ -475,7 +476,8 @@
       return;
       // the keyboard doesn't close
   }
-}</code></pre>
+}
+--></code></pre>
               </div>
             </div>
 
@@ -500,7 +502,8 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><!-- JavaScript updates field label to indicate an error but does not trap focus -->
+                <pre><code class="language-markup"><!--
+// JavaScript updates field label to indicate an error but does not trap focus
 <script type="text/javascript">
 function check() {
   if (isValid()) {
@@ -512,7 +515,8 @@ function check() {
 }
 </script>
 <label id="l1" for="name1"> First name</label>
-<input onBlur="check();" type="text" id="name1"></code></pre>
+<input onBlur="check();" type="text" id="name1">
+--></code></pre>
               </div>
             </div>
 
@@ -526,7 +530,8 @@ function check() {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><!-- JavaScript keeps returning focus to a field until a user enters data correctly -->
+                <pre><code class="language-markup"><!--
+// JavaScript keeps returning focus to a field until a user enters data correctly
 <script type="text/javascript">
 function check() {
   if (isValid()) {
@@ -535,7 +540,8 @@ function check() {
 }
 </script>
 <label for="name1"> First name</label>
-<input onBlur="check();" type="text" id="name1"></code></pre>
+<input onBlur="check();" type="text" id="name1">
+--></code></pre>
               </div>
             </div>
 
@@ -657,7 +663,9 @@ function check() {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">view.accessibilityElements = @[moduleButton, followLabel, buttonContainer];</code></pre>
+                <pre><code class="language-clike"><!--
+view.accessibilityElements = @[moduleButton, followLabel, buttonContainer];
+--></code></pre>
               </div>
             </div>
 
@@ -671,7 +679,9 @@ function check() {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">A custom view that lacks an implementation of <code>accessibilityElements</code>.</code></pre>
+                <pre><code class="language-clike"><!--
+A custom view that lacks an implementation of <code>accessibilityElements</code>.
+--></code></pre>
               </div>
             </div>
 
@@ -699,12 +709,14 @@ function check() {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java"><EditText
+                <pre><code class="language-clike"><!--
+<EditText
 android:hint="@string/text_2_desc"
 android:nextFocusDown="@+id/edit3"
 android:nextFocusUp="@+id/edit1"
 android:nextFocusLeft="@+id/edit1"
-android:nextFocusRight="@+id/edit3" /></code></pre>
+android:nextFocusRight="@+id/edit3" />
+--></code></pre>
               </div>
             </div>
 
@@ -723,14 +735,16 @@ android:nextFocusRight="@+id/edit3" /></code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><div>Banner</div>
+                <pre><code class="language-markup"><!--
+<div>Banner</div>
 <div>
   <div style="float:left;">
     <div><h1>Main story</h1></div>
     <div>Story content</div>
   </div>
   <div style="float:right;">Supplementary info</div>
-</div></code></pre>
+</div>
+--></code></pre>
               </div>
             </div>
 
@@ -744,12 +758,14 @@ android:nextFocusRight="@+id/edit3" /></code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><div>Banner</div>
+                <pre><code class="language-markup"><!--
+<div>Banner</div>
 <div>
   <div><h1>Main story</h1></div>
   <div style="position:relative; left:50%;top:-50%;">Supplementary info</div>
   <div>Story content</div>
-</div></code></pre>
+</div>
+--></code></pre>
               </div>
             </div>
 
@@ -885,12 +901,14 @@ android:nextFocusRight="@+id/edit3" /></code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">// focus moves from button 1 to 2 and then 3 and then back around to 1
+                <pre><code class="language-clike"><!--
+// focus moves from button 1 to 2 and then 3 and then back around to 1
 <LinearLayout android:orientation="vertical" ... >
-  &lt;Button android:id="@+id/btn1" android:nextFocusUp="@+id/btn3" android:nextFocusDown="@+id/btn2"... /&gt;
-  &lt;Button android:id="@+id/btn3" android:nextFocusUp="@+id/btn2" android:nextFocusDown="@+id/btn1" ... /&gt;
-  &lt;Button android:id="@+id/btn2" android:nextFocusUp="@+id/btn1" android:nextFocusDown="@+id/btn3" ... /&gt;
-</LinearLayout></code></pre>
+  <Button android:id="@+id/btn1" android:nextFocusUp="@+id/btn3" android:nextFocusDown="@+id/btn2"... />
+  <Button android:id="@+id/btn3" android:nextFocusUp="@+id/btn2" android:nextFocusDown="@+id/btn1" ... />
+  <Button android:id="@+id/btn2" android:nextFocusUp="@+id/btn1" android:nextFocusDown="@+id/btn3" ... />
+</LinearLayout>
+--></code></pre>
               </div>
             </div>
 
@@ -914,7 +932,8 @@ android:nextFocusRight="@+id/edit3" /></code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><div>
+                <pre><code class="language-markup"><!--
+<div>
   <h3>Shipping Address</h3>
   <label for="n1">Name</label><input type="text">
   <label for="a1">Address</label><input type="text">
@@ -925,7 +944,8 @@ android:nextFocusRight="@+id/edit3" /></code></pre>
   <label for="n2">Name</label><input type="text">
   <label for="a2">Address</label><input type="text">
   ...
-</div></code></pre>
+</div>
+--></code></pre>
               </div>
             </div>
 
@@ -939,7 +959,8 @@ android:nextFocusRight="@+id/edit3" /></code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><table>
+                <pre><code class="language-markup"><!--
+<table>
  <tr>
   <td>Shipping Address</td>
   <td>Billing Address</td>
@@ -952,7 +973,8 @@ android:nextFocusRight="@+id/edit3" /></code></pre>
   <td><label for="a1">Address</label><input type="text"></td>
   <td><label for="a2">Address</label><input type="text"></td>
  </tr>
-</table></code></pre>
+</table>
+--></code></pre>
               </div>
             </div>
 
@@ -1103,7 +1125,8 @@ android:nextFocusRight="@+id/edit3" /></code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">//A touch event listener attached to an element to perform an action on ACTION_UP
+                <pre><code class="language-clike"><!--
+//A touch event listener attached to an element to perform an action on ACTION_UP
 @Override
 public boolean onTouchEvent(MotionEvent event) {
   int action = event.getAction();
@@ -1112,7 +1135,8 @@ public boolean onTouchEvent(MotionEvent event) {
   }
   
   return false;
-}</code></pre>
+}
+--></code></pre>
               </div>
             </div>
 
@@ -1126,7 +1150,8 @@ public boolean onTouchEvent(MotionEvent event) {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">//A touch event listener attached to an element to perform an action on ACTION_DOWN
+                <pre><code class="language-clike"><!--
+//A touch event listener attached to an element to perform an action on ACTION_DOWN
 @Override
 public boolean onTouchEvent(MotionEvent event) {
   int action = event.getAction();
@@ -1135,7 +1160,8 @@ public boolean onTouchEvent(MotionEvent event) {
   }
   
   return false;
-}</code></pre>
+}
+--></code></pre>
               </div>
             </div>
 
@@ -1153,7 +1179,8 @@ public boolean onTouchEvent(MotionEvent event) {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><script type="text/javascript">
+                <pre><code class="language-markup"><!--
+<script type="text/javascript">
   function startGesture(e) {
     // store touch start source
   }
@@ -1162,7 +1189,8 @@ public boolean onTouchEvent(MotionEvent event) {
   }
 </script>
 ...
-<div onTouchStart="startGesture(this);" onTouchEnd="endGesture(this);"> Swipe area </div></code></pre>
+<div onTouchStart="startGesture(this);" onTouchEnd="endGesture(this);"> Swipe area </div>
+--></code></pre>
               </div>
             </div>
 
@@ -1176,13 +1204,15 @@ public boolean onTouchEvent(MotionEvent event) {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><script type="text/javascript">
+                <pre><code class="language-markup"><!--
+<script type="text/javascript">
   function startGesture(e) {
     // perform action
   }
 </script>
 ...
-<div onTouchStart="startGesture(this);"> Swipe area </div> </code></pre>
+<div onTouchStart="startGesture(this);"> Swipe area </div> 
+--></code></pre>
               </div>
             </div>
 
@@ -1316,7 +1346,9 @@ public boolean onTouchEvent(MotionEvent event) {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">[_view setIsAccessibilityElement:YES];</code></pre>
+                <pre><code class="language-clike"><!--
+[_view setIsAccessibilityElement:YES];
+--></code></pre>
               </div>
             </div>
 
@@ -1330,7 +1362,9 @@ public boolean onTouchEvent(MotionEvent event) {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">[_view setIsAccessibilityElement:NO];</code></pre>
+                <pre><code class="language-clike"><!--
+[_view setIsAccessibilityElement:NO];
+--></code></pre>
               </div>
             </div>
 
@@ -1349,8 +1383,10 @@ public boolean onTouchEvent(MotionEvent event) {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">//A text input field that can be accessed directly by touch and is focusable using the keyboard
-<EditText android:id="@+id/editTextP" android:inputType="textPassword" android:layout_height="wrap_content" android:layout_width="wrap_content" android:focusable="true"></EditText></code></pre>
+                <pre><code class="language-clike"><!--
+//A text input field that can be accessed directly by touch and is focusable using the keyboard
+<EditText android:id="@+id/editTextP" android:inputType="textPassword" android:layout_height="wrap_content" android:layout_width="wrap_content" android:focusable="true"></EditText>
+--></code></pre>
               </div>
             </div>
 
@@ -1364,8 +1400,10 @@ public boolean onTouchEvent(MotionEvent event) {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">//A text input that cannot be focused using the keyboard
-<EditText android:id="@+id/editTextP" android:inputType="textPassword" android:layout_height="wrap_content" android:layout_width="wrap_content" android:focusable="false"></EditText></code></pre>
+                <pre><code class="language-clike"><!--
+//A text input that cannot be focused using the keyboard
+<EditText android:id="@+id/editTextP" android:inputType="textPassword" android:layout_height="wrap_content" android:layout_width="wrap_content" android:focusable="false"></EditText>
+--></code></pre>
               </div>
             </div>
 
@@ -1386,8 +1424,10 @@ public boolean onTouchEvent(MotionEvent event) {
               <div class="collapsible-target" hidden>
                 <p>A carousel that supports swiping left and right touch events such as touchstart, touchend, and touchmove can supplement these gestures with keyboard access using buttons, or by watching key presses:</p>
 
-                <pre><code class="html"><a href="...">Previous</a>
-<a href="...">Next </a></code></pre>
+                <pre><code class="language-markup"><!--
+<a href="...">Previous</a>
+<a href="...">Next </a>
+--></code></pre>
               </div>
             </div>
 
@@ -1401,11 +1441,13 @@ public boolean onTouchEvent(MotionEvent event) {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><script type="text/javascript">
+                <pre><code class="language-markup"><!--
+<script type="text/javascript">
 // perform some action on touch
 </script>
 ...
-<div ontouchstart="touchStart(event);" ontouchmove="touchMove(event);" ontouchend="touchEnd(event);" ontouchcancel="touchCancel(event);"></div></code></pre>
+<div ontouchstart="touchStart(event);" ontouchmove="touchMove(event);" ontouchend="touchEnd(event);" ontouchcancel="touchCancel(event);"></div>
+--></code></pre>
               </div>
             </div>
 
@@ -1555,6 +1597,7 @@ public boolean onTouchEvent(MotionEvent event) {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
   <script src="../../scripts/libs/bootstrap/bootstrap.js"></script>
   <script src="../../scripts/script.js"></script>
+	<script src="../../scripts/prism.js"></script>
 
 </body>
 

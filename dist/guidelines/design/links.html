@@ -2,30 +2,16 @@
 <html lang="en">
 
 <head>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117757403-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-117757403-1');
-  </script> 
-
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Links - Design - Accessibility Guidelines</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
+  <link rel="stylesheet" href="../../styles/style.css">
   <link rel="stylesheet" href="../../styles/styles-responsive.css">
+	<link rel="stylesheet" href="../../styles/prism.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body id="totop">
@@ -196,8 +182,10 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">[dNameBtn setAccessibilityLabel: NSLocalizedString(@"Delete Name", @"Button label")];
-[dAddressBtn setAccessibilityLabel: NSLocalizedString (@"Delete Address", @"Button label")];</code></pre>
+                <pre><code class="language-clike"><!--
+[dNameBtn setAccessibilityLabel: NSLocalizedString(@"Delete Name", @"Button label")];
+[dAddressBtn setAccessibilityLabel: NSLocalizedString (@"Delete Address", @"Button label")];
+--></code></pre>
               </div>
             </div>
 
@@ -211,8 +199,10 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">[dNameBtn setAccessibilityLabel:@"Delete"];
-[dAddressBtn setAccessibilityLabel:@"Delete"];</code></pre>
+                <pre><code class="language-clike"><!--
+[dNameBtn setAccessibilityLabel:@"Delete"];
+[dAddressBtn setAccessibilityLabel:@"Delete"];
+--></code></pre>
               </div>
             </div>
 
@@ -230,8 +220,10 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java"><Button android:contentDescription="Delete Name" ...> </Button>
-<Button android:contentDescription="Delete Address" ...></Button></code></pre>
+                <pre><code class="language-clike"><!--
+<Button android:contentDescription="Delete Name" ...> </Button>
+<Button android:contentDescription="Delete Address" ...></Button>
+--></code></pre>
               </div>
             </div>
 
@@ -245,8 +237,10 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java"><Button android:contentDescription="Delete" ...> </Button>
-<Button android:contentDescription="Delete" ...> </Button></code></pre>
+                <pre><code class="language-clike"><!--
+<Button android:contentDescription="Delete" ...> </Button>
+<Button android:contentDescription="Delete" ...> </Button>
+--></code></pre>
               </div>
             </div>
 
@@ -264,7 +258,8 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><style>
+                <pre><code class="language-markup"><!--
+<style>
   .sr-only {
     position: absolute; /* required for clip style */
     overflow: hidden;
@@ -282,7 +277,8 @@
 </p>
 <p>Content 3 title and description.
   <a href="page3.html">More info <span class="sr-only">on content 3</span></a>
-</p></code></pre>
+</p>
+--></code></pre>
               </div>
             </div>
 
@@ -296,7 +292,8 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><p>Content 1 title and description.
+                <pre><code class="language-markup"><!--
+<p>Content 1 title and description.
   <a href="page1.html">More info</a>
 </p>
 <p>Content 2 title and description.
@@ -304,7 +301,8 @@
 </p>
 <p>Content 3 title and description.
   <a href="page3.html">More info</a>
-</p></code></pre>
+</p>
+--></code></pre>
               </div>
             </div>
 
@@ -427,14 +425,16 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">// Example 1
+                <pre><code class="language-clike"><!--
+// Example 1
 UIAlertView *messageBox = [[UIAlertView alloc] initWithTitle: NSLocalizedString (@"Alert!", @"Message box title") message: NSLocalizedString (@"This will open in your browser", @"Message box content") delegate:nil cancelButtonTitle: NSLocalizedString (@"OK", @"Agree to message button title") otherButtonTitles:nil];
     [messageBox show];
     // Launch the app in the handler for the alert view once the user presses the button
 
 // Example 2
 UIButton *pdfButton = [UIButton buttonWithType:UIButtonTypeCustom];
-[pdfButton setTitle: NSLocalizedString("View annual report in PDF", Object.nil)]</code></pre>
+[pdfButton setTitle: NSLocalizedString("View annual report in PDF", Object.nil)]
+--></code></pre>
               </div>
             </div>
 
@@ -470,7 +470,8 @@ UIButton *pdfButton = [UIButton buttonWithType:UIButtonTypeCustom];
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+                <pre><code class="language-clike"><!--
+DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
   @Override
   public void onClick(DialogInterface dialog, int which) {
     switch (which){
@@ -487,7 +488,8 @@ UIButton *pdfButton = [UIButton buttonWithType:UIButtonTypeCustom];
 
 AlertDialog.Builder builder = new AlertDialog.Builder(this);
 builder.setMessage("Are you sure?").setPositiveButton("Yes", dialogClickListener)
-  .setNegativeButton("No", dialogClickListener).show();</code></pre>
+  .setNegativeButton("No", dialogClickListener).show();
+--></code></pre>
               </div>
             </div>
 
@@ -519,8 +521,10 @@ builder.setMessage("Are you sure?").setPositiveButton("Yes", dialogClickListener
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><a href="...">Annual report <img src="html.jpg" alt="[External link]" /></a>
-<a href="...">Annual report <img src="pdf.jpg" alt="[PDF / 86kB]" /></a></code></pre>
+                <pre><code class="language-markup"><!--
+<a href="...">Annual report <img src="html.jpg" alt="[External link]" /></a>
+<a href="...">Annual report <img src="pdf.jpg" alt="[PDF / 86kB]" /></a>
+--></code></pre>
               </div>
             </div>
 
@@ -534,10 +538,12 @@ builder.setMessage("Are you sure?").setPositiveButton("Yes", dialogClickListener
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><!-- HTML version -->
+                <pre><code class="language-markup"><!--
+// HTML version
 <a href="...">Annual report </a>
-                <!-- PDF version -->
-<a href="...">Annual report </a></code></pre>
+                // PDF version
+<a href="...">Annual report </a>
+--></code></pre>
               </div>
             </div>
 
@@ -659,10 +665,12 @@ builder.setMessage("Are you sure?").setPositiveButton("Yes", dialogClickListener
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">[aFNLabel setText:NSLocalizedString(@"First Name", @"Text label for the text entry field")];
+                <pre><code class="language-clike"><!--
+[aFNLabel setText:NSLocalizedString(@"First Name", @"Text label for the text entry field")];
 [aFNLabel setIsAccessibilityElement:NO]; // We hide the label element since it is announced as part of the field
 [aFNField setPlaceholder:NSLocalizedString(@"Required", @"Placeholder text put in text entry field")];
-[aFNField setAccessibilityLabel:NSLocalizedString(@"First name required", @"A11y label for combined label + field entry")]; // Not constructing a string from label name + placeholder to avoid translation problems of constructed strings</code></pre>
+[aFNField setAccessibilityLabel:NSLocalizedString(@"First name required", @"A11y label for combined label + field entry")]; // Not constructing a string from label name + placeholder to avoid translation problems of constructed strings
+--></code></pre>
               </div>
             </div>
 
@@ -676,7 +684,8 @@ builder.setMessage("Are you sure?").setPositiveButton("Yes", dialogClickListener
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">// Example 1
+                <pre><code class="language-clike"><!--
+// Example 1
 [FNLabel setText:NSLocalizedString(@"First Name", nil)];
 [FNField setPlaceholder:NSLocalizedString(@"Required", nil)];
 [FNField setAccessibilityLabel:[NSString stringWithFormat:@"%@ %@", FNLabel.accessibilityLabel, FNField.placeholder]];
@@ -685,7 +694,8 @@ builder.setMessage("Are you sure?").setPositiveButton("Yes", dialogClickListener
 imageView.image = [UIImage imageNamed:@"addBookmark"];
 ImageView.accessibilityLabel = @"Add";
 textLabel.text = @"Add";
-textLabel.accessibilityLabel = @"Add";</code></pre>
+textLabel.accessibilityLabel = @"Add";
+--></code></pre>
               </div>
             </div>
 
@@ -703,11 +713,13 @@ textLabel.accessibilityLabel = @"Add";</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">//On-screen text followed by button, the contentDescription for the button component is a repetition of the on-screen text. The on-screen text is not focusable.
+                <pre><code class="language-clike"><!--
+//On-screen text followed by button, the contentDescription for the button component is a repetition of the on-screen text. The on-screen text is not focusable.
 
 <TextView android:id="@+id/add_label" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Add"></TextView>
 
-<Button android:id="@+id/add" android:layout_height="wrap_content" android:layout_width="wrap_content" android:contentDescription="Add"></Button></code></pre>
+<Button android:id="@+id/add" android:layout_height="wrap_content" android:layout_width="wrap_content" android:contentDescription="Add"></Button>
+--></code></pre>
               </div>
             </div>
 
@@ -721,12 +733,14 @@ textLabel.accessibilityLabel = @"Add";</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">//On-screen text followed by button, the contentDescription for the button component is a repetition of the on-screen text. The on-screen text is focusable.
+                <pre><code class="language-clike"><!--
+//On-screen text followed by button, the contentDescription for the button component is a repetition of the on-screen text. The on-screen text is focusable.
 
 <TextView android:id="@+id/add_label" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Add"
           android:focusable="true"></TextView>
 
-<Button android:id="@+id/add" android:layout_height="wrap_content" android:layout_width="wrap_content" android:contentDescription="Add"></Button></code></pre>
+<Button android:id="@+id/add" android:layout_height="wrap_content" android:layout_width="wrap_content" android:contentDescription="Add"></Button>
+--></code></pre>
               </div>
             </div>
 
@@ -744,7 +758,9 @@ textLabel.accessibilityLabel = @"Add";</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><a href="..."><img src="search.jpg" alt=""/>Search</a></code></pre>
+                <pre><code class="language-markup"><!--
+<a href="..."><img src="search.jpg" alt=""/>Search</a>
+--></code></pre>
               </div>
             </div>
 
@@ -758,7 +774,9 @@ textLabel.accessibilityLabel = @"Add";</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><a href="..."><img src="search.jpg" alt="Search"/></a><a href="...">Search</a></code></pre>
+                <pre><code class="language-markup"><!--
+<a href="..."><img src="search.jpg" alt="Search"/></a><a href="...">Search</a>
+--></code></pre>
               </div>
             </div>
 
@@ -906,6 +924,7 @@ textLabel.accessibilityLabel = @"Add";</code></pre>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
   <script src="../../scripts/libs/bootstrap/bootstrap.js"></script>
   <script src="../../scripts/script.js"></script>
+	<script src="../../scripts/prism.js"></script>
 
 </body>
 

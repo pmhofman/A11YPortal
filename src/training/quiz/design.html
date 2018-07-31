@@ -7,14 +7,11 @@
   <title>Design - Quiz - Accessibility Champions Training</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
+  <link rel="stylesheet" href="../../styles/style.css">
   <link rel="stylesheet" href="../../styles/styles-responsive.css">
+	<link rel="stylesheet" href="../../styles/prism.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body id="totop">
@@ -239,10 +236,10 @@
 
                 <p>Which of following methods can be used to add programmatically discernible alternative text to an informative background image?</p>
                 <ol class="list-alpha">
-                  <li>CSS visibility:hidden on &lt;span&gt;</li>
-                  <li>CSS clip on &lt;span&gt;</li>
-                  <li>CSS display:none on &lt;span&gt;</li>
-                  <li>aria-label on &lt;span&gt;</li>
+                  <li>CSS visibility:hidden on <span></li>
+                  <li>CSS clip on <span></li>
+                  <li>CSS display:none on <span></li>
+                  <li>aria-label on <span></li>
                 </ol>
                 <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
                 <div hidden>
@@ -280,7 +277,7 @@
 
                 <hr>
 
-                <p>True or false: If the &lt;area&gt; elements of an image map have alternative text, then alternative text does not need to be provided for the main &lt;img&gt; element.</p>
+                <p>True or false: If the <area> elements of an image map have alternative text, then alternative text does not need to be provided for the main <img> element.</p>
                 <ol class="list-alpha">
                   <li>Describe the location of the image.</li>
                   <li>Convey the functionality or end result of the form input.</li>
@@ -321,7 +318,7 @@
 
                 <hr>
 
-                <p>Which accessibility techniques apply to an image (&lt;img&gt;) that is purely for visual decoration? (Select all that apply)</p>
+                <p>Which accessibility techniques apply to an image (<img>) that is purely for visual decoration? (Select all that apply)</p>
                 <ol class="list-alpha">
                   <li>It can be given an empty, or null, alt attribute value.</li>
                   <li>The image can be assigned ARIA role="presentation".</li>
@@ -379,12 +376,12 @@
 
                 <hr>
 
-                <p>What should be done to an &lt;img&gt; element to increase screen reader compatibility when an SVG is used as its source?</p>
+                <p>What should be done to an <img> element to increase screen reader compatibility when an SVG is used as its source?</p>
                 <ol class="list-alpha">
                   <li>It should be assigned role="img".</li>
                   <li>It should be assigned role="region".</li>
                   <li>It should be assigned role="presentation".</li>
-                  <li>Nothing should be done to the &lt;img&gt; element.</li>
+                  <li>Nothing should be done to the <img> element.</li>
                 </ol>
                 <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
                 <div hidden>
@@ -394,7 +391,7 @@
 
                 <hr>
 
-                <p>What can be used to provide alternative text for SVG &lt;img&gt; elements? (Select all that apply.)</p>
+                <p>What can be used to provide alternative text for SVG <img> elements? (Select all that apply.)</p>
                 <ol class="list-alpha">
                   <li>alt attribute</li>
                   <li>aria-owns attribute</li>
@@ -424,10 +421,10 @@
 
                 <p>Which of the following ways to incorporate SVGs are considered bad for accessibility? (Select all that apply.)</p>
                 <ol class="list-alpha">
-                  <li>&lt;object&gt;</li>
-                  <li>&lt;svg&gt;</li>
-                  <li>&lt;img&gt;</li>
-                  <li>&lt;iframe&gt;</li>
+                  <li><object></li>
+                  <li><svg></li>
+                  <li><img></li>
+                  <li><iframe></li>
                 </ol>
                 <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
                 <div hidden>
@@ -437,7 +434,7 @@
 
                 <hr>
 
-                <p>What is the best way to link the &lt;title&gt; in an &lt;svg&gt; so that screen readers will recognize it as the alternative text?</p>
+                <p>What is the best way to link the <title> in an <svg> so that screen readers will recognize it as the alternative text?</p>
                 <ol class="list-alpha">
                   <li>aria-label</li>
                   <li>aria-describedby</li>
@@ -509,12 +506,12 @@
 
                 <hr>
 
-                <p>Which of the following methods are acceptable for adding alternative text to &lt;canvas&gt; elements? (Select all that apply.)</p>
+                <p>Which of the following methods are acceptable for adding alternative text to <canvas> elements? (Select all that apply.)</p>
                 <ol class="list-alpha">
                   <li>Add text in the alt attribute.</li>
                   <li>Add text via aria-label.</li>
                   <li>Refer to text via aria-labelledby.</li>
-                  <li>Add text within the &lt;canvas&gt; element.</li>
+                  <li>Add text within the <canvas> element.</li>
                 </ol>
                 <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
                 <div hidden>
@@ -524,7 +521,7 @@
 
                 <hr>
 
-                <p>What must be done to the &lt;canvas&gt; element if it is used to present an image?</p>
+                <p>What must be done to the <canvas> element if it is used to present an image?</p>
                 <ol class="list-alpha">
                   <li>It must be assignedIt must be assigned ARIA role="img".</li>
                   <li>ARIA role="presentation".</li>
@@ -539,7 +536,7 @@
 
                 <hr>
 
-                <p>True or false: If a &lt;canvas&gt; element does not specify the background color, when a user enters into Windows High Contrast Mode, the background color of the image will change along with the color of the web page as a whole.</p>
+                <p>True or false: If a <canvas> element does not specify the background color, when a user enters into Windows High Contrast Mode, the background color of the image will change along with the color of the web page as a whole.</p>
                 <ol class="list-alpha">
                   <li>True</li>
                   <li>False</li>
@@ -552,12 +549,12 @@
 
                 <hr>
 
-                <p>Effective methods for providing alternative text for simple &lt;canvas&gt; elements include: (Select all that apply.)</p>
+                <p>Effective methods for providing alternative text for simple <canvas> elements include: (Select all that apply.)</p>
                 <ol class="list-alpha">
-                  <li>Using the aria-label attribute on the &lt;canvas&gt; element.</li>
-                  <li>Using the alt attribute on the &lt;canvas&gt; element.</li>
-                  <li>Providing a description within the &lt;canvas&gt; element and referencing it using the aria-labelledby attribute.</li>
-                  <li>Providing a description within the &lt;canvas&gt; element.</li>
+                  <li>Using the aria-label attribute on the <canvas> element.</li>
+                  <li>Using the alt attribute on the <canvas> element.</li>
+                  <li>Providing a description within the <canvas> element and referencing it using the aria-labelledby attribute.</li>
+                  <li>Providing a description within the <canvas> element.</li>
                 </ol>
                 <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
                 <div hidden>
@@ -567,7 +564,7 @@
 
                 <hr>
 
-                <p>True or false: To make a &lt;canvas&gt; element keyboard focusable, use tabindex=“1” on the &lt;canvas&gt; element.</p>
+                <p>True or false: To make a <canvas> element keyboard focusable, use tabindex=“1” on the <canvas> element.</p>
                 <ol class="list-alpha">
                   <li>True</li>
                   <li>False</li>
@@ -580,7 +577,7 @@
 
                 <hr>
 
-                <p>True or false: Alternative text for &lt;video&gt; and &lt;audio&gt; elements can be provided using the alt attribute.</p>
+                <p>True or false: Alternative text for <video> and <audio> elements can be provided using the alt attribute.</p>
                 <ol class="list-alpha">
                   <li>True</li>
                   <li>False</li>
@@ -1959,8 +1956,8 @@
                 <ol class="list-alpha">
                   <li>aria-label attribute</li>
                   <li>title attribute</li>
-                  <li>Explicit &lt;label&gt; association</li>
-                  <li>Implicit &lt;label&gt; association</li>
+                  <li>Explicit <label> association</li>
+                  <li>Implicit <label> association</li>
                 </ol>
                 <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
                 <div hidden>
@@ -2042,9 +2039,9 @@
 
                 <p>Which of the following methods can be used to associate a group label with the fields it labels? (Select all that apply)</p>
                 <ol class="list-alpha">
-                  <li>&lt;fieldset&gt; and &lt;label&gt;</li>
-                  <li>&lt;fieldset&gt; and &lt;legend&gt;</li>
-                  <li>Wrap the group of fields with a &lt;label&gt;</li>
+                  <li><fieldset> and <label></li>
+                  <li><fieldset> and <legend></li>
+                  <li>Wrap the group of fields with a <label></li>
                   <li>role=&quot;group&quot; and aria-labelledby</li>
                 </ol>
                 <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
@@ -2109,9 +2106,9 @@
 
                 <p>Which of the following methods can be used to provide form instructions for specific fields programmatically? (Select all that apply)</p>
                 <ol class="list-alpha">
-                  <li>Using aria-describedby on the &lt;input&gt; element</li>
-                  <li>Providing instructions in regular text nearby the &lt;input&gt; element</li>
-                  <li>Placing instructions in the &lt;label&gt; element</li>
+                  <li>Using aria-describedby on the <input> element</li>
+                  <li>Providing instructions in regular text nearby the <input> element</li>
+                  <li>Placing instructions in the <label> element</li>
                   <li>Providing instructions about form fields before the form itself</li>
                 </ol>
                 <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
@@ -2154,7 +2151,7 @@
 
                 <p>Which of the following is the most semantically-appropriate way to associate instructions with an input?</p>
                 <ol class="list-alpha">
-                  <li>Include the instructions within the &lt;label&gt; text, along with the label/name of the input</li>
+                  <li>Include the instructions within the <label> text, along with the label/name of the input</li>
                   <li>Write the text in an aria-instructions attribute</li>
                   <li>Reference the ID of the instructions via aria-describedby</li>
                   <li>Include the instructions in the title attribute, to create a visible tooltip on mouse hover</li>
@@ -2329,12 +2326,12 @@
 
                 <p>Which of the code examples below best adheres to the requirements and best practices for error feedback?</p>
                 <ol class="list-alpha">
-                  <li>&lt;label for=&quot;password&quot;&gt; Error - Password: &lt;/label&gt; &lt;input type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot; aria-invalid=&quot;true&quot;&gt;</li>
-                  <li>&lt;label for=&quot;password&quot;&gt; Password: &lt;/label&gt; &lt;input type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot; aria-required=&quot;true&quot; aria-invalid=&quot;true&quot;&gt;</li>
-                  <li>&lt;p id=&quot;passwordError&quot;&gt;Error: Password must be at least be 8 characters&lt;/p&gt; &lt;label for=&quot;password&quot;&gt; Password: &lt;/label&gt; &lt;input type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot;
-                    aria-required=&quot;true&quot; aria-invalid=&quot;true&quot; aria-describedby=&quot;passwordError&quot;&gt;</li>
-                  <li>&lt;p&gt;Error: Password must be at least be 8 characters&lt;/p&gt; &lt;label for=&quot;password&quot;&gt; Password: &lt;/label&gt; &lt;input type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot; aria-required=&quot;true&quot;
-                    aria-invalid=&quot;true&quot;&gt;</li>
+                  <li><label for=&quot;password&quot;> Error - Password: </label> <input type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot; aria-invalid=&quot;true&quot;></li>
+                  <li><label for=&quot;password&quot;> Password: </label> <input type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot; aria-required=&quot;true&quot; aria-invalid=&quot;true&quot;></li>
+                  <li><p id=&quot;passwordError&quot;>Error: Password must be at least be 8 characters</p> <label for=&quot;password&quot;> Password: </label> <input type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot;
+                    aria-required=&quot;true&quot; aria-invalid=&quot;true&quot; aria-describedby=&quot;passwordError&quot;></li>
+                  <li><p>Error: Password must be at least be 8 characters</p> <label for=&quot;password&quot;> Password: </label> <input type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot; aria-required=&quot;true&quot;
+                    aria-invalid=&quot;true&quot;></li>
                 </ol>
                 <button class="btn btn-secondary answer-button" type="button" aria-expanded="false">Answer</button>
                 <div hidden>
@@ -2580,6 +2577,7 @@
   <script src="../../scripts/script.js"></script-->
   <script src="../../scripts/libs/bootstrap/bootstrap.js"></script>
   <script src="../../scripts/script.js"></script>
+	<script src="../../scripts/prism.js"></script>
 </body>
 
 </html>

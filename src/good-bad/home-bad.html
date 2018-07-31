@@ -8,13 +8,11 @@
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
+  <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/styles-responsive.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
 
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body class="body bad" id="totop">
@@ -381,11 +379,10 @@
 
               <h4 class="heading-s">HTML Failure</h4>
               
-<pre class="highlight">
-<code class="html">
+<pre><code class="language-markup"><!-- 
+
 <title>Bad Demonstration</title>
-</code>
-</pre>
+--></code></pre>
 
               <h4 class="heading-s">WCAG Success Criteria</h4>
               
@@ -431,16 +428,15 @@
 
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <meta name="viewport"
       content="width=device-width, 
                initial-scale=1, 
                maximum-scale=1, 
                minimum-scale=1, 
                user-scalable=no">
-</code>
-</pre>
+--></code></pre>
 
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
@@ -483,14 +479,13 @@
 
               <h4 class="heading-s">HTML Failure</h4>
               
-<pre class="highlight">
-<code class="html">
-&lt;body&gt;
-<!-- No skip-links -->
+<pre><code class="language-markup"><!-- 
+
+<body>
+// No skip-links
 ...
-&lt;/body&gt;
-</code>
-</pre>
+</body>
+--></code></pre>
 
               <h4 class="heading-s">WCAG Success Criteria</h4>
               
@@ -540,8 +535,8 @@
 
               <h4 class="heading-s">HTML Failure</h4>
               
-<pre class="highlight">
-<code class="html">
+<pre><code class="language-markup"><!-- 
+
 <div id="header">
   <div id="logo">...</div>
   <div id="navigation">
@@ -562,8 +557,7 @@
   <p>COMPANY NAME 2017</p>
   <ul> ... </ul>
 </div>     
-</code>
-</pre>
+--></code></pre>
 
               <h4 class="heading-s">WCAG Success Criteria</h4>
               
@@ -627,21 +621,20 @@
 
               <h4 class="heading-s">HTML Failure</h4>
               
-<pre class="highlight">
-<code class="html">
-<!-- Document level -->
+<pre><code class="language-markup"><!-- 
 
-&lt;html&gt;
+// Document level
 
-<!-- Within the Document -->
+<html>
+
+// Within the Document
 
 <option value="nederlands">Nederlands</option>
 
 <p>While in Spain, my friend tried to speak Spanish, but she wasn't very good.
 Everyone kept saying "No comprendo nada de lo que dices."</p>
 
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -696,24 +689,24 @@ Everyone kept saying "No comprendo nada de lo que dices."</p>
 
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
-<!-- No navigational landmark present -->
-<!-- No accessible name present -->
+              <pre><code class="language-markup"><!-- 
+
+// No navigational landmark present
+// No accessible name present
   
-<!-- No relationship between and status for menu present -->
+// No relationship between and status for menu present
 <button>
   <span class="icon-hamburger"></span>
-  <!-- No text alternative present -->
+  // No text alternative present
 </button>
 
 <div id="mainMenuItems">
-  <!-- Menu not marked up with a list -->
+  // Menu not marked up with a list
   <div>
     <div class="active">
-      <!-- No indication of current / active link -->
+      // No indication of current / active link
       <a href="../good-bad/home.html">Home</a>
-      <!-- No nested relationsship present -->
+      // No nested relationsship present
       <div>
         <div><a class="active" href="../good-bad/home.html">Good</a></div>
         <div><a href="/index-bad.html">Bad</a></div>
@@ -724,8 +717,7 @@ Everyone kept saying "No comprendo nada de lo que dices."</p>
     </div>
   </div>
 </div>
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -784,14 +776,13 @@ Everyone kept saying "No comprendo nada de lo que dices."</p>
 
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <input type="text" placeholder="Type term...">
 <button type="submit">
   <img src="../icon-search.png">
 </button>
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -858,17 +849,16 @@ Everyone kept saying "No comprendo nada de lo que dices."</p>
 
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
-  <!-- Not using H elements for headings -->
+              <pre><code class="language-markup"><!-- 
+
+  // Not using H elements for headings
   
   <span class="brandbar-title">Inaccessible Home Page</span>
   
   <div class="heading-m">The Baseline</div>
   <div class="heading-m">Accessibility Champions</div>
   <div class="heading-m">Expert section</div>
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -915,11 +905,10 @@ Everyone kept saying "No comprendo nada de lo que dices."</p>
 
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <img src="/infographic-xyz.png">
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -965,11 +954,10 @@ Everyone kept saying "No comprendo nada de lo que dices."</p>
 
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <img src="/experts.jpg" alt="image">
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -1007,9 +995,9 @@ Everyone kept saying "No comprendo nada de lo que dices."</p>
               <p>These links and buttons are not properly highlighted when they are selected using the keyboard or hovered over using a pointer device.</p>
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
-<!-- Link / button with button styling -->
+              <pre><code class="language-markup"><!-- 
+
+// Link / button with button styling
 
 <a href="../baseline" class="btn btn-primary">Read more...</a>
 <button class="btn btn-primary">Read more...</button>
@@ -1021,15 +1009,14 @@ Everyone kept saying "No comprendo nada de lo que dices."</p>
 .btn-primary:focus {
     outline: 0; box-shadow: 0 2px 2px 0 rgba(0,0,0,.24); }
 
-<!-- Link with regular link styling -->
+// Link with regular link styling
 
 <a href="../champions">Need help? Ask a Champ!</a>
 
 a       { outline: 0; text-decoration: none; border-bottom: 1px solid #767676; }
 a:hover { outline: 0; text-decoration: none; border-bottom: 1px solid #767676; }
 a:focus { outline: 0; text-decoration: none; border-bottom: 1px solid #767676; }
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -1069,11 +1056,10 @@ a:focus { outline: 0; text-decoration: none; border-bottom: 1px solid #767676; }
               <p>Link text uses "Read more..." and this doesn't indicate the purpose of the link.</p>
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <a href="../champions">Read more...</a>
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -1137,25 +1123,24 @@ a:focus { outline: 0; text-decoration: none; border-bottom: 1px solid #767676; }
               </ul>
               <h4 class="heading-s">HTML Fail</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 Go to other page:
 
-<!-- Link in code and button styling -->
+// Link in code and button styling
 <a href="../good-bad/home.html" class="btn btn-primary">Read more...</a>
 
-<!-- Button in code and button styling -->
+// Button in code and button styling
 <button type="button" class="link-primary">Read more...</button>
 
 Staying on same page:
 
-<!-- Link in code and link styling -->
+// Link in code and link styling
 <a href="../good-bad/home.html" class="link-primary">Watch the video</a>
 
-<!-- Button in code and link styling -->
+// Button in code and link styling
 <button type="button" class="link-primary">Watch the video</button>
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -1194,23 +1179,22 @@ Staying on same page:
               <p>The list items "User Experience" and "Developers" etc. are formatted to visually resemble a list but this structural information is not represented in the HTML code.</p>
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
-<!-- Using divs to visually fake items -->
+              <pre><code class="language-markup"><!-- 
+
+// Using divs to visually fake items
 
 <div class="mb-2"><a href="../good-bad/home.html" class="link-linklist">User Experience</a></div>
 <div class="mb-2"><a href="../good-bad/home.html" class="link-linklist">Developers</a></div>
 <div class="mb-2"><a href="../good-bad/home.html" class="link-linklist">Editors</a></div>
 
-<!-- Applying CSS styling on non semantic elements  -->
+// Applying CSS styling on non semantic elements
 
 <div class="list-styling">
   <div class="list-item"><a href="../good-bad/home.html">About A11Y</a></div>
   <div class="list-item"><a href="/index.htm">Universal Design</a></div>
   <div class="list-item">...</div>
 </div>
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -1259,12 +1243,11 @@ Staying on same page:
               
               <h4 class="heading-s">HTML Failure</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 .card { background-color: #ffffff; }
 .lead .text-primary { color: #ff6200; }
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -1304,6 +1287,7 @@ Staying on same page:
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
   <script src="../scripts/libs/bootstrap/bootstrap.js"></script>
   <script src="../scripts/script.js"></script>
+	<script src="../scripts/prism.js"></script>
 
 </body>
 

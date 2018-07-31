@@ -2,33 +2,18 @@
 <html lang="en">
 
 <head>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117757403-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-117757403-1');
-  </script>
-
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Accessible Request Page - Good and Bad Demonstration - COMPANY NAME</title>
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
+  <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/styles-responsive.css">
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
-
 </head>
 
 <body class="body" id="totop">
@@ -595,8 +580,8 @@
 
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <h1>Accessible Article Page</h1>
 
   <h2>Why we promote accessibility</h2>
@@ -608,18 +593,17 @@
     <h3>Add these steps to your DoD</h3>
     ...
 
-  <!-- Optional hidden heading -->
+  // Optional hidden heading
   <h2 class="sr-only">Selected for you</h2>
   <h3>...</h3>
     <h4>...</h4>
     ...
     
-  <!-- Optional with ARIA -->
+  // Optional with ARIA
   <div role="heading" aria-level="2">...</div>
     <div role="heading" aria-level="3">...</div>
   ...
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -673,11 +657,10 @@
 
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 example code
-</code>
-</pre>
+--></code></pre>
 
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
@@ -711,6 +694,7 @@ example code
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
   <script src="../scripts/libs/bootstrap/bootstrap.js"></script>
   <script src="../scripts/script.js"></script>
+	<script src="../scripts/prism.js"></script>
 
 </body>
 

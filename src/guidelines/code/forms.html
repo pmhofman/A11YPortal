@@ -7,14 +7,11 @@
   <title>Forms - Code - Accessibility Guidelines</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
+  <link rel="stylesheet" href="../../styles/style.css">
   <link rel="stylesheet" href="../../styles/styles-responsive.css">
+	<link rel="stylesheet" href="../../styles/prism.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body id="totop">
@@ -193,8 +190,10 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">[FNLabel setText:NSLocalizedString(@"First Name", nil)];
-[FNField setAccessibilityLabel:FNLabel.accessibilityLabel];</code></pre>
+                <pre><code class="language-clike"><!--
+[FNLabel setText:NSLocalizedString(@"First Name", nil)];
+[FNField setAccessibilityLabel:FNLabel.accessibilityLabel];
+--></code></pre>
               </div>
             </div>
 
@@ -208,7 +207,9 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">[FNLabel setText:NSLocalizedString(@"First Name", nil)];</code></pre>
+                <pre><code class="language-clike"><!--
+[FNLabel setText:NSLocalizedString(@"First Name", nil)];
+--></code></pre>
               </div>
             </div>
 
@@ -226,8 +227,10 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java"><TextView android:id="@+id/password_label" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="Password"></TextView>
-<EditText android:id="@+id/password" android:inputType="textPassword" android:hint="Password" android:layout_height="wrap_content" android:layout_width="wrap_content"></EditText></code></pre>
+                <pre><code class="language-clike"><!--
+<TextView android:id="@+id/password_label" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="Password"></TextView>
+<EditText android:id="@+id/password" android:inputType="textPassword" android:hint="Password" android:layout_height="wrap_content" android:layout_width="wrap_content"></EditText>
+--></code></pre>
               </div>
             </div>
 
@@ -264,8 +267,10 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><label for="uname">Username:</label>
-<input type="text" id="uname" /></code></pre>
+                <pre><code class="language-markup"><!--
+<label for="uname">Username:</label>
+<input type="text" id="uname" />
+--></code></pre>
               </div>
             </div>
 
@@ -279,7 +284,9 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><div>Username: <input type="text" id="uname" /></div></code></pre>
+                <pre><code class="language-markup"><!--
+<div>Username: <input type="text" id="uname" /></div>
+--></code></pre>
               </div>
             </div>
 
@@ -407,13 +414,15 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">// Example 1 - set the default input type for a text field
+                <pre><code class="language-clike"><!--
+// Example 1 - set the default input type for a text field
 textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
 
 // Example 2 - allow and indicate direct interaction for gestures
 [aButton setTitle:NSLocalizedString(@"Smile", @"Button title") forState:UIControlStateNormal];
 [aButton setAccessibilityHint:NSLocalizedString(@"Draw a smile on this button!", @"Accessibility hint for the smile button")];
-[aButton setAccessibilityTraits:UIAccessibilityTraitSelected | UIAccessibilityTraitImage | UIAccessibilityTraitAllowsDirectInteraction];</code></pre>
+[aButton setAccessibilityTraits:UIAccessibilityTraitSelected | UIAccessibilityTraitImage | UIAccessibilityTraitAllowsDirectInteraction];
+--></code></pre>
               </div>
             </div>
 
@@ -427,9 +436,11 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">// No indication of input type or gestures expected
+                <pre><code class="language-clike"><!--
+// No indication of input type or gestures expected
 [aButton setTitle:NSLocalizedString(@"Smile", @"Button title") forState:UIControlStateNormal];
-[aButton setAccessibilityTraits:UIAccessibilityTraitSelected | UIAccessibilityTraitImage];</code></pre>
+[aButton setAccessibilityTraits:UIAccessibilityTraitSelected | UIAccessibilityTraitImage];
+--></code></pre>
               </div>
             </div>
 
@@ -448,11 +459,13 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">// Example 1 - setting the default keyboard type
+                <pre><code class="language-clike"><!--
+// Example 1 - setting the default keyboard type
 <EditText android:inputType="number" ... />
 
 // Example 2 - using android:contentDescription to indicate gestures that can be used with graphical elements
-<View android:contentDescription="Mood - Draw a smile or a frown" /></code></pre>
+<View android:contentDescription="Mood - Draw a smile or a frown" />
+--></code></pre>
               </div>
             </div>
 
@@ -466,11 +479,13 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">// Example 1 - not setting the default keyboard type to number for a number field
+                <pre><code class="language-clike"><!--
+// Example 1 - not setting the default keyboard type to number for a number field
 <EditText ... />
 
 // Example 2 - not setting the contentDescription property with instructions for gesture use
-<View android:hint="Mood" ... /></code></pre>
+<View android:hint="Mood" ... />
+--></code></pre>
               </div>
             </div>
 
@@ -503,8 +518,10 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
               <div class="collapsible-target" hidden>
                 <p><code>input[type=range]</code> with descriptive fallback text in associated label:</p>
 
-                <pre><code class="html"><label for="t1">Rating (between 1 and 5):</label>
-<input type="range" min="1" max="5" value="3" id="t1"></code></pre>
+                <pre><code class="language-markup"><!--
+<label for="t1">Rating (between 1 and 5):</label>
+<input type="range" min="1" max="5" value="3" id="t1">
+--></code></pre>
               </div>
             </div>
 
@@ -520,8 +537,10 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
               <div class="collapsible-target" hidden>
                 <p>No indication of expected input:</p>
 
-                <pre><code class="html"><label for="t1">Rating:</label>
-<input type="text" id="t1"></code></pre>
+                <pre><code class="language-markup"><!--
+<label for="t1">Rating:</label>
+<input type="text" id="t1">
+--></code></pre>
               </div>
             </div>
 
@@ -782,8 +801,10 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">[shipAddy setAccessibilityLabel:[NSString stringWithFormat: NSLocalizedString(@"Shipping Address:", @"Label title")]];
-[billAddy setAccessibilityLabel:[NSString stringWithFormat: NSLocalizedString(@"Billing Address:", @"Label title")]];</code></pre>
+                <pre><code class="language-clike"><!--
+[shipAddy setAccessibilityLabel:[NSString stringWithFormat: NSLocalizedString(@"Shipping Address:", @"Label title")]];
+[billAddy setAccessibilityLabel:[NSString stringWithFormat: NSLocalizedString(@"Billing Address:", @"Label title")]];
+--></code></pre>
               </div>
             </div>
 
@@ -797,8 +818,10 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">[shipAddy setAccessibilityLabel:[NSString stringWithFormat:@"Address"]];
-[billAddy setAccessibilityLabel:[NSString stringWithFormat:@"Address"]];</code></pre>
+                <pre><code class="language-clike"><!--
+[shipAddy setAccessibilityLabel:[NSString stringWithFormat:@"Address"]];
+[billAddy setAccessibilityLabel:[NSString stringWithFormat:@"Address"]];
+--></code></pre>
               </div>
             </div>
 
@@ -818,11 +841,13 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java"><RadioGroup android:layout_width="match_parent" android:id="@+id/radioGroup_1" android:orientation="horizontal">
+                <pre><code class="language-clike"><!--
+<RadioGroup android:layout_width="match_parent" android:id="@+id/radioGroup_1" android:orientation="horizontal">
   <RadioButton android:layout_height="wrap_content" android:id="@+id/radio_0" android:checked="true" android:text="Option A" android:contentDescription="Choose Option - Option A"></RadioButton>
   <RadioButton android:layout_height="wrap_content" android:id="@+id/radio_1" android:text="Option B" android:contentDescription="Choose Option - Option B"></RadioButton>
   <RadioButton android:layout_height="wrap_content" android:id="@+id/radio_2" android:text="Option C" android:contentDescription="Choose Option - Option C"></RadioButton>
-</RadioGroup></code></pre>
+</RadioGroup>
+--></code></pre>
               </div>
             </div>
 
@@ -838,9 +863,11 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
               <div class="collapsible-target" hidden>
                 <p>Individual radio buttons that are not grouped together, yet are supposed to be exclusive:</p>
 
-                <pre><code class="java"><RadioButton android:layout_height="wrap_content" android:id="@+id/radio_0" android:checked="true" android:text="Option A" android:contentDescription="Option A"></RadioButton>
+                <pre><code class="language-markup"><!--
+<RadioButton android:layout_height="wrap_content" android:id="@+id/radio_0" android:checked="true" android:text="Option A" android:contentDescription="Option A"></RadioButton>
 <RadioButton android:layout_height="wrap_content" android:id="@+id/radio_1" android:text="Option B" android:contentDescription="Option B"></RadioButton>
-<RadioButton android:layout_height="wrap_content" android:id="@+id/radio_2" android:text="Option C" android:contentDescription="Option C"></RadioButton></code></pre>
+<RadioButton android:layout_height="wrap_content" android:id="@+id/radio_2" android:text="Option C" android:contentDescription="Option C"></RadioButton>
+--></code></pre>
               </div>
             </div>
 
@@ -864,13 +891,15 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
               <div class="collapsible-target" hidden>
                 <p>Correct use of name attribute ensures checking one radio button will uncheck the other:</p>
 
-                <pre><code class="html"><fieldset>
+                <pre><code class="language-markup"><!--
+<fieldset>
   <legend>Would you like to receive email updates?</legend>
   <input name="rg1" type="radio" id="r1" value="yes"/>
   <label for="r1">Yes</label>
   <input name="rg1" type="radio" id="r2" value="no"/>
   <label for="r2">No</label>
-</fieldset> </code></pre>
+</fieldset> 
+--></code></pre>
               </div>
             </div>
 
@@ -886,13 +915,15 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
               <div class="collapsible-target" hidden>
                 <p>Incorrect use of the name attribute prevents correct keyboard access to radio buttons:</p>
 
-                <pre><code class="html"><fieldset>
+                <pre><code class="language-markup"><!--
+<fieldset>
   <legend>Would you like to receive email updates?</legend>
   <input name="rg1" type="radio" id="r1" value="yes"/>
   <label for="r1">Yes</label>
   <input name="rg1" type="radio" id="r2" value="no"/>
   <label for="r2">No</label>
-</fieldset> </code></pre>
+</fieldset> 
+--></code></pre>
               </div>
             </div>
 
@@ -1017,9 +1048,11 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">- (IBAction)dataValidation:(id)sender {
+                <pre><code class="language-clike"><!--
+- (IBAction)dataValidation:(id)sender {
   // Do not change focus
-}   </code></pre>
+}   
+--></code></pre>
               </div>
             </div>
 
@@ -1051,12 +1084,14 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">//A toggle button and progress bar appear on the screen, focus does not switch automatically
+                <pre><code class="language-clike"><!--
+//A toggle button and progress bar appear on the screen, focus does not switch automatically
 <ToggleButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/toggleButton_1" android:contentDescription="@string/toggleButton_1_desc"></ToggleButton>
 <ProgressBar android:layout_height="wrap_content" android:layout_width="wrap_content" style="?android:attr/progressBarStyleLarge" android:id="@+id/progressBar_1" android:contentDescription="@string/progressBar_1_desc"></ProgressBar>
 ...
 final ToggleButton togglebutton = (ToggleButton) findViewById(R.id.bars_toggleButton_1);
-final ProgressBar progressbar = (ProgressBar) findViewById(R.id.bars_progressBar_1);  </code></pre>
+final ProgressBar progressbar = (ProgressBar) findViewById(R.id.bars_progressBar_1);  
+--></code></pre>
               </div>
             </div>
 
@@ -1070,13 +1105,15 @@ final ProgressBar progressbar = (ProgressBar) findViewById(R.id.bars_progressBar
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">//A toggle button and progress bar appear on the screen and focus switches to the progress bar automatically
+                <pre><code class="language-clike"><!--
+//A toggle button and progress bar appear on the screen and focus switches to the progress bar automatically
 <ToggleButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/toggleButton_1" android:contentDescription="@string/toggleButton_1_desc"></ToggleButton>
 <ProgressBar android:layout_height="wrap_content" android:layout_width="wrap_content" style="?android:attr/progressBarStyleLarge" android:id="@+id/progressBar_1" android:contentDescription="@string/progressBar_1_desc"></ProgressBar>
 ...
 final ToggleButton togglebutton = (ToggleButton) findViewById(R.id.bars_toggleButton_1);
 final ProgressBar progressbar = (ProgressBar) findViewById(R.id.bars_progressBar_1);
-progressbar.requestFocus();</code></pre>
+progressbar.requestFocus();
+--></code></pre>
               </div>
             </div>
 
@@ -1101,13 +1138,15 @@ progressbar.requestFocus();</code></pre>
               <div class="collapsible-target" hidden>
                 <p>Validating input after the user completes what is being entered, without moving focus:</p>
 
-                <pre><code class="html"><fieldset>
+                <pre><code class="language-markup"><!--
+<fieldset>
   <legend>Mobile phone number</legend>
   <label for="p1"> Country code </label>
   <input type="text" id="p1" onBlur="validateCode();" />
   <label for="p2"> Number </label>
   <input type="text" id="p2" onBlur="validateNumber();" />
-</fieldset></code></pre>
+</fieldset>
+--></code></pre>
               </div>
             </div>
 
@@ -1123,13 +1162,15 @@ progressbar.requestFocus();</code></pre>
               <div class="collapsible-target" hidden>
                 <P>Validating input while the user is typing, and/or moving focus to the error message:</P>
 
-                <pre><code class="html"><fieldset>
+                <pre><code class="language-markup"><!--
+<fieldset>
   <legend>Mobile phone number</legend>
   <label for="p1"> Country code </label>
   <input type="text" id="p1" onChange="validateAndMove();" />
   <label for="p2"> Number </label>
   <input type="text" id="p2" onChange="validateAndMove();" />
-</fieldset></code></pre>
+</fieldset>
+--></code></pre>
               </div>
             </div>
 
@@ -1276,6 +1317,7 @@ progressbar.requestFocus();</code></pre>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
   <script src="../../scripts/libs/bootstrap/bootstrap.js"></script>
   <script src="../../scripts/script.js"></script>
+	<script src="../../scripts/prism.js"></script>
 
 </body>
 

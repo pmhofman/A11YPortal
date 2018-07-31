@@ -19,8 +19,8 @@
   $("code").each(function() {
     var text = $(this)
       .html()
-      .replace(/</g, "&lt;");
-    var text = text.replace(/>/g, "&gt;");
+      .replace(/</g, "<");
+    var text = text.replace(/>/g, ">");
     $(this).html(text);
   });
 

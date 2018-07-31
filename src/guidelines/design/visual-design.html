@@ -8,14 +8,11 @@
   <title>Visual Design - Design - Accessibility Guidelines</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
+  <link rel="stylesheet" href="../../styles/style.css">
   <link rel="stylesheet" href="../../styles/styles-responsive.css">
+	<link rel="stylesheet" href="../../styles/prism.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body id="totop">
@@ -366,8 +363,10 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java"><ImageView ... android:contentDescription="Save"/>
-<EditText ... android:hint="Surname (required)"/></code></pre>
+                <pre><code class="language-clike"><!--
+<ImageView ... android:contentDescription="Save"/>
+<EditText ... android:hint="Surname (required)"/>
+--></code></pre>
               </div>
             </div>
 
@@ -381,8 +380,10 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java"><ImageView .../> 	[an image with no contentDescription attribute]
-<EditText ... android:hint="Surname"/></code></pre>
+                <pre><code class="language-clike"><!--
+<ImageView .../> 	[an image with no contentDescription attribute]
+<EditText ... android:hint="Surname"/>
+--></code></pre>
               </div>
             </div>
 
@@ -519,13 +520,14 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><!-- ARIA used in addition to visible text -->
+                <pre><code class="language-markup"><!--
+// ARIA used in addition to visible text
 <div>
     <label for="t1">E-mail (required):</label>
     <input type="text" aria-required="true" id="t1"/>
 </div>
 
-<!-- ARIA tab list supported with hidden '(selected)' text for no CSS or ARIA support cases -->
+// ARIA tab list supported with hidden '(selected)' text for no CSS or ARIA support cases
 <style>
     .tabs li {
       float: left;
@@ -554,7 +556,8 @@
     <li role="presentation"><a href="#" role="tab" aria-controls="tab-1" aria-selected="false">Tab 1</a></li>
     <li role="presentation"><a href="#" role="tab" aria-controls="tab-2" aria-selected="false">Tab 2</a></li>
     <li role="presentation"><a href="#" role="tab" aria-controls="tab-3" aria-selected="true" class="selected">Tab 3<span class="hidden-offscreen"> (selected)</span></a></li>
-</ul></code></pre>
+</ul>
+--></code></pre>
               </div>
             </div>
 
@@ -689,7 +692,9 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">[AButton setFrame:CGRectMake(50, 50, 10, 10)];</code></pre>
+                <pre><code class="language-clike"><!--
+[AButton setFrame:CGRectMake(50, 50, 10, 10)];
+--></code></pre>
               </div>
             </div>
 
@@ -714,8 +719,10 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">//A large enough element with sufficient area to tap.
-setPadding(10, 10, 10, 10);</code></pre>
+                <pre><code class="language-markup"><!--
+//A large enough element with sufficient area to tap.
+setPadding(10, 10, 10, 10);
+--></code></pre>
               </div>
             </div>
 
@@ -729,13 +736,15 @@ setPadding(10, 10, 10, 10);</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java"><ImageView android:id="@+id/addBookmark" android:layout_width="50dp" android:layout_height="50dp"/>
+                <pre><code class="language-markup"><!--
+<ImageView android:id="@+id/addBookmark" android:layout_width="50dp" android:layout_height="50dp"/>
 
 // or
 
 int dimensionInPixels = 50 * context.getResources().getDisplayMetrics().density
 LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams (dimensionInPixels, dimensionInPixels);
-addBookmarkImageView.setLayoutParams(layoutParams);</code></pre>
+addBookmarkImageView.setLayoutParams(layoutParams);
+--></code></pre>
               </div>
             </div>
 
@@ -749,13 +758,15 @@ addBookmarkImageView.setLayoutParams(layoutParams);</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java"><ImageView android:id="@+id/addBookmark" android:layout_width="25dp" android:layout_height="25dp"/>
+                <pre><code class="language-clike"><!--
+<ImageView android:id="@+id/addBookmark" android:layout_width="25dp" android:layout_height="25dp"/>
 
 // or
 
 int dimensionInPixels = 25 * context.getResources().getDisplayMetrics().density
 LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams (dimensionInPixels, dimensionInPixels);
-addBookmarkImageView.setLayoutParams(layoutParams);</code></pre>
+addBookmarkImageView.setLayoutParams(layoutParams);
+--></code></pre>
               </div>
             </div>
 
@@ -774,7 +785,8 @@ addBookmarkImageView.setLayoutParams(layoutParams);</code></pre>
               </h5>
               <div class="collapsible-target" hidden>
                 <p>Use elements such as lists to provide structure to page content such as navigation, and CSS to add padding and margins around each touch target:</p>
-                <pre><code class="html"><style>
+                <pre><code class="language-markup"><!--
+<style>
   .main-nav {
     margin: 0;
     padding: 0;
@@ -797,7 +809,8 @@ addBookmarkImageView.setLayoutParams(layoutParams);</code></pre>
   <li><a href="/developers">Developers</a></li>
   <li><a href="/editors">Editors</a></li>
   <li><a href="/product-owners">Product Owners</a></li>
-</ul></code></pre>
+</ul>
+--></code></pre>
               </div>
             </div>
             <div class="collapsible">
@@ -811,7 +824,9 @@ addBookmarkImageView.setLayoutParams(layoutParams);</code></pre>
               </h5>
               <div class="collapsible-target" hidden>
                 <p>Don't use white space and printable characters to create spacing within or around touch targets:</p>
-                <pre><code class="html"><a href="/user-experience">User Experience</a> | <a href="/developers">Developers</a> | <a href="/editors">Editors</a></code></pre>
+                <pre><code class="language-markup"><!--
+<a href="/user-experience">User Experience</a> | <a href="/developers">Developers</a> | <a href="/editors">Editors</a>
+--></code></pre>
               </div>
             </div>
           </div>
@@ -928,8 +943,10 @@ addBookmarkImageView.setLayoutParams(layoutParams);</code></pre>
               <div class="collapsible-target" hidden>
                 <p>A touch target that is up against another touch target with 1 pixel of inactive space between them.</p>
 
-                <pre><code class="objectivec">[AButton setFrame:CGRectMake(50, 50, 50, 50)];
-[BButton setFrame:CGRectMake(101, 50, 50, 50)];</code></pre>
+                <pre><code class="language-markup"><!--
+[AButton setFrame:CGRectMake(50, 50, 50, 50)];
+[BButton setFrame:CGRectMake(101, 50, 50, 50)];
+--></code></pre>
               </div>
             </div>
 
@@ -945,8 +962,10 @@ addBookmarkImageView.setLayoutParams(layoutParams);</code></pre>
               <div class="collapsible-target" hidden>
                 <p>A touch target that overlaps another touch target with no inactive space between the two targets.</p>
 
-                <pre><code class="objectivec">[AButton setFrame:CGRectMake(50, 50, 50, 50)];
-[BButton setFrame:CGRectMake(99, 50, 50, 50)];</code></pre>
+                <pre><code class="language-markup"><!--
+[AButton setFrame:CGRectMake(50, 50, 50, 50)];
+[BButton setFrame:CGRectMake(99, 50, 50, 50)];
+--></code></pre>
               </div>
             </div>
 
@@ -965,7 +984,8 @@ addBookmarkImageView.setLayoutParams(layoutParams);</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java"><ImageButton android:id="@+id/addBookmarkBtn" android:layout_margin="1"
+                <pre><code class="language-clike"><!--
+<ImageButton android:id="@+id/addBookmarkBtn" android:layout_margin="1"
                                                    android:layout_height="wrap_content"
                                                    android:layout_width="wrap_content"
                                                    android:src="@drawable/addBMK"/>
@@ -976,7 +996,8 @@ LinearLayout layout = new LinearLayout(...);
 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(...);
 params.setMargins(1, 1, 1, 1);
 ImageButton addBookmarkBtn = new ImageButton(...);
-layout.addView(addBookmarkBtn, params);</code></pre>
+layout.addView(addBookmarkBtn, params);
+--></code></pre>
               </div>
             </div>
 
@@ -990,7 +1011,8 @@ layout.addView(addBookmarkBtn, params);</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java"><ImageButton android:id="@+id/addBookmarkBtn" android:layout_margin="0"
+                <pre><code class="language-clike"><!--
+<ImageButton android:id="@+id/addBookmarkBtn" android:layout_margin="0"
                                                    android:layout_height="wrap_content"
                                                    android:layout_width="wrap_content"
                                                    android:src="@drawable/addBMK"/>
@@ -1001,7 +1023,8 @@ LinearLayout layout = new LinearLayout(...);
 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(...);
 params.setMargins(0, 0, 0, 0);
 ImageButton addBookmarkBtn = new ImageButton(...);
-layout.addView(addBookmarkBtn, params);</code></pre>
+layout.addView(addBookmarkBtn, params);
+--></code></pre>
               </div>
             </div>
 
@@ -1021,7 +1044,8 @@ layout.addView(addBookmarkBtn, params);</code></pre>
               <div class="collapsible-target" hidden>
                 <p>Add borders or margins around touch targets to add at least 1px of inactive space.</p>
 
-                <pre><code class="html"><style>
+                <pre><code class="language-markup"><!--
+<style>
     .main-nav {
       margin: 0;
       padding: 0;
@@ -1045,7 +1069,8 @@ layout.addView(addBookmarkBtn, params);</code></pre>
     <li><a href="/developers">Developers</a></li>
     <li><a href="/editors">Editors</a></li>
     <li><a href="/product-owners">Product Owners</a></li>
-</ul></code></pre>
+</ul>
+--></code></pre>
               </div>
             </div>
 
@@ -1061,7 +1086,8 @@ layout.addView(addBookmarkBtn, params);</code></pre>
               <div class="collapsible-target" hidden>
                 <p>In this example there are no margins or borders around each link so there is no inactive space between them.</p>
 
-                <pre><code class="html"><style>
+                <pre><code class="language-markup"><!--
+<style>
     .main-nav {
       margin: 0;
       padding: 0;
@@ -1084,7 +1110,8 @@ layout.addView(addBookmarkBtn, params);</code></pre>
     <li><a href="/developers">Developers</a></li>
     <li><a href="/editors">Editors</a></li>
     <li><a href="/product-owners">Product Owners</a></li>
-</ul></code></pre>
+</ul>
+--></code></pre>
               </div>
             </div>
           </div>
@@ -1222,9 +1249,11 @@ layout.addView(addBookmarkBtn, params);</code></pre>
               <div class="collapsible-target" hidden>
                 <p>When specifying text size ideally use scale-independent pixels:</p>
 
-                <pre><code class="java"><TextView android:layout_width="match_parent"
+                <pre><code class="language-markup"><!--
+<TextView android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:textSize="20sp"/></code></pre>
+                                                android:textSize="20sp"/>
+--></code></pre>
               </div>
             </div>
 
@@ -1250,7 +1279,9 @@ layout.addView(addBookmarkBtn, params);</code></pre>
               <div class="collapsible-target" hidden>
                 <p>Do not disable user scaling:</p>
 
-                <pre><code class="html"><meta name="viewport" content="width=device-width, initial-scale=1.0"></code></pre>
+                <pre><code class="language-markup"><!--
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+--></code></pre>
               </div>
             </div>
 
@@ -1266,7 +1297,8 @@ layout.addView(addBookmarkBtn, params);</code></pre>
               <div class="collapsible-target" hidden>
                 <p>Disable scaling and/or scrollbars:</p>
 
-                <pre><code class="html"><meta name="viewport" content="user-scalable=no"/>
+                <pre><code class="language-markup"><!--
+<meta name="viewport" content="user-scalable=no"/>
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=1;">
 
 <style>
@@ -1275,7 +1307,8 @@ body {
 }
 </style>
 
-<iframe scrolling="no"></iframe></code></pre>
+<iframe scrolling="no"></iframe>
+--></code></pre>
               </div>
             </div>
 
@@ -1417,9 +1450,11 @@ body {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">// Custom control acts like a button and can be tapped by the user
+                <pre><code class="language-clike"><!--
+// Custom control acts like a button and can be tapped by the user
 [customControl setTitle:NSLocalizedString(@"Smile", @"Button title")];
-[customControl setAccessibilityTraits:UIAccessibilityTraitButton];</code></pre>
+[customControl setAccessibilityTraits:UIAccessibilityTraitButton];
+--></code></pre>
               </div>
             </div>
 
@@ -1433,8 +1468,10 @@ body {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">// Custom control acts like a button but does not have the correct traits so will be confusing for a VoiceOver user
-[customControl setTitle:NSLocalizedString(@"Smile", @"Button title")];</code></pre>
+                <pre><code class="language-clike"><!--
+// Custom control acts like a button but does not have the correct traits so will be confusing for a VoiceOver user
+[customControl setTitle:NSLocalizedString(@"Smile", @"Button title")];
+--></code></pre>
               </div>
             </div>
 
@@ -1452,8 +1489,10 @@ body {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">// use of a button with a background image rather than a clickable image
-<button android:background="@drawable/add" android:contentDescription="Add"></button></code></pre>
+                <pre><code class="language-clike"><!--
+// use of a button with a background image rather than a clickable image
+<button android:background="@drawable/add" android:contentDescription="Add"></button>
+--></code></pre>
               </div>
             </div>
 
@@ -1473,7 +1512,8 @@ body {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><style>
+                <pre><code class="language-markup"><!--
+<style>
   body {
     background: #fff;
   }
@@ -1489,7 +1529,8 @@ body {
 
 <a href="../../index.html">Home</a>
 
-<button type="submit">Search</button></code></pre>
+<button type="submit">Search</button>
+--></code></pre>
               </div>
             </div>
 
@@ -1503,14 +1544,16 @@ body {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><style>
+                <pre><code class="language-markup"><!--
+<style>
   a {
     cursor: text;
     text-decoration: none;
   }
 </style>
 
-<a href="../../index.html">Home</a></code></pre>
+<a href="../../index.html">Home</a>
+--></code></pre>
               </div>
             </div>
 
@@ -1640,10 +1683,12 @@ body {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">// gbutton is a simulated button to provide accessible touch to a graph. It has already been initialized as a UIAccessibilityElement
+                <pre><code class="language-clike"><!--
+// gbutton is a simulated button to provide accessible touch to a graph. It has already been initialized as a UIAccessibilityElement
 gbutton.accessibilityLabel = NSLocalizedString(@"1st quarter results", @"Button title");
 gbutton.accessiiblityTraits = UIAccessibilityTraitButton;
-gbutton.accessiiblityFrame = CGRectMake(x, y, w, h); // We set the accessibilityFrame here so we know where the object is and can draw a focus rectangle around it.</code></pre>
+gbutton.accessiiblityFrame = CGRectMake(x, y, w, h); // We set the accessibilityFrame here so we know where the object is and can draw a focus rectangle around it.
+--></code></pre>
               </div>
             </div>
 
@@ -1657,10 +1702,12 @@ gbutton.accessiiblityFrame = CGRectMake(x, y, w, h); // We set the accessibility
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">// gbutton is a simulated button to provide accessible touch to a graph. It has already been initialized as a UIAccessibilityElement, button title not translateable
+                <pre><code class="language-clike"><!--
+// gbutton is a simulated button to provide accessible touch to a graph. It has already been initialized as a UIAccessibilityElement, button title not translateable
 gbutton.accessibilityLabel = @"1st quarter results";
 gbutton.accessiblityTraits = UIAccessibilityTraitButton;
-gbutton.accessiiblityFrame = nil;</code></pre>
+gbutton.accessiiblityFrame = nil;
+--></code></pre>
               </div>
             </div>
 
@@ -1678,14 +1725,16 @@ gbutton.accessiiblityFrame = nil;</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">// A custom element that is drawn differently when it has focus via the stylesheet
+                <pre><code class="language-clike"><!--
+// A custom element that is drawn differently when it has focus via the stylesheet
 <CustomButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="@drawable/my_button"></CustomButton>
 
 // the my_button.xml file in res/drawable
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_focused="true" android:drawable="@android:drawable/btn_default_focused"></item>
     <item android:drawable="@drawable/btn_default_my"></item>
-</selector></code></pre>
+</selector>
+--></code></pre>
               </div>
             </div>
 
@@ -1699,14 +1748,16 @@ gbutton.accessiiblityFrame = nil;</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">//A custom element that is only drawn one way
+                <pre><code class="language-clike"><!--
+//A custom element that is only drawn one way
 <CustomButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="@drawable/my_button"></CustomButton>
 
 //the my_button.xml file in res/drawable
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/btn_default_my">
     </item>
-</selector></code></pre>
+</selector>
+--></code></pre>
               </div>
             </div>
 
@@ -1727,17 +1778,19 @@ gbutton.accessiiblityFrame = nil;</code></pre>
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><!-- example 1, no CSS property changes will automatically produce desired visual focus in supporting user agents-->
+                <pre><code class="language-markup"><!--
+// example 1, no CSS property changes will automatically produce desired visual focus in supporting user agents
 <a href="..."> Next </a>
 
-                <!-- example 2, use of the CSS outline property -->
+// example 2, use of the CSS outline property
 <style type="text/css">
 a {
   outline: black dotted thin;
 }
 </style>
 ...
-<a href="..."> Next </a></code></pre>
+<a href="..."> Next </a>
+--></code></pre>
               </div>
             </div>
 
@@ -1751,13 +1804,15 @@ a {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><style type="text/css">
+                <pre><code class="language-markup"><!--
+<style type="text/css">
 a {
   outline: none;
 }
 </style>
 ...
-<a href="..."> Next </a></code></pre>
+<a href="..."> Next </a>
+--></code></pre>
               </div>
             </div>
           </div>
@@ -1888,9 +1943,11 @@ a {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">[AButton setImage:[UIImage imageNamed:@"play.jpg"] forState:UIControlStateNormal];
+                <pre><code class="language-clike"><!--
+[AButton setImage:[UIImage imageNamed:@"play.jpg"] forState:UIControlStateNormal];
 [AButton setTitle:NSLocalizedString(@"Play clip", nil) forState:UIControlStateNormal];
-[AButton setAccessibilityTraits: UIAccessibilityTraitButton];</code></pre>
+[AButton setAccessibilityTraits: UIAccessibilityTraitButton];
+--></code></pre>
               </div>
             </div>
 
@@ -1904,10 +1961,12 @@ a {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">// an image that doesn't look like a button
+                <pre><code class="language-clike"><!--
+// an image that doesn't look like a button
 UIImageView* aImage = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
 [aImage imageNamed:@"playbtn"];
-[aImage setTitle:NSLocalizedString(@"Play clip", nil) forState:UIControlStateNormal];</code></pre>
+[aImage setTitle:NSLocalizedString(@"Play clip", nil) forState:UIControlStateNormal];
+--></code></pre>
               </div>
             </div>
 
@@ -1925,13 +1984,15 @@ UIImageView* aImage = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 10
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">//A custom element that doesn't look like a button uses the default button theme and indicate visual focus
+                <pre><code class="language-clike"><!--
+//A custom element that doesn't look like a button uses the default button theme and indicate visual focus
 <CustomButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="@drawable/my_button"></CustomButton>
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_focused="true" android:drawable="@android:drawable/btn_default"></item>
     <item android:drawable="@drawable/btn_default"></item>
-</selector></code></pre>
+</selector>
+--></code></pre>
               </div>
             </div>
 
@@ -1945,13 +2006,15 @@ UIImageView* aImage = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 10
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">//A custom button element that is drawn in a non-standard way
+                <pre><code class="language-clike"><!--
+//A custom button element that is drawn in a non-standard way
 <CustomButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="@drawable/my_button"></CustomButton>
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/btn_custom">
     </item>
-</selector></code></pre>
+</selector>
+--></code></pre>
               </div>
             </div>
 
@@ -1970,8 +2033,10 @@ UIImageView* aImage = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 10
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><a href="..."> Next story</a>
-<button>Next story</button></code></pre>
+                <pre><code class="language-markup"><!--
+<a href="..."> Next story</a>
+<button>Next story</button>
+--></code></pre>
               </div>
             </div>
 
@@ -1985,7 +2050,9 @@ UIImageView* aImage = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 10
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><div onclick="openStory();"> Next story </div></code></pre>
+                <pre><code class="language-markup"><!--
+<div onclick="openStory();"> Next story </div>
+--></code></pre>
               </div>
             </div>
 
@@ -2114,13 +2181,15 @@ UIImageView* aImage = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 10
               <div class="collapsible-target" hidden>
                 <p>Use terms for actions that are not device or control specific:</p>
 
-                <pre><code class="html"><form>
+                <pre><code class="language-markup"><!--
+<form>
     <p>Select the day do you prefer?</p>
     <label><input type="radio" name="day" id="mon" value="Monday">Monday</label>
     <label><input type="radio" name="day" id="fri" value="Friday">Friday</label>
     <label><input type="radio" name="day" id="sat" value="Saturday">Saturday</label>
     <input type="submit" value="Submit">
-</form></code></pre>
+</form>
+--></code></pre>
               </div>
             </div>
 
@@ -2498,6 +2567,7 @@ UIImageView* aImage = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 10
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
   <script src="../../scripts/libs/bootstrap/bootstrap.js"></script>
   <script src="../../scripts/script.js"></script>
+	<script src="../../scripts/prism.js"></script>
 
 </body>
 

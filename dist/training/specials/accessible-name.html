@@ -2,24 +2,14 @@
 <html lang="en">
 
 <head>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117757403-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-117757403-1');
-  </script>
-
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accessible Name - Specials - Accessibility Champions Training</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
+  <link rel="stylesheet" href="../../styles/style.css">
   <link rel="stylesheet" href="../../styles/styles-responsive.css">
+	<link rel="stylesheet" href="../../styles/prism.css">
 
   <style type="text/css">
     a.example[href][target="_blank" rel="noopener noreferrer"]:focus:after,
@@ -39,11 +29,7 @@
     }
   </style>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -219,12 +205,11 @@
 
               </div>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <label for="u_name">Username</label>
 <input title="Must not include spaces or any special characters" type="text" id="u_name" />
-</code>
-</pre>
+--></code></pre>
               <ul>
                 <li>Both Name and Description set on widget object in the accessibility tree</li>
                 <li>Both are supposed to be conveyed to the assistive technology user</li>
@@ -278,12 +263,11 @@
 
               </div>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <label>Username</label>
 <input title="Must not include spaces or any special characters" type="text" />
-</code>
-</pre>
+--></code></pre>
               <div class="alert alert-info">
                 <p class="mb-2">
                   <strong>Text Alternative Computation</strong>
@@ -361,8 +345,8 @@
 
                 </div>
 
-                <pre class="highlight">
-<code class="html">
+                <pre><code class="language-markup"><!-- 
+
 <button>
   <span class="action">Delete</span>
   <span class="profile">
@@ -370,8 +354,7 @@
     Phoebe Tonkin
   </span>
 </button>
-</code>
-</pre>
+--></code></pre>
 
                 <div class="alert alert-info">
                   <p class="mb-2">
@@ -421,8 +404,8 @@
 
                 </div>
 
-                <pre class="highlight">
-<code class="html">
+                <pre><code class="language-markup"><!-- 
+
 <button>
   <span class="action">Delete</span>
   <span class="profile" aria-label="all records of Phoebe Tonkin">
@@ -430,8 +413,7 @@
     Phoebe Tonkin
   </span>
 </button>
-</code>
-</pre>
+--></code></pre>
 
                 <div class="alert alert-info">
                   <p class="mb-2">
@@ -480,8 +462,8 @@
 
                 </div>
 
-                <pre class="highlight">
-<code class="html">
+                <pre><code class="language-markup"><!-- 
+
 <button aria-label="Remove all trace of Phoebe Tonkin from the face of the Earth">
   <span class="action">Delete</span>
   <span class="profile" aria-label="all records of Phoebe Tonkin">
@@ -489,8 +471,7 @@
     Phoebe Tonkin
   </span>
 </button>
-</code>
-</pre>
+--></code></pre>
 
                 <div class="alert alert-info">
                   <p class="mb-2">
@@ -540,11 +521,10 @@
 
                 </div>
 
-                <pre class="highlight">
-<code class="html">
+                <pre><code class="language-markup"><!-- 
+
 <input id="my_name" aria-labelledby="my_name" aria-label="Your name is?" type="text" />
-</code>
-</pre>
+--></code></pre>
                 <ul>
                   <li>Algorithm first checks for the presence of <code>aria-labelledby=""</code></li>
                   <li>Follows the referenced ID to the element</li>
@@ -603,14 +583,13 @@
 
                 </div>
 
-                <pre class="highlight">
-<code class="html">
+                <pre><code class="language-markup"><!-- 
+
 <div id="parentId">
   <button aria-labelledby="parentId" aria-label="Remove event:">X</button>
   <span class="event">Blindfolded Phoebe Contest</span>
 </div>
-</code>
-</pre>
+--></code></pre>
                 <ul>
                   <li>Algorithm detects the presence of <code>aria-labelledby=""</code> on the button</li>
                   <li>Follows that to the referenced element</li>
@@ -685,8 +664,8 @@
 
                 </div>
 
-                <pre class="highlight">
-<code class="html">
+                <pre><code class="language-markup"><!-- 
+
 <div>
   <div id="lblId">
     Your Email
@@ -704,8 +683,7 @@ role="button">
     </a>
   </div>
 </div>
-</code>
-</pre>
+--></code></pre>
                 <div class="alert alert-info">
                   <p class="mb-2">
                     <strong>Text Alternative Computation Edit field</strong>
@@ -814,11 +792,11 @@ role="button">
 
               </div>
 
-              <pre class="highlight">
-<code class="html">
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-  &lt;head&gt;
+              <pre><code class="language-markup"><!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <style type="text/css">
       a[href][target="_blank" rel="noopener noreferrer"]:focus:after, a[href][target="_blank" rel="noopener noreferrer"]:hover:after {
         height: auto; width: auto;
@@ -834,15 +812,14 @@ role="button">
         content: ' - Opens in new window ';
       }
     </style>
-  &lt;/head&gt;
-  &lt;body&gt;
+  </head>
+  <body>
     <div>
       <a href="http://google.com" target="_blank" rel="noopener noreferrer">Search</a>
     </div>
-  &lt;/body&gt;
-&lt;/html&gt;
-</code>
-</pre>
+  </body>
+</html>
+--></code></pre>
 
               <div class="alert alert-info">
                 <p class="mb-2">
@@ -916,16 +893,15 @@ role="button">
 
               </div>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <input aria-label="Country" aria-describedby="descId" type="text" />
 <div id="descId" style="display:none;">
   <span>
     Choose the country where you currently reside.
   </span>
 </div>
-</code>
-</pre>
+--></code></pre>
 
               <div class="alert alert-info">
                 <p class="mb-2">
@@ -983,16 +959,15 @@ role="button">
 
               </div>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <input aria-label="Country" aria-describedby="descId" type="text" />
 <div id="descId" style="visibility:hidden;" >
   <span>
     Choose the country where you currently reside.
   </span>
 </div>
-</code>
-</pre>
+--></code></pre>
 
               <div class="alert alert-info">
                 <p class="mb-2">
@@ -1052,8 +1027,8 @@ role="button">
 
               </div>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <div id="parentId">
   Email address:
   <input aria-labelledby="parentId" type="text" />
@@ -1061,8 +1036,7 @@ role="button">
     Error: A valid email address is required.
   </div>
 </div>
-</code>
-</pre>
+--></code></pre>
 
               <div class="alert alert-info">
                 <p class="mb-2">
@@ -1122,8 +1096,8 @@ role="button">
 
               </div>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <div id="parentId">
   Email address:
   <input aria-labelledby="parentId" type="text" />
@@ -1131,8 +1105,7 @@ role="button">
     Error: A valid email address is required.
   </div>
 </div>
-</code>
-</pre>
+--></code></pre>
 
               <div class="alert alert-info">
                 <p class="mb-2">
@@ -1190,8 +1163,8 @@ role="button">
 
               </div>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <div id="parentId">
   Email address:
   <input aria-labelledby="parentId" type="text" />
@@ -1199,8 +1172,7 @@ role="button">
     Error: A valid email address is required.
   </div>
 </div>
-</code>
-</pre>
+--></code></pre>
 
               <div class="alert alert-info">
                 <p class="mb-2">
@@ -1250,8 +1222,8 @@ role="button">
 
               </div>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <div id="parentId">
   Email address:
   <input aria-labelledby="parentId" type="text" />
@@ -1259,8 +1231,7 @@ role="button">
     Error: A valid email address is required.
   </div>
 </div>
-</code>
-</pre>
+--></code></pre>
 
               <div class="alert alert-info">
                 <p class="mb-2">
@@ -1308,8 +1279,8 @@ role="button">
 
               </div>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <div id="parentId">
   Email address:
   <input aria-labelledby="parentId" type="text" />
@@ -1317,8 +1288,7 @@ role="button">
     Error: A valid email address is required.
   </div>
 </div>
-</code>
-</pre>
+--></code></pre>
 
               <div class="alert alert-info">
                 <p class="mb-2">
@@ -1381,15 +1351,14 @@ role="button">
 
               </div>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <button>
   <div>
     <span>Wow!</span>
   </div>
 </button>
-</code>
-</pre>
+--></code></pre>
 
               <div class="alert alert-info">
                 <p class="mb-2">
@@ -1435,15 +1404,14 @@ role="button">
 
               </div>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <button>
   <div aria-label="This is the best!" >
     <span>Wow!</span>
   </div>
 </button>
-</code>
-</pre>
+--></code></pre>
 
               <div class="alert alert-info">
                 <p class="mb-2">
@@ -1489,15 +1457,14 @@ role="button">
 
               </div>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <button>
   <div aria-label="This is the best!" role="presentation" >
     <span>Wow!</span>
   </div>
 </button>
-</code>
-</pre>
+--></code></pre>
 
               <div class="alert alert-info">
                 <p class="mb-2">
@@ -1710,6 +1677,7 @@ role="button">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
   <script src="../../scripts/libs/bootstrap/bootstrap.js"></script>
   <script src="../../scripts/script.js"></script>
+	<script src="../../scripts/prism.js"></script>
 
 </body>
 

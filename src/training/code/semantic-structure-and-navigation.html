@@ -7,14 +7,11 @@
   <title>Semantic Structure and Navigation - Web - Accessibility Champions Training</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
+  <link rel="stylesheet" href="../../styles/style.css">
   <link rel="stylesheet" href="../../styles/styles-responsive.css">
+	<link rel="stylesheet" href="../../styles/prism.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body id="totop">
@@ -318,7 +315,7 @@
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" class="link-ts"><span>&lt;title&gt;: The Document Title element - MDN</span></a></li>
+                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" class="link-ts"><span><title>: The Document Title element - MDN</span></a></li>
                 </ul>
 
               </div>
@@ -1007,11 +1004,11 @@
                   </li>
                   <li>Main site navigation methods
                     <ul>
-                      <li>Add &lt;nav role="navigation"&gt; to the Main Menu</li>
+                      <li>Add <nav role="navigation"> to the Main Menu</li>
                       <li>Never use more than 2 or 3 NAV elements or they will loose value</li>
                       <li>Give menu's accessible names via aria-labelledby</li>
                       <li>Give current link a hidden text of "current"</li>
-                      <li>Only when the role really fits the <a href="https://www.w3.org/TR/wai-aria-1.1/#menu">main menu specification</a> use role="tree" or role="menu". In most cases a &lt;nav&gt; with a &lt;ul&gt; will be the best choice.</li>
+                      <li>Only when the role really fits the <a href="https://www.w3.org/TR/wai-aria-1.1/#menu">main menu specification</a> use role="tree" or role="menu". In most cases a <nav> with a <ul> will be the best choice.</li>
                       <li>Although main navigation may look like tabs, role="tab" is almost always never the proper choice.</li>
                       <li>Provide more than 1 way to locate a Web page
                         <ul>
@@ -1735,14 +1732,14 @@
 
                 <h3 class="card-title">Checklist Deque</h3>
 
-                <h4 class="heading-s"><strong><code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code></strong><code></code></h4>
+                <h4 class="heading-s"><strong><code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code></strong></h4>
                 <ul class="list-icons list-checklist">
                   <li>Critical emphasis in the text <span class="badge badge-info">SHOULD</span> be conveyed through visual styling.
                   </li>
                   <li>Critical emphasis in the text <span class="badge badge-info">SHOULD</span> be conveyed in a text-based format.</li>
                 </ul>
 
-                <h4 class="heading-s"><code><strong>&lt;blockquote&gt;</strong></code><strong> and &lt;<code>q&gt;</code></strong></h4>
+                <h4 class="heading-s"><code>&lt;strong&gt;<blockquote></strong></code><strong> and <code>&lt;q&gt;</code></strong></h4>
                 <ul class="list-icons list-checklist">
                   <li>The <code>&lt;blockquote&gt;</code> element <span class="badge badge-info">SHOULD</span> be used to designate long (block level) quotations.
                   </li>
@@ -1803,19 +1800,19 @@
                 <ul>
                   <li>Reasonable support</li>
                   <li>write out the full abbreviation the first time that it appears</li>
-                  <li>&lt;acronym&gt; is phased out, use &lt;abbr&gt;</li>
+                  <li><acronym> is phased out, use <abbr></li>
                 </ul>
 
                 <h4 class="heading-s">Elements NOT announced by Screen readers (but still important!)</h4>
                 <ul>
                   <li>Reasonable support</li>
-                  <li>&lt;strong&gt; - strong emphasis</li>
-                  <li>&lt;em&gt; - emphasis</li>
-                  <li>&lt;q&gt; - inline quotation</li>
-                  <li>&lt;pre&gt; - preformatted text</li>
-                  <li>&lt;code&gt; - computer code (such as HTML, JavaScript, PHP, etc.)</li>
-                  <li>&lt;address&gt; - contact information for the creators of a document</li>
-                  <li>&lt;time&gt; - date and/or time</li>
+                  <li><strong> - strong emphasis</li>
+                  <li><em> - emphasis</li>
+                  <li><q> - inline quotation</li>
+                  <li><pre> - preformatted text</li>
+                  <li><code> - computer code (such as HTML, JavaScript, PHP, etc.)</li>
+                  <li><address> - contact information for the creators of a document</li>
+                  <li><time> - date and/or time</li>
                   <li><a href="http://w3c.github.io/low-vision-a11y-tf/requirements#x3-5-identifying-elements">LVTF 3.5 Identifying Elements</a></li>
                 </ul>
 
@@ -1824,7 +1821,7 @@
                   <li>Good practice
                     <ul>
                       <li>Increase font size</li>
-                      <li>Make the font bold using &lt;em&gt; and &lt;strong&gt; or CSS</li>
+                      <li>Make the font bold using <em> and <strong> or CSS</li>
                       <li>Change the color of the font (* watch contrast and not only means of conveying important information)</li>
                       <li>Put an outline around the content</li>
                       <li>Put a background color behind the content</li>
@@ -1834,7 +1831,7 @@
                   </li>
                   <li>Bad practice
                     <ul>
-                      <li>Make the font italic using &lt;i&gt; or &lt;em&gt; or CSS</li>
+                      <li>Make the font italic using <i> or <em> or CSS</li>
                       <li>USE ALL CAPITAL LETTERS</li>
                       <li>*Put asterisks around words or phrases*</li>
                     </ul>
@@ -2118,6 +2115,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
   <script src="../../scripts/libs/bootstrap/bootstrap.js"></script>
   <script src="../../scripts/script.js"></script>
+	<script src="../../scripts/prism.js"></script>
 
 </body>
 

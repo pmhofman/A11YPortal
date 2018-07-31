@@ -7,14 +7,11 @@
   <title>Scripts and Dynamic Content - Code - Accessibility Guidelines</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
+  <link rel="stylesheet" href="../../styles/style.css">
   <link rel="stylesheet" href="../../styles/styles-responsive.css">
+	<link rel="stylesheet" href="../../styles/prism.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body id="totop">
@@ -181,7 +178,8 @@
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">// Example 1 - checking a class is available
+                <pre><code class="language-clike"><!--
+// Example 1 - checking a class is available
 if (NSClassFromString(@"UIPopoverController")) {
   // Do something
 }
@@ -198,7 +196,8 @@ if #available(iOS 10.0, *) {
   // Cool new feature that iOS 10 supports
 } else {
   // Fallback to something less cool, but that will work on iOS 9 and below
-}</code></pre>
+}
+--></code></pre>
               </div>
             </div>
 
@@ -216,12 +215,14 @@ if #available(iOS 10.0, *) {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="java">if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                <pre><code class="language-clike"><!--
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
   //Enable your feature
 }
 else {
   //Disable your feature
-}</code></pre>
+}
+--></code></pre>
               </div>
             </div>
 
@@ -240,23 +241,25 @@ else {
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><!-- Example 1 - HTML content that does not rely on JavaScript or CSS enhancement to function -->
+                <pre><code class="language-markup"><!--
+// Example 1 - HTML content that does not rely on JavaScript or CSS enhancement to function
 <a href="page2.html"> Next Page </a>
 
-<!-- Example 2 - Content that is displayed with or without JavaScript -->
+// Example 2 - Content that is displayed with or without JavaScript
 <script>
 // embed game or media player
 </script>
 
 <noscript>This content requires Javascript to be enabled.</noscript>
 
-<!-- Example 3 - check if a Javascript method or property is available -->
+// Example 3 - check if a Javascript method or property is available
 if("geolocation" in navigator) { ... }
 
-<!-- Example 4 - check if CSS rules are supported -->
+// Example 4 - check if CSS rules are supported
 @supports (display: flex) and (transition: .5s) {
 .box { display: flex; transition: .5s; }
-} </code></pre>
+} 
+--></code></pre>
               </div>
             </div>
 
@@ -270,13 +273,15 @@ if("geolocation" in navigator) { ... }
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html"><!-- Example 1 - JavaScript based link -->
+                <pre><code class="language-markup"><!--
+// Example 1 - JavaScript based link
 <a onclick="nextPage();"> Next Page </a>
 
-<!-- Example 2 - content that is only available with JavaScript and no fall-back explanation -->
+// Example 2 - content that is only available with JavaScript and no fall-back explanation
 <script>
 // embed game or media player
-</script></code></pre>
+</script>
+--></code></pre>
               </div>
             </div>
 
@@ -475,14 +480,16 @@ if("geolocation" in navigator) { ... }
               </h5>
               <div class="collapsible-target" hidden>
                 <p>A moving carousel of news stories that change every 5 seconds, with controls to over-ride this behaviour:</p>
-                <pre><code class="html"><h2>Story headline</h2>
+                <pre><code class="language-markup"><!--
+<h2>Story headline</h2>
 <div>Story content</div>
 <div>
   <button style="float:left;">Prior story</button>
   <button style="float:left;">Pause</button>
   <button style="float:left;">Next story</button>
 </div>
-...</code></pre>
+...
+--></code></pre>
               </div>
             </div>
 
@@ -497,8 +504,10 @@ if("geolocation" in navigator) { ... }
               </h5>
               <div class="collapsible-target" hidden>
                 <p>A moving carousel of news stories that change every 5 seconds:</p>
-                <pre><code class="html"><h2>Story headline</h2>
-<div>Story content</div></code></pre>
+                <pre><code class="language-markup"><!--
+<h2>Story headline</h2>
+<div>Story content</div>
+--></code></pre>
               </div>
             </div>
 
@@ -618,7 +627,9 @@ if("geolocation" in navigator) { ... }
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">[stockTicker setAccessibilityTraits:UIAccessibilityTraitStaticText | UIAccessibilityTraitUpdatesFrequently];</code></pre>
+                <pre><code class="language-clike"><!--
+[stockTicker setAccessibilityTraits:UIAccessibilityTraitStaticText | UIAccessibilityTraitUpdatesFrequently];
+--></code></pre>
               </div>
             </div>
 
@@ -632,8 +643,10 @@ if("geolocation" in navigator) { ... }
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">[stockTicker setAccessibilityTraits:UIAccessibilityTraitStaticText];
-UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)</code></pre>
+                <pre><code class="language-clike"><!--
+[stockTicker setAccessibilityTraits:UIAccessibilityTraitStaticText];
+UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)
+--></code></pre>
               </div>
             </div>
 
@@ -684,13 +697,15 @@ UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)</
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html">&lt;head&gt;
+                <pre><code class="language-markup"><!--
+<head>
   <title>This is appropriate</title>
-&lt;/head&gt;
-&lt;body&gt;
+</head>
+<body>
   <p>Please reload this page!</p>
   <a href="...">Reload Page</a>
-&lt;/body&gt;</code></pre>
+</body>
+--></code></pre>
               </div>
             </div>
 
@@ -704,18 +719,20 @@ UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)</
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html">&lt;body onload=setTimeout("location.href='http://www.company-name.com'",5000)&gt;
+                <pre><code class="language-markup"><!--
+<body onload=setTimeout("location.href='http://www.company-name.com'",5000)>
   <p>...Information...</p>
-&lt;/body&gt;
+</body>
 
-<!-- or -->
-&lt;head&gt;
+// or
+<head>
   <title>Don't use this!</title>
-  &lt;meta http-equiv="refresh" content="5; http://www.example.com/newpage"&gt;
-&lt;/head&gt;
-&lt;body&gt;
+  <meta http-equiv="refresh" content="5; http://www.example.com/newpage">
+</head>
+<body>
   <p>If your browser supports Refresh, you'll be transported to our <a href="http://www.example.com/newpage">new site</a> in 5 seconds, otherwise, select the link manually.</p>
-&lt;/body&gt;</code></pre>
+</body>
+--></code></pre>
               </div>
             </div>
 
@@ -852,7 +869,8 @@ UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)</
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html">&lt;head&gt;
+                <pre><code class="language-markup"><!--
+<head>
   <script type="text/javascript">
     var time ; global to keep track of time
     function setTimer() {
@@ -867,10 +885,11 @@ UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)</
       }
     }
   </script>
-&lt;/head&gt;
-&lt;body onload="setTimer();"&gt;
+</head>
+<body onload="setTimer();">
 ...
-&lt;/body&gt; </code></pre>
+</body> 
+--></code></pre>
               </div>
             </div>
 
@@ -884,7 +903,8 @@ UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)</
                 </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html">&lt;head&gt;
+                <pre><code class="language-markup"><!--
+<head>
   <script type="text/javascript">
     var time ; global to keep track of time
     function setTimer() {
@@ -894,10 +914,11 @@ UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)</
       alert("Your session has ended");
     }
   </script>
-&lt;/head&gt;
-&lt;body onload="setTimer();"&gt;
+</head>
+<body onload="setTimer();">
 ...
-&lt;/body&gt;  </code></pre>
+</body>  
+--></code></pre>
               </div>
             </div>
 
@@ -1184,6 +1205,7 @@ UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)</
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
   <script src="../../scripts/libs/bootstrap/bootstrap.js"></script>
   <script src="../../scripts/script.js"></script>
+	<script src="../../scripts/prism.js"></script>
 
 </body>
 

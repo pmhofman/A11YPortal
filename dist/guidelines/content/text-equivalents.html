@@ -2,30 +2,16 @@
 <html lang="en">
 
 <head>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117757403-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-117757403-1');
-  </script>
-
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Text Equivalents - Content - Accessibility Guidelines</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
+  <link rel="stylesheet" href="../../styles/style.css">
   <link rel="stylesheet" href="../../styles/styles-responsive.css">
+	<link rel="stylesheet" href="../../styles/prism.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body id="totop">
@@ -204,7 +190,9 @@
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">[aButton setAccessibilityLabel:NSLocalizedString(@"Add to favourites video", @"Add to favourites button accessibility label")];</code></pre>
+                <pre><code class="language-clike"><!--
+[aButton setAccessibilityLabel:NSLocalizedString(@"Add to favourites video", @"Add to favourites button accessibility label")];
+--></code></pre>
             </div>
           </div>
 
@@ -218,7 +206,9 @@
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">[aButton setAccessibilityLabel:NSLocalizedString(@"Adds this video to your favourites", @"Add to favourites button accessibility label")];</code></pre>
+                <pre><code class="language-clike"><!--
+[aButton setAccessibilityLabel:NSLocalizedString(@"Adds this video to your favourites", @"Add to favourites button accessibility label")];
+--></code></pre>
             </div>
           </div>
 
@@ -236,12 +226,14 @@
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-                <pre><code class="java"><button
+                <pre><code class="language-clike"><!--
+<button
 android:layout_height="wrap_content"
 android:id="@+id/sunnyday"
 android:src="@drawable/blue"
 android:focusable="true"
-android:contentDescription="Main Menu"></button></ImageView></code></pre>
+android:contentDescription="Main Menu"></button></ImageView>
+--></code></pre>
             </div>
 
           </div>
@@ -256,12 +248,14 @@ android:contentDescription="Main Menu"></button></ImageView></code></pre>
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-                <pre><code class="java"><button
+                <pre><code class="language-clike"><!--
+<button
 android:layout_height="wrap_content"
 android:id="@+id/sunnyday"
 android:src="@drawable/blue"
 android:focusable="true"
-android:contentDescription="Exit this screen and return to the main menu"></button>/ImageView> </code></pre>
+android:contentDescription="Exit this screen and return to the main menu"></button>/ImageView> 
+--></code></pre>
             </div>
           </div>
 
@@ -279,11 +273,13 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-                <pre><code class="html"><!-- Example 1 - image -->
+                <pre><code class="language-markup"><!--
+// Example 1 - image
 <img src="rating.jpg" alt="Rate this article" />
 
-<!-- Example 2 - form input -->
-<input id="t1" type="text" aria-label="Search" /></code></pre>
+// Example 2 - form input
+<input id="t1" type="text" aria-label="Search" />
+--></code></pre>
             </div>
           </div>
 
@@ -297,11 +293,13 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-                <pre><code class="html"><!-- Example 1 - image -->
+                <pre><code class="language-markup"><!--
+// Example 1 - image
 <img src="rating.jpg" alt="Greyed out stars" />
 
-<!-- Example 2 - form input -->
-<input id="t1" type="text" title="Type your search term here:" /> </code></pre>
+// Example 2 - form input
+<input id="t1" type="text" title="Type your search term here:" /> 
+--></code></pre>
             </div>
           </div>
         </div>
@@ -424,7 +422,9 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-              <pre><code class="objectivec">[somethingDecorative setIsAccessibilityElement:NO];</code></pre>
+              <pre><code class="language-clike"><!--
+[somethingDecorative setIsAccessibilityElement:NO];
+--></code></pre>
             </div>
           </div>
           <div class="collapsible">
@@ -437,7 +437,9 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-              <pre><code class="objectivec">[somethingDecorative setIsAccessibilityElement:YES];</code></pre>
+              <pre><code class="language-clike"><!--
+[somethingDecorative setIsAccessibilityElement:YES];
+--></code></pre>
             </div>
           </div>
 
@@ -456,8 +458,10 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-                <pre><code class="java">//blue rectangle used for decoration that does not receive focus - in this case android:focusable is false by default
-<ImageView android:layout_height="wrap_content" android:id="@+id/image_1" android:src="@drawable/blue"></ImageView></code></pre>
+                <pre><code class="language-clike"><!--
+//blue rectangle used for decoration that does not receive focus - in this case android:focusable is false by default
+<ImageView android:layout_height="wrap_content" android:id="@+id/image_1" android:src="@drawable/blue"></ImageView>
+--></code></pre>
             </div>
           </div>
           <div class="collapsible">
@@ -470,8 +474,10 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-                <pre><code class="java">//blue rectangle used for decoration that can receive focus
-<ImageView android:layout_height="wrap_content" android:id="@+id/image_1" android:src="@drawable/blue" android:focusable="true"></ImageView></code></pre>
+                <pre><code class="language-clike"><!--
+//blue rectangle used for decoration that can receive focus
+<ImageView android:layout_height="wrap_content" android:id="@+id/image_1" android:src="@drawable/blue" android:focusable="true"></ImageView>
+--></code></pre>
             </div>
           </div>
 
@@ -491,7 +497,9 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
             <div class="collapsible-target" hidden>
               <p>Button that is not currently used:</p>
 
-              <pre><code class="html"><button type="button" disabled="disabled"></button></code></pre>
+              <pre><code class="language-markup"><!--
+<button type="button" disabled="disabled"></button>
+--></code></pre>
             </div>
           </div>
 
@@ -505,7 +513,9 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-              <pre><code class="html"><button type="button"></button></code></pre>
+              <pre><code class="language-markup"><!--
+<button type="button"></button>
+--></code></pre>
             </div>
           </div>
         </div>
@@ -632,9 +642,11 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
             <div class="collapsible-target" hidden>
               <p>Hints are best used in situations where an item such as an item in a list has a dual purpose. For example, the item indicates the name of a audio article but when activated places the article in listening queue.</p>
 
-                <pre><code class="objectivec">UIButton *addButton = [UIButton buttonWithType:UIButtonTypeCustom];
+                <pre><code class="language-markup"><!--
+UIButton *addButton = [UIButton buttonWithType:UIButtonTypeCustom];
 [addButton setTitle: NSLocalizedString("Weekend planner", @"Title for button")]
-[addButton setAccessibilityHint:NSLocalizedString("Places item in queue", @"Accessibility hint for button")];</code></pre>
+[addButton setAccessibilityHint:NSLocalizedString("Places item in queue", @"Accessibility hint for button")];
+--></code></pre>
             </div>
           </div>
 
@@ -648,9 +660,11 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">UIButton *addButton = [UIButton buttonWithType:UIButtonTypeCustom];
+                <pre><code class="language-clike"><!--
+UIButton *addButton = [UIButton buttonWithType:UIButtonTypeCustom];
 [addButton setTitle: NSLocalizedString("Weekend planner", @"Title for button")]
-[addButton setAccessibilityHint:NSLocalizedString("Weekend planner button", @"Accessibility hint for button")];</code></pre>
+[addButton setAccessibilityHint:NSLocalizedString("Weekend planner button", @"Accessibility hint for button")];
+--></code></pre>
             </div>
           </div>
 
@@ -677,11 +691,13 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-<pre><code class="html">
+<pre><code class="language-markup"><!--
+
 <a href="..."/><img src="listenicon.jpg" alt="Listen to today's weather" />Listen to today's weather</a>
 <a href="#" title="Listen to today's weather" />Listen to today's weather</a>
 <a href="..." title="related articles"> Related articles </a>  
-                </code></pre>
+                
+--></code></pre>
             </div>
           </div>
 
@@ -695,10 +711,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-<pre><code class="html">
+<pre><code class="language-markup"><!--
+
 <a href="..."/><img src="listenicon.jpsb" alt="" />Listen to today's weather</a>
 <a href="..."> Related articles </a>
-</code></pre>
+
+--></code></pre>
             </div>
           </div>
         </div>
@@ -822,12 +840,14 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-                  <pre><code class="objectivec">// aButton is a happy button with a secret life
+                  <pre><code class="language-clike"><!--
+// aButton is a happy button with a secret life
 [aButton setFrame:CGRectMake(100, 100, 100, 100)];
 [aButton setImage:[UIImage imageNamed:@"smile.jpg"] forState:UIControlStateNormal];
 [aButton setTitle:NSLocalizedString(@"Smile", @"Button title") forState:UIControlStateNormal];
 [aButton setAccessibilityHint:NSLocalizedString(@"I am a button because my traits say so!", @"Accessibility hint for smile button")];
-[aButton setAccessibilityTraits:UIAccessibilityTraitButton];</code></pre>
+[aButton setAccessibilityTraits:UIAccessibilityTraitButton];
+--></code></pre>
             </div>
           </div>
           <div class="collapsible">
@@ -840,10 +860,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-                  <pre><code class="objectivec">// aButton is a happy button with a secret life
+                  <pre><code class="language-clike"><!--
+// aButton is a happy button with a secret life
 [aButton setFrame:CGRectMake(100, 100, 100, 100)];
 [aButton setImage:[UIImage imageNamed:@"smile.jpg"] forState:UIControlStateNormal];
-[aButton setTitle:NSLocalizedString(@"Smile", @"Button title") forState:UIControlStateNormal];</code></pre>
+[aButton setTitle:NSLocalizedString(@"Smile", @"Button title") forState:UIControlStateNormal];
+--></code></pre>
             </div>
           </div>
 
@@ -867,10 +889,11 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
             <div class="collapsible-target" hidden>
               <p>For the home page of the [COMPANY NAME] Global site:</p>
 
-              <pre><code class="html"><!-- Example 1 - standard control -->
+              <pre><code class="language-markup"><!--
+// Example 1 - standard control
 <input type="checkbox" id="c1" /><label for="c1">Remember me</label>
 
-<!-- Example 2 - ARIA supported tree view with fall-back -->
+// Example 2 - ARIA supported tree view with fall-back
 <ul role="tree">
   <li aria-level="0" aria-expanded="true" role="treeitem">
     <a href="...">Savings<span class="offscrn"> - Expanded</span></a>
@@ -888,7 +911,8 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
       <li aria-level="1" role="treeitem"><a href="...">Microsoft</a></li>
     </ul>
   </li>
-</ul></code></pre>
+</ul>
+--></code></pre>
             </div>
           </div>
 
@@ -904,10 +928,11 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
             <div class="collapsible-target" hidden>
               <p>For the home page of the [COMPANY NAME] Global site:</p>
 
-                  <pre><code class="html"><!-- Example 1 - non-standard control -->
+                  <pre><code class="language-markup"><!--
+// Example 1 - non-standard control
 <div><img src="chkbx" alt="checkbox" />Remember me</div>
 
-<!-- Example 2 - inaccessible tree view -->
+// Example 2 - inaccessible tree view
 <div>
   <div onClick="toggle();">
     Savings
@@ -925,7 +950,8 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
       <div class="indent">Microsoft</div>
     </div>
   </div>
-</div></code></pre>
+</div>
+--></code></pre>
             </div>
           </div>
         </div>
@@ -1056,11 +1082,13 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">// aLabel is a UILabel that is selected
+                <pre><code class="language-clike"><!--
+// aLabel is a UILabel that is selected
 [aLabel setText:NSLocalizedString(@"Setup", @"Label title")];
 [aLabel setAccessibilityTraits:UIAccessibilityTraitStaticText | UIAccessibilityTraitSelected];
 [aLabel setTextColor:[UIColor whiteColor]];
-[ALabel setBackgroundColor:[UIColor blueColor]];</code></pre>
+[ALabel setBackgroundColor:[UIColor blueColor]];
+--></code></pre>
             </div>
           </div>
 
@@ -1074,11 +1102,13 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-                <pre><code class="objectivec">// aLabel is a UILabel that is selected
+                <pre><code class="language-clike"><!--
+// aLabel is a UILabel that is selected
 [aLabel setText:NSLocalizedString(@"Setup", @"Label title")];
 [aLabel setAccessibilityTraits:UIAccessibilityTraitStaticText];
 [aLabel setTextColor:[UIColor whiteColor]];
-[aLabel setBackgroundColor:[UIColor blueColor]];</code></pre>
+[aLabel setBackgroundColor:[UIColor blueColor]];
+--></code></pre>
             </div>
           </div>
 
@@ -1098,9 +1128,11 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
             <div class="collapsible-target" hidden>
               <p>The text input field is required and uses a large font to indicate it's required. This is also indicated via on-screen text (label) and the contentDescription attribute on the corresponding EditText element.</p>
 
-              <pre><code class="java"><TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/label" android:text="Password (required)" android:textStyle="bold"></TextView>
+              <pre><code class="language-markup"><!--
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/label" android:text="Password (required)" android:textStyle="bold"></TextView>
 
-<EditText android:id="@+id/editText" android:inputType="textPassword" android:layout_height="wrap_content" android:layout_width="wrap_content" android:="Password (required)"></EditText></code></pre>
+<EditText android:id="@+id/editText" android:inputType="textPassword" android:layout_height="wrap_content" android:layout_width="wrap_content" android:="Password (required)"></EditText>
+--></code></pre>
             </div>
 
           </div>
@@ -1117,9 +1149,11 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
             <div class="collapsible-target" hidden>
               <p>The text input field is required and uses a large font to indicate it's required.</p>
 
-              <pre><code class="java"><TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/label" android:text="Password" android:textStyle="bold"></TextView>
+              <pre><code class="language-markup"><!--
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/label" android:text="Password" android:textStyle="bold"></TextView>
 
-<EditText android:id="@+id/editText" android:inputType="textPassword" android:layout_height="wrap_content" android:layout_width="wrap_content" android:hint="Password:"></EditText></code></pre>
+<EditText android:id="@+id/editText" android:inputType="textPassword" android:layout_height="wrap_content" android:layout_width="wrap_content" android:hint="Password:"></EditText>
+--></code></pre>
             </div>
           </div>
 
@@ -1137,14 +1171,16 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-                <pre><code class="html"><h2>Fruit</h2>
+                <pre><code class="language-markup"><!--
+<h2>Fruit</h2>
 <ul>
   <li>Apples</li>
   <li>Oranges</li>
   <li>Bananas</li>
 </ul>
 
-<div>An <strong>error</strong> was detected...</div></code></pre>
+<div>An <strong>error</strong> was detected...</div>
+--></code></pre>
             </div>
           </div>
 
@@ -1158,14 +1194,16 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
                 </button>
             </h5>
             <div class="collapsible-target" hidden>
-                <pre><code class="html"><div class="heading">Fruit</div>
+                <pre><code class="language-markup"><!--
+<div class="heading">Fruit</div>
 <div>
   <div style="padding-left:1em;">Apples</div>
   <div style="padding-left:1em;">Oranges</div>
   <div style="padding-left:1em;">Bananas</div>
 </div>
 
-<div>An <span style="font-weight:bold;">error</span> was detected...</div></code></pre>
+<div>An <span style="font-weight:bold;">error</span> was detected...</div>
+--></code></pre>
             </div>
           </div>
         </div>
@@ -1328,6 +1366,7 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="../../scripts/libs/bootstrap/bootstrap.js"></script>
 <script src="../../scripts/script.js"></script>
+	<script src="../../scripts/prism.js"></script>
 
 </body>
 

@@ -9,15 +9,11 @@
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../styles/libs/bootstrap/bootstrap.processed.css">
-  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
+  <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/styles-responsive.css">
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
-
 </head>
 
 <body class="body" id="totop">
@@ -409,11 +405,10 @@
 
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <title>Accessible Home Page - Good and Bad Demonstration - COMPANY NAME</title>
-</code>
-</pre>
+--></code></pre>
 
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
@@ -460,11 +455,10 @@
 
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-</code>
-</pre>
+--></code></pre>
 
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
@@ -508,17 +502,16 @@
 
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre class="highlight">
-<code class="html">
-&lt;body&gt;
+              <pre><code class="language-markup"><!-- 
+
+<body>
 <div class="skip-links">
   <a href="#main-menu">Skip to Main Menu</a>
   <a href="#main-content">Skip to Main Content</a>
 </div>
 ...
-&lt;/body&gt;
-</code>
-</pre>
+</body>
+--></code></pre>
 
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
@@ -574,8 +567,8 @@
 
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <header role="banner">
   <div id="logo">...</div>
   <nav role="navigation">
@@ -596,8 +589,7 @@
   <p>COMPANY NAME 2017</p>
   <ul>...</ul>
 </footer>     
-</code>
-</pre>
+--></code></pre>
 
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
@@ -661,21 +653,20 @@
 
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre class="highlight">
-<code class="html">
-<!-- Document level -->
+              <pre><code class="language-markup"><!-- 
 
-&lt;html lang="en"&gt;
+// Document level
 
-<!-- Within the Document -->
+<html lang="en">
+
+// Within the Document
 
 <option value="nederlands" lang="nl">Nederlands</option>
 
 <p>While in Spain, my friend tried to speak Spanish, but she wasn't very good.
 Everyone kept saying "<span lang="es">No comprendo nada de lo que dices.</span>"</p>
 
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -740,18 +731,18 @@ Everyone kept saying "<span lang="es">No comprendo nada de lo que dices.</span>"
 
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <nav role="navigation" aria-labelledby="main-nav">
   <div class="sr-only" id="main-nav">Main Menu</div>
   
-  <!-- Button for mobile hamburger style menu -->
+  // Button for mobile hamburger style menu
   <button aria-controls="mainMenuItems" aria-expanded="false">
     <span class="icon-hamburger"></span>
     <span class="sr-only">Toggle main menu</span>
   </button>
   
-  <!-- Menu items device independent -->
+  // Menu items device independent
   <div id="mainMenuItems">
     <ul>
       <li class="active">
@@ -779,8 +770,7 @@ Everyone kept saying "<span lang="es">No comprendo nada de lo que dices.</span>"
   </div>
   
 </nav>
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -848,8 +838,8 @@ Everyone kept saying "<span lang="es">No comprendo nada de lo que dices.</span>"
 
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <form role="search">
   <label for="search">Search</label>
   <input type="text" id="search">
@@ -858,8 +848,7 @@ Everyone kept saying "<span lang="es">No comprendo nada de lo que dices.</span>"
     <span class="sr-only">Search</span>
   </button>
 </form>
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -931,8 +920,8 @@ Everyone kept saying "<span lang="es">No comprendo nada de lo que dices.</span>"
 
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <h1>Accessible Home Page</h1>
 
   <h2 class="sr-only">Selected for you</h2>
@@ -940,10 +929,9 @@ Everyone kept saying "<span lang="es">No comprendo nada de lo que dices.</span>"
     <h3>Accessibility Champions</h3>
     <h3>Expert section</h3>
     
-    <!-- Optional with ARIA -->
+    // Optional with ARIA
     <div role="heading" aria-level="3">...</div>  
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -986,14 +974,13 @@ Everyone kept saying "<span lang="es">No comprendo nada de lo que dices.</span>"
 
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <img src="/infographic-xyz.png" alt="Cutout of infographic for the
            9 step Getting Started with accessibility part. Step 1,
            roles and responsibilities, and step 2, personas,
            are partly shown.">
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -1040,11 +1027,10 @@ Everyone kept saying "<span lang="es">No comprendo nada de lo que dices.</span>"
 
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <img src="/experts.jpg" alt="">
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -1083,9 +1069,9 @@ Everyone kept saying "<span lang="es">No comprendo nada de lo que dices.</span>"
               <p>These links and buttons are highlighted when they are selected using the keyboard or hovered over using a pointer device.</p>
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre class="highlight">
-<code class="html">
-<!-- Link -->
+              <pre><code class="language-markup"><!-- 
+
+// Link
 
 <a href="../baseline" class="link-primary">More on The Baseline</a>
 
@@ -1093,15 +1079,14 @@ a.link-primary { color: #ff6200; border: 1px solid #ff6200; text-decoration: non
 a.link-primary:hover { text-decoration: underline; }
 a.link-primary:focus { text-decoration: underline; outline-width: 5px; }
 
-<!-- Button -->
+// Button
 
 <button type="button" class="btn btn-primary">Watch the video</button>
 
 button.btn-primay { background-color: #ff6200; }
 button.btn-primay:hover { background-color: #cc4e00; }
 button.btn:focus { outline: #448eff auto 5px; }
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -1146,11 +1131,10 @@ button.btn:focus { outline: #448eff auto 5px; }
                 or off-screen text can be used to make them unique.</p>
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 <a href="../champions">More on Champions</a>
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -1215,19 +1199,18 @@ button.btn:focus { outline: #448eff auto 5px; }
               </ul>
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 Go to other page:
 
-<!-- Link in code and link styling, goes to other page -->
+// Link in code and link styling, goes to other page
 <a href="../good-bad/home.html" class="link-primary">More on Expert</a>
 
 Staying on same page:
 
-<!-- Button in code and button styling, stays on page -->
+// Button in code and button styling, stays on page
 <button type="button" class="btn btn-primary">Watch the video</button>
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -1266,9 +1249,9 @@ Staying on same page:
               <p>Extending on the "4.1.2 Name, Role, Value" success criteria it's a best practice to provide a name for each list so people using a screen reader can distinguish the lists on the page</p>
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre class="highlight">
-<code class="html">
-<!-- Accessible name via aria-labelledby -->
+              <pre><code class="language-markup"><!-- 
+
+// Accessible name via aria-labelledby
 
 <h3 id="responsibilities">Responsibilities for:</h3>
 <ul aria-labelledby="responsibilities">
@@ -1277,15 +1260,14 @@ Staying on same page:
   <li>…</li>
 </ul>
 
-<!-- Accessible name via aria-label -->
+// Accessible name via aria-label
 
 <ul aria-label="Footer links">
   <li><a href="../good-bad/home.html">About A11Y</a></li>
   <li><a href="/index.htm">Universal Design</a></li>
   <li>…</li>
 </ul>
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -1345,12 +1327,11 @@ Staying on same page:
 
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre class="highlight">
-<code class="html">
+              <pre><code class="language-markup"><!-- 
+
 .card { background-color: #ffffff; }
 .lead { color: #333333; }
-</code>
-</pre>
+--></code></pre>
               <h4 class="heading-s">WCAG Success Criteria</h4>
 
               <ul class="list-group list-group-lessons">
@@ -1386,6 +1367,7 @@ Staying on same page:
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
   <script src="../scripts/libs/bootstrap/bootstrap.js"></script>
   <script src="../scripts/script.js"></script>
+	<script src="../scripts/prism.js"></script>
   <script src="../scripts/videosub.js"></script>
 
 </body>
