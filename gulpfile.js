@@ -39,7 +39,7 @@ gulp.task("html", () =>
 
 gulp.task("js", () =>
   gulp
-    .src("src/**/*.js", { base: "src", since: gulp.lastRun("js") })
+    .src("src/**/*", { base: "src", since: gulp.lastRun("js") })
     .pipe(gulp.dest("dist"))
 );
 
@@ -55,9 +55,31 @@ gulp.task("fonts", () =>
     .pipe(gulp.dest("dist"))
 );
 
-// Add pdf, psd, zip, eot, ttf, woff, .htaccess
+gulp.task("pdf", () =>
+  gulp
+    .src("src/**/*.pdf", { base: "src", since: gulp.lastRun("pdf") })
+    .pipe(gulp.dest("dist"))
+);
 
-gulp.task("build", gulp.parallel("html", "images", "js", "scss", "css", "fonts"));
+gulp.task("psd", () =>
+  gulp
+    .src("src/**/*.psd", { base: "src", since: gulp.lastRun("psd") })
+    .pipe(gulp.dest("dist"))
+);
+
+gulp.task("zip", () =>
+  gulp
+    .src("src/**/*.zip", { base: "src", since: gulp.lastRun("zip") })
+    .pipe(gulp.dest("dist"))
+);
+
+gulp.task("htaccess", () =>
+  gulp
+    .src("src/**/.htaccess", { base: "src", since: gulp.lastRun("htaccess") })
+    .pipe(gulp.dest("dist"))
+);
+
+gulp.task("build", gulp.parallel("html", "images", "js", "scss", "css", "fonts", "pdf", "psd", "zip", "htaccess"));
 
 gulp.task("watch", () => {
   browserSyncInstance.init({

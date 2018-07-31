@@ -14,7 +14,7 @@
       margin: 0;
     }
 
-  &.annotations-on {
+  &.annotation-on {
     display: block;
   }
   
@@ -40,7 +40,7 @@
   height: 44px;
   padding: 2px;
 
-  &.btn-annot-on {
+  &.annotation-on {
     display: block;
     margin: 0;
     padding: 0;
@@ -65,7 +65,7 @@
      outline-width: 5px;
    }
 
-  &.btn-annot-outline-on {
+  &.annotation-on {
     outline: red dashed 2px; 
   }
    
@@ -76,7 +76,7 @@
 .modal-annot {
   display: none;
 
-  &.modal-annot-on {
+  &.annotation-on {
     display: block !important;
     position: static;
     opacity: 1;
@@ -133,7 +133,7 @@
 
     }
 
-    &.modal-annot-on {
+    &.annotation-on {
 
       &.show {
 
@@ -151,7 +151,7 @@
 
 @media (min-width: 576px) {
   
-  .modal-annot.modal-annot-on.fade.show .modal-lg {
+  .modal-annot.annotation-on.fade.show .modal-lg {
     max-width: 500px;
   }
     
@@ -159,7 +159,7 @@
 
 @media (min-width: 992px) {
   
-  .modal-annot.modal-annot-on.fade.show .modal-lg {
+  .modal-annot.annotation-on.fade.show .modal-lg {
     max-width: 800px;
   }
     
@@ -167,7 +167,7 @@
 
 // Body-annot
 
-.body-annot {
+.annotation-on {
   
   .btn-annot-title {
     top: 0;
@@ -228,7 +228,7 @@
 
 @media (max-width: 992px) {
   
-  .body-annot.bad {
+  .annotation-on.bad {
     
     .btn-annot-skip {
       left: 64px;;
