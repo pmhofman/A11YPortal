@@ -1,6 +1,6 @@
 {
   "name": "a11yportal",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "description": "A central hub for accessibility information. It features all basics, guidelines, training material and good/bad examples.",
   "main": "index.js",
   "directories": {
@@ -12,7 +12,8 @@
     "deploy:production": "firebase deploy --project com-ing-a11y",
     "deploy:staging": "firebase deploy --project com-ing-a11y-staging",
     "start:dev": "gulp start:dev",
-    "test": "gulp test"
+    "test": "gulp test",
+    "test:w3": "gulp valid"
   },
   "repository": {
     "type": "git",
@@ -29,8 +30,10 @@
     "del": "^3.0.0",
     "firebase-tools": "^3.19.3",
     "gulp": "^4.0.0",
-    "gulp-axe-cli": "^0.1.4",
     "gulp-axe-webdriver": "^3.0.0",
     "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+
   }
 }
