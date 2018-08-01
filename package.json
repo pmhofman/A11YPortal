@@ -9,22 +9,27 @@
   "scripts": {
     "axe": "gulp axe",
     "build": "gulp build",
-    "deploy:production": "firebase deploy --project com-ing-a11y",
-    "deploy:staging": "firebase deploy --project com-ing-a11y-staging",
+    "deploy:production": "firebase deploy --project ing-a11y",
+    "deploy:staging": "firebase deploy --project ing-a11y-staging",
     "start:dev": "gulp start:dev",
-    "test": "gulp test",
-    "test:w3": "gulp valid"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erikkroes/A11YPortal.git"
+    "url": "git+https://github.com/team-a11y/A11YPortal.git"
   },
   "author": "Erik Kroes",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/erikkroes/A11YPortal/issues"
+    "url": "https://github.com/team-a11y/A11YPortal/issues"
   },
-  "homepage": "https://github.com/erikkroes/A11YPortal#readme",
+  "homepage": "https://github.com/team-a11y/A11YPortal#readme",
+  "contributors": [
+    {
+      "name": "Jake Abma",
+      "url": "http://github.com/jake-abma"
+    }
+  ],
   "devDependencies": {
     "browser-sync": "^2.24.6",
     "del": "^3.0.0",
