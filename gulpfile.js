@@ -1,7 +1,7 @@
 const axe = require('gulp-axe-webdriver');
 const browserSync = require('browser-sync');
 const del = require('del');
-//const eslint = require('gulp-eslint');
+const eslint = require('gulp-eslint');
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 
@@ -40,8 +40,9 @@ gulp.task('html', () =>
 
 gulp.task('js', () =>
   gulp
-    .src('src/**/*', { base: 'src', since: gulp.lastRun('js') })
-//    .pipe(eslint())
+    .src('src/**/*.js', { base: 'src', since: gulp.lastRun('js') })
+    .pipe(eslint())
+    .pipe(eslint.format())
     .pipe(gulp.dest('dist'))
 );
 
@@ -81,7 +82,7 @@ gulp.task('htaccess', () =>
     .pipe(gulp.dest('dist'))
 );
 
-gulp.task('build', gulp.parallel('html', 'images', 'js', 'scss', 'css', 'fonts', 'pdf', 'psd', 'zip', 'htaccess'));
+gulp.task('build', gulp.parallel('html', 'images', 'js', 'css', 'scss', 'fonts', 'pdf', 'psd', 'zip', 'htaccess'));
 
 
 gulp.task('valid', function () {

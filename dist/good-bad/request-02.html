@@ -7,7 +7,7 @@
 
   <title>Accessible Request Page - Good and Bad Demonstration - COMPANY NAME</title>
 
-  <link rel="stylesheet" href="../styles/libs/bootstrap/bootstrap.processed.css">
+  <link rel="stylesheet" href="../styles/libs/bootstrap/bootstrap.css">
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/styles-responsive.css">
 </head>
@@ -28,7 +28,7 @@
           <ul class="pipe-links list-inline">
             <li class="list-inline-item"><a href="../index.html"><span>1. Basics</span></a></li>
             <li class="list-inline-item"><a href="../guidelines/fundamentals/home.html"><span>2. Guidelines</span></a></li>
-            <li class="list-inline-item"><a href="../training/fundamentals/home.html"><span>3. Training</span></a></li>
+            <li class="list-inline-item"><a href="../advanced/fundamentals/home.html"><span>3. Advanced</span></a></li>
             <li class="list-inline-item"><a href="../good-bad/home.html" aria-current="true"><span>4. Good / Bad</span></a></li>
             <li class="list-inline-item"><a href="../sitemap/sitemap-basics.html"><span>Sitemap</span></a></li>
             <li class="list-inline-item"><a href="../about/fundamentals/contact.html"><span>About</span></a></li>
@@ -135,10 +135,22 @@
     </div>
     
     <div class="container">
+      <p>With this form, you will request a Credit Card. Within 5 business days you'll receive an answer for acceptance. On the <a href="#">Credit Card page</a> you can find more information about the impact of the application for your account.</p>
 
-      <h2 class="sr-only" id="navigator-title">Request a credit card with 5 steps</h2>
+      <strong>Before filling in the form please make sure you have the following items ready:</strong>
 
-      <h3 class="sr-only" id="steps-title">Personal information (Step 1 of 5)</h3>
+      <ul class="list-icons list-checklist mt-3" aria-label="Checklist items needed">
+        <li>Digital copy Passport</li>
+        <li>Citizen service number</li>
+        <li>Bank account number</li>
+        <li>Data partner</li>
+      </ul>
+
+      <p>NOTE: All fields in this form are required, unless otherwise specified.</p>
+
+      <h2 class="sr-only" id="navigator-title">Request a credit card in 2 steps</h2>
+
+      <h3 class="sr-only" id="steps-title">Additional information (Step 2 of 2)</h3>
 
       <div class="card">
         
@@ -146,7 +158,7 @@
           <div class="steps-indicator">
             <ol class="steps-indicator-list">
               <li class="steps-indicator-item visited">
-                <a href="/request.html" class="steps-indicator-element">
+                <a href="request.html" class="steps-indicator-element">
                   <span class="sr-only">Completed step</span>
                   <span class="steps-indicator-type">1</span>
                   <span class="steps-indicator-text">Personal information</span>
@@ -157,28 +169,7 @@
                 <span class="steps-indicator-element">
                   <span class="sr-only">Current step</span>
                 <span class="steps-indicator-type">2</span>
-                <span class="steps-indicator-text">Additinal information</span>
-                <span class="arrow steps-indicator-arrow"></span>
-                </span>
-              </li>
-              <li class="steps-indicator-item">
-                <span class="steps-indicator-element">
-                  <span class="steps-indicator-type">3</span>
-                <span class="steps-indicator-text">Comments</span>
-                <span class="arrow steps-indicator-arrow"></span>
-                </span>
-              </li>
-              <li class="steps-indicator-item">
-                <span class="steps-indicator-element">
-                  <span class="steps-indicator-type">4</span>
-                <span class="steps-indicator-text">Check data</span>
-                <span class="arrow steps-indicator-arrow"></span>
-                </span>
-              </li>
-              <li class="steps-indicator-item">
-                <span class="steps-indicator-element">
-                  <span class="steps-indicator-type">5</span>
-                <span class="steps-indicator-text">Data send</span>
+                <span class="steps-indicator-text">Additional information</span>
                 <span class="arrow steps-indicator-arrow"></span>
                 </span>
               </li>
@@ -199,20 +190,206 @@
         
         <form>
           <div class="card-block">
-            
-            <p class="card-text">NOTE: All input fields are required unless otherwise specified</p>
-            
             <fieldset>
-              <legend class="card-title">Personal information</legend>
-              
-              Fieldset 1
+              <legend class="card-title">Additional information</legend>
+
+              <div class="form-group">
+                <div class="control-label col-sm-4 col-lg-3">
+                  <label for="password">
+                    Preferred password
+                  </label>
+                </div>
+                <div class="col-sm-8 col-lg-6">
+                  <div class="row">
+                    <div class="col-md-10">
+                      <input type="password" name="password" id="password" class="form-control" aria-required="true" aria-describedby="passwordStrength" oninput="passwordStrength()" autocomplete="new-password">
+                      <span id="passwordStrength" aria-live="polite"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             </fieldset>
 
             <hr>
 
             <fieldset>
-              <legend class="card-title">Address details</legend>
+              <legend class="card-title">Billing Address</legend>
+
+              <div class="form-group">
+                <div class="control-label col-sm-4 col-lg-3">
+                  <label for="billingStreet">
+                    Street name
+                  </label>
+                </div>
+                <div class="col-sm-8 col-lg-6">
+                  <div class="row">
+                    <div class="col-md-10">
+                      <input type="text" name="billingStreet" id="billingStreet" class="form-control" aria-required="true" autocomplete="address-line1">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="control-label col-sm-4 col-lg-3">
+                  <label for="billingNumber">
+                    Number
+                  </label>
+                </div>
+                <div class="col-sm-8 col-lg-6">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <input type="text" name="billingNumber" id="billingNumber" class="form-control" aria-required="true" autocomplete="address-line2">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="control-label col-sm-4 col-lg-3">
+                  <label for="billingZip">
+                    Zip code
+                  </label>
+                </div>
+                <div class="col-sm-8 col-lg-6">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <input type="text" name="billingZip" id="billingZip" class="form-control" aria-required="true" autocomplete="postal-code">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="control-label col-sm-4 col-lg-3">
+                  <label for="billingCity">
+                    City
+                  </label>
+                </div>
+                <div class="col-sm-8 col-lg-6">
+                  <div class="row">
+                    <div class="col-md-10">
+                      <input type="text" name="billingCity" id="billingCity" class="form-control" aria-required="true" autocomplete="address-level2">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="confirm-checkbox offset-sm-4 offset-lg-3 col-sm-8 col-lg-6">
+                  <label for="addressbox">
+                    <input type="checkbox" name="addressbox" id="addressbox" value="identical" aria-required="true" onclick="disableShipping()">
+                    <span>The billing address and shipping address are identical</span>
+                  </label>
+                </div>
+              </div>
+
+            </fieldset>
+
+            <hr>
+
+            <fieldset id="shippingAddress">
+              <legend class="card-title">Shipping Address</legend>
+
+              <div class="form-group">
+                <div class="control-label col-sm-4 col-lg-3">
+                  <label for="shippingStreet">
+                    Street name
+                  </label>
+                </div>
+                <div class="col-sm-8 col-lg-6">
+                  <div class="row">
+                    <div class="col-md-10">
+                      <input type="text" name="shippingStreet" id="shippingStreet" class="form-control" aria-required="true" autocomplete="address-line1">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="control-label col-sm-4 col-lg-3">
+                  <label for="shippingNumber">
+                    Number
+                  </label>
+                </div>
+                <div class="col-sm-8 col-lg-6">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <input type="text" name="shippingNumber" id="shippingNumber" class="form-control" aria-required="true" autocomplete="address-line2">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="control-label col-sm-4 col-lg-3">
+                  <label for="shippingZip">
+                    Zip code
+                  </label>
+                </div>
+                <div class="col-sm-8 col-lg-6">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <input type="text" name="shippingZip" id="shippingZip" class="form-control" aria-required="true"  autocomplete="postal-code">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="control-label col-sm-4 col-lg-3">
+                  <label for="shippingCity">
+                    City
+                  </label>
+                </div>
+                <div class="col-sm-8 col-lg-6">
+                  <div class="row">
+                    <div class="col-md-10">
+                      <input type="text" name="shippingCity" id="shippingCity" class="form-control" aria-required="true" autocomplete="address-level2">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </fieldset>
+
+            <hr>
+
+            <fieldset>
+              <legend class="card-title">Creditcard Details</legend>
+
+              <div class="form-group">
+                <div class="control-label col-sm-4 col-lg-3">
+                  <label for="cardType">
+                    Type of creditcard
+                  </label>
+                </div>
+                <div class="col-sm-8 col-lg-6">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-10">
+                      <select class="form-control" name="cardType" id="cardType" aria-required="true">
+                        <option value="">Choose a creditcard type</option>
+                        <optgroup label="Personal">
+                          <option value="cb">Cardboard</option>
+                          <option value="ag">Silver</option>
+                          <option value="au">Gold</option>
+                        </optgroup>
+                        <optgroup label="Business">
+                          <option value="sb">Small business</option>
+                          <option value="mb">Medium business</option>
+                          <option value="lb">Large business</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+
+            <fieldset>
+              <legend class="card-title">Creditcard Details</legend>
 
               <div class="fieldset-row">
                 <legend class="control-label col-sm-4 col-lg-3" id="livingSituation-legend">
@@ -258,11 +435,20 @@
             </fieldset>
 
             <div class="form-group">
+              <div class="confirm-checkbox offset-sm-4 offset-lg-3 col-sm-8 col-lg-6">
+                <label for="confirmbox">
+                  <input type="checkbox" name="confirmbox" id="confirmbox" value="confirm" aria-required="true">
+                  <span>I have checked that the information I have entered is correct</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
               <div class="control-label col-sm-4 col-lg-3">
-                <a href="/request.html" class="link link-secondary"><< Previous</a>
+                <a href="request.html" class="link link-secondary"><< Previous</a>
               </div>
               <div class="col-sm-8 col-lg-6">
-                <a href="/request-03.html" class="link link-primary">Next</a>
+                <input type="submit" value="Request creditcard" class="btn btn-primary" onclick="alert('Your request has been submitted succesfully')">
                 <a href="/request_validated.html" class="link link-secondary ml-3">Go validate</a>
               </div>
             </div>
@@ -271,7 +457,7 @@
         </form>
 
       </div>
-      
+    </div>
   </main>
   
   <footer class="full-cover site-footer" role="contentinfo">

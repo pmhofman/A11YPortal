@@ -7,7 +7,7 @@
 
   <title>Accessible Request Page - Good and Bad Demonstration - COMPANY NAME</title>
 
-  <link rel="stylesheet" href="../styles/libs/bootstrap/bootstrap.processed.css">
+  <link rel="stylesheet" href="../styles/libs/bootstrap/bootstrap.css">
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/styles-responsive.css">
 </head>
@@ -27,12 +27,11 @@
           <ul class="pipe-links list-inline">
             <li class="list-inline-item"><a href="../index.html"><span>1. Basics</span></a></li>
             <li class="list-inline-item"><a href="../guidelines/fundamentals/home.html"><span>2. Guidelines</span></a></li>
-            <li class="list-inline-item"><a href="../training/fundamentals/home.html"><span>3. Training</span></a></li>
+            <li class="list-inline-item"><a href="../advanced/fundamentals/home.html"><span>3. Advanced</span></a></li>
             <li class="list-inline-item"><a href="../good-bad/home.html" aria-current="true"><span>4. Good / Bad</span></a></li>
             <li class="list-inline-item"><a href="../sitemap/sitemap-basics.html"><span>Sitemap</span></a></li>
             <li class="list-inline-item"><a href="../about/fundamentals/contact.html"><span>About</span></a></li>
           </ul>
-        </div>
       </nav>
     </div>
 
@@ -133,8 +132,7 @@
       <div class="container">
         <div class="brandbar-header">
           <div class="brandbar-heading">
-            <h1 class="brandbar-title btn-annot-outline">Draft: Accessible Request Page</h1>
-            <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal01">01</button>
+            <h1 class="brandbar-title">Draft: Accessible Request Page</h1>
             <p class="brandbar-lead">Good and Bad Demonstration</p>
             <span class="d-block mt-2 annot-relative">
               <a href="https://dequeuniversity.com/class/html-css1/forms/" class="link-primary">
@@ -145,7 +143,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="container">
 
       <p>With this form, you will request a Credit Card. Within 5 business days you'll receive an answer for acceptance. On the <a href="#">Credit Card page</a> you can find more information about the impact of the application for your account.</p>
@@ -159,9 +157,13 @@
         <li>Data partner</li>
       </ul>
 
-      <h2 class="sr-only" id="navigator-title">Request a credit card with 5 steps</h2>
+      <p>NOTE: All fields in this form are required, unless otherwise specified.</p>
 
-      <h3 class="sr-only" id="steps-title">Personal information (Step 1 of 5)</h3>
+      <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal01">01</button>
+
+      <h2 class="sr-only" id="navigator-title">Request a credit card in 2 steps</h2>
+
+      <h3 class="sr-only" id="steps-title">Personal information (Step 1 of 2)</h3>
 
       <div class="card">
 
@@ -175,34 +177,14 @@
                   <span class="steps-indicator-text">Personal information</span>
                   <span class="arrow steps-indicator-arrow"></span>
                 </a>
+                <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal02">02</button>
               </li>
               <li class="steps-indicator-item">
-                <span class="steps-indicator-element">
-                  <span class="steps-indicator-type">2</span>
-                  <span class="steps-indicator-text">Additional information</span>
-                  <span class="arrow steps-indicator-arrow"></span>
-                </span>
-              </li>
-              <li class="steps-indicator-item">
-                <span class="steps-indicator-element">
-                  <span class="steps-indicator-type">3</span>
-                  <span class="steps-indicator-text">Comments</span>
-                  <span class="arrow steps-indicator-arrow"></span>
-                </span>
-              </li>
-              <li class="steps-indicator-item">
-                <span class="steps-indicator-element">
-                  <span class="steps-indicator-type">4</span>
-                  <span class="steps-indicator-text">Check data</span>
-                  <span class="arrow steps-indicator-arrow"></span>
-                </span>
-              </li>
-              <li class="steps-indicator-item">
-                <span class="steps-indicator-element">
-                  <span class="steps-indicator-type">5</span>
-                  <span class="steps-indicator-text">Data send</span>
-                  <span class="arrow steps-indicator-arrow"></span>
-                </span>
+                  <span class="steps-indicator-element">
+                    <span class="steps-indicator-type">2</span>
+                    <span class="steps-indicator-text">Additional information</span>
+                    <span class="arrow steps-indicator-arrow"></span>
+                  </span>
               </li>
             </ol>
           </div>
@@ -219,23 +201,25 @@
           </div>
         </div>
 
-        <form class="m-0">
+        <form class="m-0" aria-labelledby="form-title">
+
           <div class="card-block">
 
-            <p class="card-text">NOTE: All input fields are required unless otherwise specified</p>
-
-            <h4 class="card-title">Personal information</h4>
-
+            <h4 class="card-title" id="form-title">Personal information</h4>
+            <button type="button" class="btn btn-annot btn-annot-secondary" data-toggle="modal" data-target="#annotModal03">03</button>
             <div class="form-group">
               <div class="control-label col-sm-4 col-lg-3">
                 <label for="initials">
                   Initials
                 </label>
+                <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal04">04</button>
               </div>
               <div class="col-sm-8 col-lg-6">
                 <div class="row">
                   <div class="col-sm-5 col-lg-4">
                     <input type="text" name="initials" id="initials" class="form-control" maxlength="12" aria-required="true">
+                    <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal05">05</button>
+
                   </div>
                 </div>
               </div>
@@ -244,13 +228,13 @@
             <div class="form-group">
               <div class="control-label col-sm-4 col-lg-3">
                 <label for="name">
-                  Name
+                  First Name
                 </label>
               </div>
               <div class="col-sm-8 col-lg-6">
                 <div class="row">
                   <div class="col-md-10">
-                    <input type="text" name="name" id="name" class="form-control" aria-required="true">
+                    <input type="text" name="name" id="name" class="form-control" aria-required="true" autocomplete="given-name">
                   </div>
                 </div>
               </div>
@@ -269,107 +253,20 @@
                   </div>
                 </div>
                 <div class="form-control-help" id="insertion-description">Full writing<span class="sr-only">.</span></div>
+                <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal07">06</button>
               </div>
             </div>
 
             <div class="form-group">
               <div class="control-label col-sm-4 col-lg-3">
                 <label for="surname">
-                  Surname
+                  Last Name
                 </label>
               </div>
               <div class="col-sm-8 col-lg-6">
                 <div class="row">
                   <div class="col-md-10">
-                    <input type="text" name="surname" id="surname" class="form-control" aria-required="true">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="fieldset-row" role="group">
-              <legend class="control-label col-sm-4 col-lg-3">
-                <span class="sr-only">Personal data</span> Pre nominals <span class="label-help">(not required)</span>
-              </legend>
-
-              <div class="col-sm-8 col-lg-6">
-
-                <div class="row">
-                  <div class="col-xxs-10 col-sm-5 col-lg-4">
-                    <div class="form-group">
-                      <div class="sr-only">Title</div>
-                      <p class="form-control-pseudo" id="preNominals">Drs</p>
-                    </div>
-                  </div>
-                  <div class="col-xxs-2 col-sm-5 col-lg-8">
-                    <button type="button" class="btn btn-tertiary" aria-labelledby="preNominals preNominalsButtonText">
-                      <span role="img" class="icon icon-trashcan icon-md icon-gray-dark" aria-label="Remove title" id="preNominalsButtonText">
-                      </span>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-xxs-10 col-sm-5 col-lg-4">
-                    <div class="form-group">
-                      <label class="sr-only" for="preNominalsTitle2">Second title</label>
-                      <select class="form-control" name="preNominals2" id="preNominalsTitle2">
-                        <option value="">Another title</option>
-                        <option value="dr">Dr</option>
-                        <option value="ds">Ds</option>
-                        <option value="drs">Drs</option>
-                        <option value="ir">Ir</option>
-                        <option value="mr">Mr</option>
-                        <option value="prof">Prof</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-xxs-2 col-sm-5 col-lg-8">
-                    <button type="button" class="btn btn-tertiary" disabled aria-disabled="true">
-                      <span role="img" class="icon icon-trashcan icon-md icon-gray-dark" aria-label="Delete second title">
-                        </button>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                      <button type="button" class="btn btn-tertiary btn-wrap icon-position icon-before icon-position-md">
-                          <span class="icon icon-plus icon-orange mr-2" role="img" aria-label="Add"></span>
-                          Another title before my name
-                        </button>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="control-label col-sm-4 col-lg-3">
-                <label for="postNominals">
-                    Title behind my name or extra addition <span class="label-help">(not required)</span>
-                  </label>
-              </div>
-              <div class="col-sm-8 col-lg-6">
-                <div class="row">
-                  <div class="col-xxs-10 col-sm-5 col-lg-4">
-                    <input type="text" name="postNominals" id="postNominals" class="form-control" aria-describedby="postNominals-description postNominals-attention">
-                  </div>
-                  <div class="col-xxs-2 col-sm-5 col-lg-8">
-                    <button type="button" class="btn btn-tertiary" disabled aria-disabled="true">
-                        <span class="icon icon-trashcan icon-md icon-gray-dark" role="img" aria-label="Delete title behind my name or extra addition"></span>
-                      </button>
-                  </div>
-                </div>
-                <div class="form-control-help" id="postNominals-description">Write as MSc or jr<span class="sr-only">.</span></div>
-                <div class="alert alert-inline alert-info" id="postNominals-attention">
-                  <span class="stacked-icon" role="img" aria-label="Attention!: ">
-                    <span class="icon"></span>
-                  <span class="icon"></span>
-                  </span>
-                  <div class="body-box body-box-sm">
-                    The title or extra addition will be part of your Credit Card
+                    <input type="text" name="surname" id="surname" class="form-control" aria-required="true" autocomplete="family-name">
                   </div>
                 </div>
               </div>
@@ -384,37 +281,12 @@
               <div class="col-sm-8 col-lg-6">
                 <div class="row">
                   <div class="col-sm-5 col-lg-4">
-                    <input type="text" name="dateOfBirth" id="dateOfBirth" class="form-control" aria-describedby="dateOfBirth-description" aria-required="true">
+                    <input type="date" name="dateOfBirth" id="dateOfBirth" class="form-control" aria-describedby="dateOfBirth-description" aria-required="true" autocomplete="bday">
+                    <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal06">07</button>
                   </div>
                 </div>
                 <div class="form-control-help" id="dateOfBirth-description">
-                  Write as dd-mm-yyyy<span class="sr-only">.</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="fieldset-row" role="group">
-              <legend class="legend control-label col-sm-4 col-lg-3" id="genderLegend">
-                <span class="sr-only">Personal data</span> Gender
-              </legend>
-              <div class="col-sm-8 col-lg-6">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="radio-inline radio-custom">
-                      <label for="genderMale">
-                          <input type="radio" name="gender" id="genderMale" value="male" aria-labelledby="genderLegend genderMaleLabel" aria-required="true">
-                          <span class="radio-custom-input" aria-hidden="true"></span>
-                          <span id="genderMaleLabel">Male</span>
-                        </label>
-                    </div>
-                    <div class="radio-inline radio-custom">
-                      <label for="genderFemale">
-                          <input type="radio" name="gender" id="genderFemale" value="female" aria-labelledby="genderLegend genderFemaleLabel" aria-required="true">
-                          <span class="radio-custom-input" aria-hidden="true"></span>
-                          <span id="genderFemaleLabel">Female</span>
-                        </label>
-                    </div>
-                  </div>
+                  Write as dd-mm-yyyy
                 </div>
               </div>
             </div>
@@ -422,7 +294,7 @@
             <div class="form-group">
               <div class="control-label col-sm-4 col-lg-3">
                 <label for="csn">
-                    Citizen service number 
+                    Citizen service number
                   </label>
               </div>
               <div class="col-sm-8 col-lg-6">
@@ -432,27 +304,10 @@
                   </div>
                 </div>
                 <div class="form-control-help" id="csn-description">
-                  Consists of 9 numbers<span class="sr-only">.</span>
+                  Consists of 9 numbers
                 </div>
               </div>
             </div>
-
-            <dl class="form-group form-text-only">
-              <dt class="control-label-pseudo col-sm-4 col-lg-3" id="land-label">
-                  Country
-                </dt>
-              <dd class="col-sm-8 col-lg-6" role="definition" aria-labelledby="land-label">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <p class="form-control-pseudo position position-left position-lg">
-                      <span class="position-component">
-                          <img src="../images/flag-america.png" class="img-responsive" width="24" alt="">
-                        </span> America
-                    </p>
-                  </div>
-                </div>
-              </dd>
-            </dl>
 
             <div class="form-group">
               <div class="control-label col-sm-4 col-lg-3">
@@ -480,6 +335,61 @@
               </div>
             </div>
 
+
+            <hr>
+
+            <fieldset>
+              <legend class="legend"><h5>Financial information</h5></legend>
+
+              <fieldset>
+                <legend class="sr-only" id="employmentLegend">Employment</legend>
+                <div class="fieldset-row">
+                  <div class="legend control-label col-sm-4 col-lg-3" aria-hidden="true">
+                    Employment
+                  </div>
+                  <div class="col-sm-8 col-lg-6">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="radio-inline radio-custom">
+                          <label for="employmentEmployed">
+                            <input type="radio" name="employment" id="employmentEmployed" value="employed" aria-required="true">
+                            <span class="radio-custom-input" aria-hidden="true"></span>
+                            <span>Employed</span>
+                          </label>
+                        </div>
+                        <div class="radio-inline radio-custom">
+                          <label for="employmentUnemployed">
+                            <input type="radio" name="employment" id="employmentUnemployed" value="employed" aria-required="true">
+                            <span class="radio-custom-input" aria-hidden="true"></span>
+                            <span>Unemployed</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="form-group">
+                <div class="control-label col-sm-4 col-lg-3">
+                  <label for="funds">
+                    Funds
+                  </label>
+                </div>
+                <div class="col-sm-8 col-lg-6">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-10">
+                      <select class="form-control" name="funds" id="funds" aria-required="true" disabled>
+                        <option value="limited">Limited</option>
+                        <option value="unlimited">Unlimited</option>
+                      </select>
+                      <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal07">08</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
             <hr>
 
             <div class="form-group">
@@ -496,9 +406,9 @@
         </form>
 
       </div>
-
+    </div>
   </main>
-  
+
   <footer class="full-cover site-footer" role="contentinfo">
     <div class="container">
       <div class="d-inline-block">
@@ -576,7 +486,7 @@
 
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre><code class="language-markup"><!-- 
+              <pre><code class="language-markup"><!--
 
 <h1>Accessible Article Page</h1>
 
@@ -653,7 +563,7 @@
 
               <h4 class="heading-s">HTML Example</h4>
 
-              <pre><code class="language-markup"><!-- 
+              <pre><code class="language-markup"><!--
 
 example code
 --></code></pre>

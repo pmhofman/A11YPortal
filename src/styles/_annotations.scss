@@ -57,7 +57,7 @@
   
 }
   
- .btn-annot-outline {
+.btn-annot-outline {
   position: relative;
   outline-width: 0;
    
@@ -192,6 +192,14 @@
   .btn-annot-image {
     top: 4px;
     left: 4px;
+  }
+
+  .btn-annot-secondary {
+    top: 46px;
+  }
+
+  .btn-annot-tertiary {
+    top: 94px;
   }
   
   .skip-links a {

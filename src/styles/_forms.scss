@@ -410,23 +410,23 @@ input[type="radio"]:focus {
 .has-error {
   background: #ffebeb;
   margin: 0 -20px 4px -20px;
-  padding: 5.75px 20px;
+  padding: 5.75px 0;
 }
-.has-error .invalid .form-control,
-.has-error .invalid .radio-custom-input,
-.has-error .invalid .checkbox-custom-input {
+.has-error.invalid .form-control,
+.has-error.invalid .radio-custom-input,
+.has-error.invalid .checkbox-custom-input {
   -webkit-box-shadow: inset 0 3px 2px -2px #d5d5d5;
   box-shadow: inset 0 3px 2px -2px #d5d5d5;
   border-color: #ff0000;
 }
-.has-error .invalid .form-control:focus,
-.has-error .invalid .radio-custom-input:focus,
-.has-error .invalid .checkbox-custom-input:focus {
+.has-error.invalid .form-control:focus,
+.has-error.invalid .radio-custom-input:focus,
+.has-error.invalid .checkbox-custom-input:focus {
   -webkit-box-shadow: inset 0 3px 2px -2px #d5d5d5, 0 0 6px #ff6666;
   box-shadow: inset 0 3px 2px -2px #d5d5d5, 0 0 6px #ff6666;
   border-color: #990000;
 }
-.has-error .invalid .input-group-addon {
+.has-error.invalid .input-group-addon {
   border-color: #ff0000;
   background-color: #ffffff;
   color: #333333;

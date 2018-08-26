@@ -52,7 +52,7 @@
   li > .stacked-icon,
   li > .icon {
     position: absolute;
-    // top: 14px;
+    top: 14px;
     left: 5px;
   }
   
@@ -65,6 +65,7 @@
   > li {
     position: relative;
     padding-left: 20px;
+    margin-bottom: .5rem;
     
     &:before {
       font-family: company-name-icons;
@@ -103,6 +104,7 @@
   > li {
     position: relative;
     padding-left: 20px;
+    margin-bottom: .5rem;
     
     &:before {
       font-family: company-name-icons;
@@ -159,15 +161,9 @@
       font-size: 14px;
       font-size: .875rem;
       left: 0;
-      top: 5px;
+      top: 14px;
       color: #993300;
     }
-    
-    // &:before {
-    //  content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1182308/arrow-orange.png);
-    //  position: absolute;
-    //  left: 0;
-    // }
     
     a {
       color: inherit;
@@ -182,17 +178,7 @@
   list-style: none;
   padding-left: 0;
 }
-.list-icons li {
-  position: relative;
-  padding-left: 30px;
-}
-.list-icons li:before,
-.list-icons li > .stacked-icon,
-.list-icons li > .icon {
-  position: absolute;
-  top: 14px;
-  left: 5px;
-}
+
 .list-icons li > a {
   color: #0f4e73;
   text-decoration: none;
