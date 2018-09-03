@@ -987,9 +987,33 @@
 
                 <h3 class="card-title">Tips & Tricks</h3>
 
-                <h4 class="heading-s">The Main Navigation Menu</h4>
-
+                <h4 class="heading-s">Basics structure</h4>
                 <ul class="list-icons list-checklist">
+                  <li>In most cases a <code>&lt;nav&gt;</code> with a <code>&lt;ul&gt;</code> will be the best choice.</li>
+                  <li>Wrap <code>&lt;nav role="navigation"&gt;</code> around to the Main Menu.</li>
+                  <li>Authors <span class="badge badge-danger">MUST NOT</span> use more than 2 or 3 <code>&lt;nav&gt;</code> elements or they will loose value</li>
+                  <li>Give menu's <a href="https://www.w3.org/TR/wai-aria-1.1/#dfn-accessible-name">accessible names</a> via <code><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby">aria-labelledby</a></code></li>
+                  <li>Give the current link a hidden / screen reader only text of "current"</li>
+                </ul>
+
+                <h4 class="heading-s">Use of ARIA</h4>
+                <ul class="list-icons list-checklist">
+<<<<<<< HEAD:dist/advanced/code/semantic-structure-and-navigation.html
+                  <li>Authors <span class="badge badge-danger">MUST NOT</span> use <code><a href="https://www.w3.org/TR/wai-aria-1.1/#menu">role="menu"</a></code> for navigation between pages. The menu role is appropriate when presented in a manner similar to a menu on a desktop application.</li>
+                  <li>Authors <span class="badge badge-info">SHOULD</span>  only mark one element in a set of elements as current with <code><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-current">aria-current</a></code>.</li>
+                  <li>Authors <span class="badge badge-info">SHOULD NOT</span> use the <code>aria-current</code>attribute as a substitute for <code><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-selected">aria-selected</a></code> in widgets where <code>aria-selected</code> has the same meaning.</li>
+                </ul>
+
+                <h4 class="heading-s">Multiple ways</h4>
+                <p class="mb-2">Provide more than 1 way to locate a Web page</p>
+                <ul>
+                  <li>Navigation menu</li>
+                  <li>Search option</li>
+                  <li>Breadcrumbs</li>
+                  <li>Sitemap</li>
+                  <li>(List of) links</li>
+                  <li>TOC</li>
+=======
                   <li>
                     <a href="https://www.w3.org/WAI/WCAG20/quickref/#consistent-behavior-consistent-locations">3.2.3 Consistent Navigation Level AA: WCAG Filters</a>
                   </li>
@@ -1020,6 +1044,7 @@
                       <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-current">aria-current="page" (state)</a> (new, not well supported yet)</li>
                     </ul>
                   </li>
+>>>>>>> fa9606da3d0155f78ba7c7ce2cc37c6e0f898a63:dist/advanced/code/semantic-structure-and-navigation.html
                 </ul>
 
               </div>
@@ -1032,17 +1057,47 @@
             <div class="card">
               <div class="card-block">
 
+                <h3 class="card-title">Jump to:</h3>
+
+                <h4 class="heading-s">Guidelines</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../guidelines/code/focus.html#focusable-elements" class="link-ts"><span>Focusable elements</span></a></li>
+                  <li><a href="../../guidelines/code/focus.html#focus-order" class="link-ts"><span>Focus order</span></a></li>
+                  <li><a href="../../guidelines/code/focus.html#user-interactions" class="link-ts"><span>User interactions</span></a></li>
+                  <li><a href="../../guidelines/code/focus.html#alternative-input-methods" class="link-ts"><span>Alternative input methods</span></a></li>
+                  <li><a href="../../guidelines/design/structure.html#containers-and-landmarks" class="link-ts"><span>Containers and landmarks</span></a></li>
+                  <li><a href="../../guidelines/content/text-equivalents.html#visual-formatting" class="link-ts"><span>Visual formatting</span></a></li>
+                  <li><a href="../../guidelines/design/visual-design.html#visible-focus" class="link-ts"><span>Visible focus</span></a></li>
+                  <li><a href="../../guidelines/design/visual-design.html#choice" class="link-ts"><span>Choice</span></a></li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-block">
+
                 <h3 class="card-title">Resources</h3>
 
                 <h4 class="heading-s">Specifications</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://www.w3.org/WAI/WCAG21/quickref/?currentsidebar=%23col_customize&amp;tags=navigation" class="link-ts"><span>"navigation" - WCAG Filter</span></a></li>
+                  <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#use-of-color" class="link-ts"><span>1.4.1 Use of Color - Level A</span></a></li>
+                  <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways" class="link-ts"><span>2.4.5 Multiple Ways - Level AA</span></a></li>
+                  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#navigation" class="link-ts"><span>navigation (role) - ARIA</span></a></li>
+                  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-current" class="link-ts"><span>aria-current (state) - ARIA</span></a></li>
+                </ul>
 
                 <h4 class="heading-s">Examples</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://www.w3.org/WAI/tutorials/menus/" class="link-ts"><span>Menu Concepts Tutorial - WAI W3C</span></a></li>
+                </ul>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <ul class="list-icons list-linklist">
+                  <li><a href="https://inclusive-components.design/menus-menu-buttons/" class="link-ts"><span>Menus & Menu Buttons</span></a></li>
                   <li><a href="https://www.levelaccess.com/challenges-mega-menus-standard-menus-make-accessible/" class="link-ts"><span>Creating Accessible Menus and Mega Menus</span></a></li>
+                  <li><a href="https://adobe-accessibility.github.io/Accessible-Mega-Menu/" class="link-ts"><span>Accessible Mega Menu - Adobe</span></a></li>
                 </ul>
 
               </div>
@@ -1054,7 +1109,10 @@
                 <h3 class="card-title">Practice</h3>
 
                 <h4 class="heading-s">WCAG Annotations</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../good-bad/home.html#annotModal06" class="link-ts"><span>06. Main menu with NAV element, a list and proper attributes - Good</span></a></li>
+                  <li><a href="../../good-bad/home-bad.html#annotModal06" class="link-ts"><span>06. Main menu without name, role, states and values - Bad</span></a></li>
+                </ul>
 
                 <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
